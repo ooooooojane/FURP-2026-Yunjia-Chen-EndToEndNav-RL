@@ -1,23 +1,18 @@
-# Meeting Notes — Template
-
-> Copy this file for each meeting. Suggested filename: `YYYY-MM-DD.md` (e.g. `2026-06-15.md`).
-> Capture **key takeaways and action items**, not a full transcript.
+# Meeting Notes — Week 1
 
 ---
 
-**Date:** YYYY-MM-DD
-**Type:** Weekly meeting / Workshop / Supervisor check-in / Other
-**Attendees:** _names_
+**Date:** 2026-06-08
+**Type:** Kick-off meeting
 
 ## Discussion summary
-- _Main points discussed._
+Went over how to get the certificate, which needs >50% attendance, submit a poster, present at the showcase. 
+For GitHub, one repo for the whole project, update weekly log and meeting notes every week. 
+Research track needs to replicate a paper plus new stuff. 
+Leave requests must be by email, not just chat messages.
 
 ## Decisions made
-- _What was agreed?_
-
-## Action items
-- [ ] _Task — owner — due date_
-- [ ] _..._
+Will update meeting notes and personal progress.
 
 ## Questions / follow-ups
-- _Anything to raise with the project lead or supervisor._
+N/A
