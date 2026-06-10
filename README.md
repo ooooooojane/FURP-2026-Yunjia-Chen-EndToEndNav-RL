@@ -25,16 +25,16 @@ This is your project home for the FURP programme. **Fork this template**, rename
 
 | Field | Your entry |
 |---|---|
-| Student name(s) | _e.g. Jason Zhang_ |
-| Project title | _..._ |
-| Project tag | _e.g. ROSBootcamp_ |
+| Student name(s) | Yunjia Chen |
+| Project title | End-to-End Navigation for an AMR with Reinforcement Learning |
+| Project tag | EndToEndNav-RL |
 | Track | Research |
-| Supervising faculty | _..._ |
-| Project lead | _..._ |
-| Team or individual | _..._ |
+| Supervising faculty | Tianxiang Cui |
+| Project lead | Fuhua Jia |
+| Team or individual | Team |
 | Cited paper being replicated | _title + link/DOI_ |
 
-**One-line summary:** _What is your project about? (1–2 sentences)_
+**One-line summary:** Train a policy that maps observations to navigation actions and study how reward design, state representation, and evaluation affect performance.
 
 ---
 
