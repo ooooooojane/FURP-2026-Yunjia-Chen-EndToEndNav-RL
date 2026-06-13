@@ -30,20 +30,24 @@
 
 <!-- =================  YOUR ENTRIES BELOW  ================= -->
 
-### Week 1 — YYYY-MM-DD
+### Week 1 — 2026-06-12
 
-**Attended this week's meeting:** Yes / No
+**Attended this week's meeting:** Yes
 
 **Progress this week**
 - Set up repository from the FURP template.
-- _..._
+- Read and understood the CVPR 2018 paper on Vision-and-Language Navigation (VLN).
+- Set up turtlesim on macOS (Apple Silicon) via Docker + ROS 2 Humble.
 
 **Challenges & blockers**
-- _..._
+- Encountered and resolved issues with missing brew, xhost path and unactivated ros2 environment during turtlesim setup.
+- Due to macOS lacking NVIDIA GPU support and the complex compilation dependencies of Habitat, I was unable to configure the Habitat environment on my local machine.
 
 **Next steps**
-- _..._
+- If possible, seek a GPU‑equipped Linux workstation from IT department, or purchase a PSSD to create a Linux‑to‑Go system.
+- Continue reading relevant literature.
 
 **Hours spent (optional):**
-
+N/A
 **Links (optional):**
+N/A
