@@ -25,7 +25,14 @@
 **Next steps**
 - Complete the Nav2 smoke test by either: (a) debugging the map_server configuration failure, (b) using an alternative simulation like tb3_loopback_simulation.launch.py, or (c) creating a minimal working map file with correct YAML formatting.
 - For Isaac Lab: due to hardware limitations, either (a) run lightweight environment loading tests only (without training), (b) use cloud GPU resources, or (c) focus primarily on the Habitat path for the project.
-- Begin Week 3 objectives: download the PointNav or VLN dataset for Habitat and run baseline models.
+- Download the PointNav or VLN dataset for Habitat and run baseline models.
 - Document all working configurations and smoke test results for the Week 2 checkpoint submission.
 
 **Hours spent (optional):** idk i spent my whole week in the computer lab.
+
+
+<img width="1920" height="1080" alt="截图 2026-06-19 20-46-10" src="https://github.com/user-attachments/assets/df36d42b-98bf-4ac8-a16a-dbc7157d0672" />
+<img width="1920" height="1080" alt="截图 2026-06-19 21-58-13" src="https://github.com/user-attachments/assets/6748fcf5-2698-4554-ac63-22723296b55e" />
+<img width="1920" height="1080" alt="截图 2026-06-16 21-27-52" src="https://github.com/user-attachments/assets/5c4086cb-c7d3-49fc-a86a-fcbe3b4b18ee" />
+<img width="1920" height="1080" alt="截图 2026-06-16 19-40-57" src="https://github.com/user-attachments/assets/ad964e9d-b364-4ebb-9031-f7d366f71627" />
+
