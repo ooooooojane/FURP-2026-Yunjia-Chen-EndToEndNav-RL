@@ -11,10 +11,15 @@
 
 **Challenges & blockers** 
 *Resolved*: Ubuntu boot issues on external drive — fixed /etc/fstab by switching from device names to UUID for EFI mounting.
+
 *Resolved*: Missing gym in Habitat — installed gym==0.21.0 after downgrading setuptools.
+
 *Resolved*: Isaac Lab dependency resolution (resolution-too-deep) — fixed by using a fresh Python 3.10 conda environment and proper pip extra index URL.
+
 *Resolved*: Gazebo spawn_entity issues — loaded the ROS factory plugin and manually spawned the robot model.
+
 *Resolved*: Isaac Lab smoke test fails due to insufficient GPU memory (NVIDIA T400, 2GB VRAM) — PhysX cannot allocate GPU memory for physics simulation; training cannot proceed on current hardware.
+
 *Ongoing*: Nav2 map display — map_server is running but the /map topic contains all -1 values (unknown cells). The default map file is missing, and custom map creation leads to map_server configuration failure (Transitioning failed). Currently debugging the map loading issue.
 
 **Next steps**
