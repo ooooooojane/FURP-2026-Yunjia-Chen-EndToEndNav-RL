@@ -15,8 +15,8 @@
 - Run remaining QUCTc6BB5sX and 2azQ1b91cZZ to complete 5-scene subset evaluation.
 - Analyze failure cases from evaluation logs to identify common failure modes.
 
-**Hours spent (optional):** 
-IDK dude im drowning  someone SAVE ME.
+**Hours spent (optional)** 
+- IDK dude im drowning  someone SAVE ME.
 
 **Links (optional):**
 - ETPNav paper: https://arxiv.org/abs/2304.03047
