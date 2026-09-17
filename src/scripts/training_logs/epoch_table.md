@@ -83,9 +83,9 @@
 | Reward | CNNTD3 | SAC | Δ (SAC − CNNTD3) |
 |--------|--------|-----|-------------------|
 | **Default** | 0.94 (10/20 perfect) | 0.92 (6/20 perfect) | −0.02 |
-| **Dense** | 0.84 (3/20 perfect) | **0.93** (10/20 perfect) | +0.09 ✅ |
-| **Harsh** | 0.82 (3/20 perfect) | **0.85** (6/20 perfect) | +0.03 ✅ |
-| **Sparse** | ❌ gave up @ E3 | — | — |
+| **Dense** | 0.84 (3/20 perfect) | **0.93** (10/20 perfect) | +0.09 (是) |
+| **Harsh** | 0.82 (3/20 perfect) | **0.85** (6/20 perfect) | +0.03 (是) |
+| **Sparse** | gave up @ E3 | — | — |
 
 **Metric: Last 20 epoch avg Reward ↑**
 

@@ -36,10 +36,10 @@ def probe(model, sim, n=5):
     spread = acts.max(axis=0) - acts.min(axis=0)
     # 退化判据: 两个通道都几乎不动(注意: 单一通道饱和可能是合法策略, 不算退化)
     if spread[0] < 0.05 and spread[1] < 0.05:
-        print("  ⚠️ 两个动作通道都几乎不变! 权重疑似退化")
+        print("  [警告] 两个动作通道都几乎不变! 权重疑似退化")
         ok = False
     else:
-        print("  ✅ 动作随输入变化, 权重正常")
+        print("  [OK] 动作随输入变化, 权重正常")
     return ok
 
 
@@ -82,5 +82,5 @@ if __name__ == "__main__":
     probe_ok = probe(policy, sim)
     rate = quick_eval(policy, sim, n_episodes=args.episodes, world=args.world)
 
-    verdict = "✅ 验证通过" if (probe_ok and rate >= 0.6) else "❌ 验证失败"
+    verdict = "[OK] 验证通过" if (probe_ok and rate >= 0.6) else "[FAIL] 验证失败"
     print("== 结论: %s (goal率 %.0f%%) ==" % (verdict, rate * 100))

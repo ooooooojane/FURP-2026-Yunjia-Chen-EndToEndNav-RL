@@ -92,7 +92,27 @@ Previously these two worlds silently inherited defaults, so they were not the
 same sensor model as the world used for the main experiments. Pure addition —
 nothing was removed.
 
+## What the patch does **not** cover
+
+A `git diff` only captures changes to files upstream already tracks. Our working
+tree also contained **8 files we wrote that upstream has no counterpart for**,
+so they are untracked and absent from this patch:
+
+```
+robot_nav/test_failure.py        robot_nav/rl_test_failure.py
+robot_nav/test_generalize.py     robot_nav/rl_test_generalize.py
+robot_nav/test_cnntd3_gen.py     robot_nav/rl_test_cnntd3.py
+robot_nav/rl_train_quick.py      robot_nav/probe_world.py
+```
+
+Those are carried in this repository directly under `scripts/robot_nav/` — see
+`../README.md` for what each does. Two of them (`test_failure.py`,
+`test_generalize.py`) generate published results, so they matter.
+
 ## Verification
 
 The patch was reverse-apply-checked against the working tree it was generated
-from, so it reproduces those exact 4 file states.
+from, so it reproduces those exact 4 file states. It was also applied to a
+**fresh clone** of upstream at the base commit and then diffed against
+`scripts/robot_nav/`: every upstream file matches byte-for-byte, and the only
+extras are the 8 local scripts listed above.

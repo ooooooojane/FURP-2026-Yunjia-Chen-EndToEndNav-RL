@@ -26,6 +26,14 @@ scripts below can be read in context. **To reproduce a training run, apply the
 patch to a fresh upstream clone** rather than using this copy directly — see
 `patches/README.md` for the exact commands.
 
+> **It is not *only* upstream plus the patch.** Verified by diffing against a
+> fresh clone: every upstream file is byte-identical, but `robot_nav/` also
+> contains **8 scripts we wrote ourselves** that upstream does not have
+> (`test_failure.py`, `test_generalize.py`, `test_cnntd3_gen.py`,
+> `rl_test_failure.py`, `rl_test_generalize.py`, `rl_test_cnntd3.py`,
+> `rl_train_quick.py`, `probe_world.py`). These are ours, not carryover, and
+> two of them generate published results — see the table below.
+
 ## `scripts/` — what each file does
 
 All scripts assume the working directory is `scripts/`.
@@ -47,6 +55,8 @@ All scripts assume the working directory is `scripts/`.
 | `run_all_v5.sh` | Full sweep driver: Table 3 dual-seed × 4 methods × 500 scenarios + Table 4 matrix × 200 scenarios | reproduction entry point |
 | `run_overnight_all.sh` | Full re-run under the deterministic scenario-manifest protocol | produced the final v3 data |
 | `run_table4_matrix.sh` | Table 4 success matrix, 7 tiers, parallel | Table 4 success |
+| `robot_nav/test_failure.py` | Runs N episodes of any algorithm × reward and categorises every failure (tight-space / near-goal / early collision / timeout) | `training_logs/failure_*.json`, the W5 failure breakdown |
+| `robot_nav/test_generalize.py` | Runs any algorithm × reward on three unseen maps | the W4–W5 generalisation table (Circle / Cross / Eval) |
 
 ### Supporting
 
@@ -58,6 +68,11 @@ All scripts assume the working directory is `scripts/`.
 | `yaw_cal.py` | Spins the robot 360° and measures odom error, suggests `odom_z_scale` |
 | `turn_openloop_test.py` | Open-loop fixed-ω step; odom-integrated vs physical yaw |
 | `latency_bench_all.py` | Single-device batch latency re-test (superseded by `latency_repeat_batches.py`, kept for the earlier protocol) |
+| `robot_nav/test_cnntd3_gen.py` | Quick generalisation check for a single CNNTD3 variant |
+| `robot_nav/rl_test_cnntd3.py` | Renders a trained CNNTD3 policy navigating, for recording video |
+| `robot_nav/rl_train_quick.py` | 3-epoch smoke-test training loop, for checking a setup works before committing to a full run |
+| `robot_nav/rl_test_failure.py`, `robot_nav/rl_test_generalize.py` | Earlier CNNTD3-only versions of the two analysis scripts above; superseded by the `test_*` versions, which take algorithm and reward as arguments |
+| `robot_nav/probe_world.py` | 7-line scratch probe that loads the simulator and prints step time and LiDAR shape. Hardcodes a host path (`/home/furp/...`) — edit before reuse |
 
 ### The two ROS nodes — read this before getting confused
 
@@ -84,11 +99,18 @@ There are two, and only one of them was deployed:
   **One exception:** `ros2_ws/src/rl_nav_node/cnntd3_actor.pt` (552 KB) *is*
   included, because `inference_node.py` loads it by relative path and the ROS2
   package is unusable without it.
-- **Upstream files we never used** — `rnn_*`, `rvo_*`, `marl_*` experiment entry
-  points and the `DDPG` / `HCM` / `MARL` / `RCPG` model implementations are
-  inherited from upstream and irrelevant to this work. They remain in
-  `robot_nav/` only because `rl_train.py`'s model factory imports across the
-  full algorithm set.
+- **Nothing else was pruned out of `robot_nav/`.** The tree also carries
+  upstream components this project never touched — the `rnn_*` / `rvo_*` /
+  `marl_*` experiment entry points and the `HCM` / `MARL` / `RCPG` model
+  packages. They are dead weight here, but they are left **exactly as upstream
+  ships them** so that every *upstream* file in `scripts/robot_nav/` stays
+  byte-identical to `upstream + patches/upstream_modifications.patch` — which is
+  the whole point of shipping a patch instead of a fork. Editing or deleting
+  them would quietly break that equivalence.
+
+  Of the unused ones only `DDPG` and `TD3` are actually reachable — they appear
+  in `rl_train.py`'s `--algo` choices. `HCM`, `MARL` and `RCPG` are referenced
+  by nothing we run.
 
 ## `scripts/training_logs/`
 

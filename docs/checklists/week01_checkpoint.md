@@ -6,9 +6,9 @@
 - Date: 2026/6/19
 
 ## Environment
-- [✓] Python environment created
-- [✓] Dependencies installed without conflicts
-- [✓] Project folder structure understood
+- [x] Python environment created
+- [x] Dependencies installed without conflicts
+- [x] Project folder structure understood
 
 ## Smoke test
 - [ ] Smoke test command executed

@@ -102,7 +102,7 @@ Then see [`src/README.md`](src/README.md) for the per-script detail and
 **The three rules for the certificate** — all three must be satisfied:
 
 1. **Attend > 50%** of programme activities.
-2. **Submit a poster** — placed as `FURP_Showcase.pdf` in this repo root. ✅
+2. **Submit a poster** — placed as `FURP_Showcase.pdf` in this repo root.
 3. **Present at the Poster Showcase.**
 
 Research Track minimum: successful replication of a cited work with at least
