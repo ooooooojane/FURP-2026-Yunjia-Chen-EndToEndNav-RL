@@ -10,12 +10,12 @@
 
 | | |
 |---|---|
-| 📄 **Final report** | [`FURP_Summer_Report.pdf`](FURP_Summer_Report.pdf) |
-| 🖼️ **Poster** | [`FURP_Showcase.pdf`](FURP_Showcase.pdf) |
-| 💻 **Code** | [`src/`](src/) — map in [`src/README.md`](src/README.md) |
-| 📊 **Source data** | [`src/paper_data/`](src/paper_data/) — which file backs which table |
-| 🔧 **Upstream patch** | [`src/patches/`](src/patches/) — what we changed, as a diff |
-| 📝 **Weekly log** | [`docs/00_weekly.md`](docs/00_weekly.md) |
+|  **Final report** | [`FURP_Summer_Report.pdf`](FURP_Summer_Report.pdf) |
+|  **Poster** | [`FURP_Showcase.pdf`](FURP_Showcase.pdf) |
+|  **Code** | [`src/`](src/) — map in [`src/README.md`](src/README.md) |
+|  **Source data** | [`src/paper_data/`](src/paper_data/) — which file backs which table |
+|  **Upstream patch** | [`src/patches/`](src/patches/) — what we changed, as a diff |
+|  **Weekly log** | [`docs/00_weekly.md`](docs/00_weekly.md) |
 
 ## Abstract
 
