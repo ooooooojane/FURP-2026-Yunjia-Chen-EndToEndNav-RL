@@ -1,0 +1,177 @@
+{
+  "manifest_version": "1.0",
+  "generated": "2026-08-20",
+  "purpose": "论文所有数字的来源登记(GPT 审阅 P0-4.2 数据版本漂移修复)。论文引用数字一律从 10_数据总表.md 取,数据总表来源在本文件登记。2026-08-20 更新:表3 换为 v3 无探针协议最终数据,表4 补 200 场景矩阵结果。",
+  "software": {
+    "mac_drl_env": {
+      "python": "3.11.15",
+      "torch": "2.13.0",
+      "onnxruntime": "1.28.0",
+      "numpy": "2.2.6"
+    },
+    "host_furp_env": {
+      "torch": "2.13.0+cu130",
+      "cuda": "13.0",
+      "note": "DRL 评估与 RTX 4070 延迟测量"
+    },
+    "host_neupan_env": {
+      "torch": "2.5.1+cu121",
+      "note": "NeuPAN 评估"
+    }
+  },
+  "hardware": {
+    "mac": {
+      "chip": "Apple M5",
+      "note": "M5 CPU(device=cpu)与 M5 GPU(device=mps)"
+    },
+    "host": {
+      "gpu": "RTX 4070 12GB",
+      "cpu_cores": 16,
+      "os": "Ubuntu 22.04"
+    },
+    "robot": {
+      "model": "WHEELTEC S100",
+      "status": "待测(同学调试中)"
+    }
+  },
+  "world_files": {
+    "robot_world.yaml": {
+      "sha256": "5c95d9b4b350400dee2690e5c2deb0e0499bcb8af66675cdb30a276f9f1d8f97",
+      "note": "Mac 与主机哈希一致(同文件)"
+    }
+  },
+  "model_files": {
+    "training_checkpoints": {
+      "CNNTD3_actor.pth": "752aba6ac0f640e8fbac5ec0ff40384b4f236ffdc4e91884d75937a11f586453",
+      "SAC_actor.pth": "ebb69f7d084bad8a5abf4f39202a84434fb939fede1c14fb8848201b03b79ebe",
+      "PPO_policy.pth": "a9af6a8d3135bf09648bd203a34851f3c882d4cb2a7d62513f858ded6778537a"
+    },
+    "deployment_forms": {
+      "CNNTD3_actor.pt": "247fc1b7060aed68fe5c5839d69cced5e9b7cc6f8abab7f6eb1668865222dc40",
+      "SAC_actor.pt": "875e4d601e24cc8be4eda61d462a386f842c21cfc2d3a705c4be5d3eacd0b8ca",
+      "PPO_actor.pt": "d9c26191cef1b558a0c856f6c5eb7bfac47fe34c607b4ae14f024cc90f30cbb2",
+      "CNNTD3.onnx_fp32": "2ebb3a23d24d844a9bfc1120e093dad47ed5b117782b6786f660b454a8d73c9a",
+      "CNNTD3.onnx.data": "外部权重文件(Mac 与主机已同步)",
+      "CNNTD3_int8_realcalib.onnx": "6b869da306f2da0d222e3c77ba0eadccd1c8da1796de041900210802b7674d24",
+      "CNNTD3_pruned10.pt": "0696038f7df8be9536042e5777fa3c76f129a908bf1c02377f048297c6d38651",
+      "CNNTD3_pruned30.pt": "67e170b35fce248dfacf55c568cd4a9bb88721db2fc4daf6f591ec219b585f9b",
+      "CNNTD3_pruned50.pt": "79495d89040b1da65c4439eba115c448f85a5ade054c6923b22e77455959ea2d",
+      "CNNTD3_pruned50_ft.pt": "25819d236ca7bfabeb39355474a6050307b24a88889d2c869b2f88a30dd4423a",
+      "note": "CNNTD3_actor_pruned*.pt 为未剪的等大文件(564KB),非部署剪枝模型,禁止用于评估"
+    }
+  },
+  "table2_latency": {
+    "script": "latency_repeat_batches.py(2026-08-17, 5 独立批次×1000 次/格,含 mps/cuda synchronize;旧 latency_bench.py 无 mps 同步,旧批次作废)",
+    "protocol": {
+      "warmup": 50,
+      "n_per_batch": 1000,
+      "n_batches": 5,
+      "input": "[1,185] random",
+      "seed": 7
+    },
+    "authoritative": "results/table2_latency_crossbatch.json(5000 样本/格合并统计)",
+    "raw": "results/table2_repeat_batches.npz(raw timings)",
+    "stability": "CPU std<=0.001ms;RTX 4070 std<=0.003ms;M5 GPU(MPS)std 0.011-0.17ms(波动大,SAC/PPO 偶发高值批次)",
+    "neupan_row": {
+      "source": "table2_latency_v3.json(2026-08-11, 主机 CPU, 决策延迟含规划求解)",
+      "note": "双峰分布,论文报 mean 与 p95"
+    }
+  },
+  "table3_success": {
+    "status": "2026-08-20 定稿(生成阶段探针筛选、评估阶段无探针,权威)",
+    "script": "eval_multi_policy.py(生成阶段探针筛选场景; 评估阶段不执行探针, 恢复随机状态快照后以探针前原始采样位姿重置开跑; 配对由相同场景记录+随机状态恢复+共同episode集合保证)",
+    "script_sha256": "c114dd586d098fb7ca94e7c7a54c0deceb2c6d88acd1099a7c5a786cc16520a6",
+    "protocol": {
+      "world": "robot_world.yaml (sha256 5c95d9b4b350400dee2690e5c2deb0e0499bcb8af66675cdb30a276f9f1d8f97)",
+      "episodes": "seed42: 500, seed7: 499, 共 999(seed7 有 1 场景重置后前方<0.3m 兜底跳过)",
+      "max_steps": 500,
+      "goal_threshold_m": 0.3,
+      "start_filter": "生成阶段探针筛选(最小激光>=0.5m 且两步机动无碰撞), 接受率: seed42 767尝试→500(65.2%), seed7 719尝试→500(69.5%); 评估从探针前原始位姿(朝向0)启动, 目标经恢复的随机状态复现并以记录值核验",
+      "failure_categories": "success / near_goal_collision / tight_space / early_collision / mid_route_collision / timeout_no_goal",
+      "fallback": "某场景重置后前方<0.3m 时该场景对全部方法共同跳过: seed7 四种方法共同缺失 episode 97"
+    },
+    "files_20260820": {
+      "seed42": {
+        "mp42_cnntd3.json": "2ccd29c89c30869f115772c94448252b3b39d73ed175ba5516491a09eec228bd",
+        "mp42_sac.json": "25b721ea2be2f94480a6f8933a6b8359671107a7ccb826b96e1297eb7c2e1d9f",
+        "mp42_ppo.json": "92b0bcb7fd6fcb9e5541bfefd78e314da5bf2e3d7715fb7a29ef7f327cdbeb39",
+        "mp42_neupan.json": "c8ba0687332aa012bc8c197a0ef3884ec99e8f990da0c525caca39a5fc753631"
+      },
+      "seed7": {
+        "mp7_cnntd3.json": "146955d8774e3cf96c3315211ed54133e0e6aac4642fb0339b1bfc2387d4e218 (2026-08-20 修复后)",
+        "mp7_sac.json": "fc47273b9cc30674d87ef0559dd843841fa9a1bb7d0db981d0d523faa06a3722",
+        "mp7_ppo.json": "e194aca09a965aaa9fe0437e8949840738f3a86244a21b0c00d965ec236a661e",
+        "mp7_neupan.json": "c47ccac3e9aeaf49b2fa123dfb371a2dbf3d1582514043ddd08454f99c06229a"
+      }
+    },
+    "results": {
+      "seed42(500局)": "cnntd3 67.8% / sac 83.0% / ppo 30.8% / neupan 1.6%",
+      "seed7(499局)": "cnntd3 69.7% / sac 84.4% / ppo 31.1% / neupan 3.4%",
+      "merged(999局)": "cnntd3 68.8%[65.8,71.6] / sac 83.7%[81.3,85.8] / ppo 30.9%[28.1,33.9] / neupan 2.5%[1.7,3.7] (Wilson 95% CI)"
+    },
+    "data_notes": [
+      "seed7 四种方法共同缺失 episode 97(兜底跳过), 其余 499 场景完全配对, 共 999 配对场景",
+      "seed7 cnntd3: episode 377 碰撞局被误标 success(标志 349 vs reasons 348); 2026-08-20 修复该 episode 标志并重建 summary(348/499=69.7%, 新 SHA 见下); 原文件哈希 053db0671c02699213c3dbfa1fbcef497f021a9ceecef4840135f2f7690979fa",
+      "neupan seed7 含 1 局 early_collision(并入碰撞率)",
+      "旧值(2026-08-17)与新值差异不构成单变量 sensitivity 分析(GPT 2026-08-20 意见): 新旧协议同时改变了场景筛选/初态/RNG消耗路径, 正文只用 v3"
+    ],
+    "pairwise_mcnemar": {
+      "method": "精确二项 McNemar(999 共同场景)",
+      "sac_vs_cnntd3": "失配对 178/30, p=8.5e-27",
+      "cnntd3_vs_ppo": "失配对 414/35, p=2.5e-83",
+      "ppo_vs_neupan": "失配对 291/7, p=1.6e-76",
+      "note": "相邻排名预设, Holm 校正后结论不变; Wilson CI 保留用于效应大小"
+    }
+  },
+  "table4_compression": {
+    "sizes": {
+      "source": "exported/compressed/compression_report.json (2026-08-05)"
+    },
+    "success_rates": {
+      "status": "2026-08-19 完成(确定性协议,单进程多方法同场景配对,200 场景)",
+      "script": "eval_multi_policy.py (mp_matrix 批次, 与表3 v3 同脚本)",
+      "results_200scenes": {
+        "baseline": "72.5% (145/200)",
+        "pruned10": "72.5% (145/200), McNemar 不显著",
+        "pruned30": "76.0% (152/200), McNemar 不显著",
+        "pruned50": "61.0% (122/200), McNemar 显著下降 chi2=12.41",
+        "pruned50_ft": "70.0% (140/200), 显著恢复 chi2=6.28, 与基线相当",
+        "ort_fp32": "72.0% (144/200), 不显著",
+        "int8": "72.0% (144/200), 不显著(b=4,c=3)"
+      },
+      "files": "results/mp_matrix_*.json (2026-08-19 01:49)"
+    },
+    "latency": {
+      "source": "results/table4_latency_unified.json (2026-08-17 更新版: 关键三档跨批均值 pytorch 0.1204/ort_fp32 0.0191/ort_int8 0.0282, 加速 6.3×)",
+      "script": "latency_bench_unified.py",
+      "corrected": "剪枝档改用 CNNTD3_pruned*.pt(此前误用等大未剪 actor_pruned*.pt, 已重测)"
+    },
+    "note": "INT8: 成功率无显著退化 + 尺寸-71% → 压缩不损失能力; 剪枝50%显著掉点, 剪枝-微调显著恢复(方法贡献); 延迟跨批权威: pytorch 0.1204 / ort_fp32 0.0191(6.3×) / ort_int8 0.0282"
+  },
+  "neupan": {
+    "repo": "github.com/xxx/neupan (host ~/github/neupan)",
+    "planner_config": {
+      "file": "planner_diff_small_best.yaml",
+      "sha256": "af95b7bd6957280f742ff1a1344bba7c907887dd1ad30a5cd29f5a0250bd2cd9",
+      "note": "LON 失败反传调优 40 轮后定稿(2026-08-04),官方权重未改; 调优后模型在 v3 最终协议下 999 局 2.5%"
+    },
+    "evaluations": {
+      "seed42_100局_旧协议": "results/neupan_100ep_seed42.json (2026-08-04, 7.0%, 终止判定未修复 → 作废)",
+      "seed42_v3_500局": "results/mp42_neupan.json (2026-08-20, 1.6%)",
+      "seed7_v3_499局": "results/mp7_neupan.json (2026-08-20, 3.4%)",
+      "合并": "25/999 = 2.5% [1.7%, 3.7%] Wilson CI, 碰撞 5.5%, 超时 92.0%, 平均 461 步 (2026-08-20 v3 定稿)"
+    }
+  },
+  "deprecated": [
+    "表2 旧批次 table2_latency_v3.json 的 DRL 行(2026-08-11)作废:MPS 未同步,跨批次比值不可用;仅保留 NeuPAN 行",
+    "table4_latency_unified.json 第一版(actor_pruned*.pt 误用版)作废,以 2026-08-17 晚更新版为准",
+    "数据总表 8/17 前所有旧统计值一律以本 manifest + 数据总表为准",
+    "表3 2026-08-17 版(75.2/89.6/25.0/3.3,1000 局,eval_compare.py 含 reset_clear 物理探针)全部作废:探针影响起始姿态(GPT 审阅 P0-2),v3 无探针协议重跑为唯一权威",
+    "neupan 8/17 500局值(2.8%/3.8%)作废:同上协议变更,以 v3 1.6%/3.4% 为准"
+  ],
+  "eval_compare_versions": {
+    "d6b2333e31422fdeb4924d09d3b9f04075595b7ed8419a84d60634439c5714fd": "终止修复版(seed7 500 局实际使用, 兜底为 return sim.reset())",
+    "657e11b513ee24efaedde0a0272e31ce4c586ad616d0bcbfbcbda5984aed5b5e": "当前权威版: 终止修复 + 兜底改 raise + 探针改称 initialization-and-rejection(四副本一致)",
+    "90e6c90af8df2ba8d2de11b674cfdb1a0502fd5bec853f1a87cdf525268b6586": "无终止修复旧版(曾误存于 Code/scripts 与复检材料, 已替换)"
+  }
+}

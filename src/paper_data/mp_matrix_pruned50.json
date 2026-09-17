@@ -1,0 +1,1618 @@
+{
+ "summary": {
+  "policy": "pruned50",
+  "n": 200,
+  "success": 0.61,
+  "collision": 0.16,
+  "timeout": 0.23,
+  "avg_steps": 173.37,
+  "reasons": {
+   "success": 122,
+   "timeout_no_goal": 46,
+   "near_goal_collision": 23,
+   "tight_space": 9
+  }
+ },
+ "episodes": [
+  {
+   "success": true,
+   "collision": false,
+   "steps": 137,
+   "min_obstacle": 0.31,
+   "fail_reason": "success",
+   "episode": 1
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 42,
+   "min_obstacle": 0.26,
+   "fail_reason": "success",
+   "episode": 2
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.58,
+   "fail_reason": "timeout_no_goal",
+   "episode": 3
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.35,
+   "fail_reason": "timeout_no_goal",
+   "episode": 4
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 79,
+   "min_obstacle": 0.06,
+   "fail_reason": "near_goal_collision",
+   "episode": 5
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 98,
+   "min_obstacle": 0.02,
+   "fail_reason": "near_goal_collision",
+   "episode": 6
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.43,
+   "fail_reason": "timeout_no_goal",
+   "episode": 7
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 52,
+   "min_obstacle": 0.51,
+   "fail_reason": "success",
+   "episode": 8
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 10,
+   "min_obstacle": 1.57,
+   "fail_reason": "success",
+   "episode": 9
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 86,
+   "min_obstacle": 0.3,
+   "fail_reason": "success",
+   "episode": 10
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 461,
+   "min_obstacle": 0.13,
+   "fail_reason": "tight_space",
+   "episode": 11
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 88,
+   "min_obstacle": 0.32,
+   "fail_reason": "success",
+   "episode": 12
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 73,
+   "min_obstacle": 0.38,
+   "fail_reason": "success",
+   "episode": 13
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 132,
+   "min_obstacle": 0.38,
+   "fail_reason": "success",
+   "episode": 14
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 71,
+   "min_obstacle": 0.54,
+   "fail_reason": "success",
+   "episode": 15
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 60,
+   "min_obstacle": 0.35,
+   "fail_reason": "success",
+   "episode": 16
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 36,
+   "min_obstacle": 0.54,
+   "fail_reason": "success",
+   "episode": 17
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 78,
+   "min_obstacle": 0.29,
+   "fail_reason": "success",
+   "episode": 18
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.04,
+   "fail_reason": "timeout_no_goal",
+   "episode": 19
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 475,
+   "min_obstacle": 0.08,
+   "fail_reason": "success",
+   "episode": 20
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 29,
+   "min_obstacle": 0.56,
+   "fail_reason": "success",
+   "episode": 21
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.75,
+   "fail_reason": "timeout_no_goal",
+   "episode": 22
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 297,
+   "min_obstacle": 0.14,
+   "fail_reason": "success",
+   "episode": 23
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.61,
+   "fail_reason": "timeout_no_goal",
+   "episode": 24
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 42,
+   "min_obstacle": 0.34,
+   "fail_reason": "success",
+   "episode": 25
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 59,
+   "min_obstacle": 0.86,
+   "fail_reason": "success",
+   "episode": 26
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 125,
+   "min_obstacle": 0.41,
+   "fail_reason": "success",
+   "episode": 27
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 35,
+   "min_obstacle": 0.94,
+   "fail_reason": "success",
+   "episode": 28
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 75,
+   "min_obstacle": 0.61,
+   "fail_reason": "success",
+   "episode": 29
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.51,
+   "fail_reason": "timeout_no_goal",
+   "episode": 30
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.32,
+   "fail_reason": "timeout_no_goal",
+   "episode": 31
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 82,
+   "min_obstacle": 0.49,
+   "fail_reason": "success",
+   "episode": 32
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 40,
+   "min_obstacle": 0.54,
+   "fail_reason": "success",
+   "episode": 33
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 57,
+   "min_obstacle": 0.52,
+   "fail_reason": "success",
+   "episode": 34
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 68,
+   "min_obstacle": 0.26,
+   "fail_reason": "success",
+   "episode": 35
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 65,
+   "min_obstacle": 0.08,
+   "fail_reason": "near_goal_collision",
+   "episode": 36
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 142,
+   "min_obstacle": 0.38,
+   "fail_reason": "success",
+   "episode": 37
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.85,
+   "fail_reason": "timeout_no_goal",
+   "episode": 38
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 70,
+   "min_obstacle": 0.11,
+   "fail_reason": "near_goal_collision",
+   "episode": 39
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 76,
+   "min_obstacle": 0.35,
+   "fail_reason": "success",
+   "episode": 40
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 65,
+   "min_obstacle": -0.01,
+   "fail_reason": "near_goal_collision",
+   "episode": 41
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 7,
+   "min_obstacle": 0.04,
+   "fail_reason": "near_goal_collision",
+   "episode": 42
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.62,
+   "fail_reason": "timeout_no_goal",
+   "episode": 43
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 144,
+   "min_obstacle": 0.09,
+   "fail_reason": "success",
+   "episode": 44
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 82,
+   "min_obstacle": 0.23,
+   "fail_reason": "success",
+   "episode": 45
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 99,
+   "min_obstacle": 0.02,
+   "fail_reason": "success",
+   "episode": 46
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.86,
+   "fail_reason": "timeout_no_goal",
+   "episode": 47
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 9,
+   "min_obstacle": 0.09,
+   "fail_reason": "tight_space",
+   "episode": 48
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 211,
+   "min_obstacle": 0.05,
+   "fail_reason": "tight_space",
+   "episode": 49
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 66,
+   "min_obstacle": 0.67,
+   "fail_reason": "success",
+   "episode": 50
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 80,
+   "min_obstacle": 0.03,
+   "fail_reason": "success",
+   "episode": 51
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 16,
+   "min_obstacle": 0.28,
+   "fail_reason": "success",
+   "episode": 52
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 64,
+   "min_obstacle": 0.58,
+   "fail_reason": "success",
+   "episode": 53
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.64,
+   "fail_reason": "timeout_no_goal",
+   "episode": 54
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 66,
+   "min_obstacle": 0.13,
+   "fail_reason": "success",
+   "episode": 55
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 106,
+   "min_obstacle": 0.25,
+   "fail_reason": "success",
+   "episode": 56
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 55,
+   "min_obstacle": 1.09,
+   "fail_reason": "success",
+   "episode": 57
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 17,
+   "min_obstacle": -0.02,
+   "fail_reason": "tight_space",
+   "episode": 58
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 64,
+   "min_obstacle": 0.28,
+   "fail_reason": "success",
+   "episode": 59
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 15,
+   "min_obstacle": 0.06,
+   "fail_reason": "near_goal_collision",
+   "episode": 60
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 41,
+   "min_obstacle": 0.13,
+   "fail_reason": "near_goal_collision",
+   "episode": 61
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 96,
+   "min_obstacle": 0.71,
+   "fail_reason": "success",
+   "episode": 62
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.67,
+   "fail_reason": "timeout_no_goal",
+   "episode": 63
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 11,
+   "min_obstacle": 0.24,
+   "fail_reason": "success",
+   "episode": 64
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.71,
+   "fail_reason": "timeout_no_goal",
+   "episode": 65
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.97,
+   "fail_reason": "timeout_no_goal",
+   "episode": 66
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 131,
+   "min_obstacle": 0.31,
+   "fail_reason": "success",
+   "episode": 67
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 58,
+   "min_obstacle": 0.3,
+   "fail_reason": "success",
+   "episode": 68
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 64,
+   "min_obstacle": 0.79,
+   "fail_reason": "success",
+   "episode": 69
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.3,
+   "fail_reason": "timeout_no_goal",
+   "episode": 70
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 19,
+   "min_obstacle": 0.06,
+   "fail_reason": "near_goal_collision",
+   "episode": 71
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 131,
+   "min_obstacle": 0.08,
+   "fail_reason": "near_goal_collision",
+   "episode": 72
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 85,
+   "min_obstacle": 0.26,
+   "fail_reason": "success",
+   "episode": 73
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.38,
+   "fail_reason": "timeout_no_goal",
+   "episode": 74
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 46,
+   "min_obstacle": 0.06,
+   "fail_reason": "near_goal_collision",
+   "episode": 75
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 86,
+   "min_obstacle": 0.67,
+   "fail_reason": "success",
+   "episode": 76
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 373,
+   "min_obstacle": 0.43,
+   "fail_reason": "success",
+   "episode": 77
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 223,
+   "min_obstacle": 0.23,
+   "fail_reason": "success",
+   "episode": 78
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 38,
+   "min_obstacle": 0.92,
+   "fail_reason": "success",
+   "episode": 79
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 50,
+   "min_obstacle": 0.06,
+   "fail_reason": "near_goal_collision",
+   "episode": 80
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 58,
+   "min_obstacle": 0.38,
+   "fail_reason": "success",
+   "episode": 81
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 55,
+   "min_obstacle": 0.85,
+   "fail_reason": "success",
+   "episode": 82
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 58,
+   "min_obstacle": 1.59,
+   "fail_reason": "success",
+   "episode": 83
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.18,
+   "fail_reason": "timeout_no_goal",
+   "episode": 84
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 25,
+   "min_obstacle": 0.05,
+   "fail_reason": "near_goal_collision",
+   "episode": 85
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 119,
+   "min_obstacle": 0.72,
+   "fail_reason": "success",
+   "episode": 86
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 125,
+   "min_obstacle": 0.26,
+   "fail_reason": "success",
+   "episode": 87
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.37,
+   "fail_reason": "timeout_no_goal",
+   "episode": 88
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 95,
+   "min_obstacle": 0.0,
+   "fail_reason": "near_goal_collision",
+   "episode": 89
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.75,
+   "fail_reason": "timeout_no_goal",
+   "episode": 90
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.31,
+   "fail_reason": "timeout_no_goal",
+   "episode": 91
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.53,
+   "fail_reason": "timeout_no_goal",
+   "episode": 92
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 35,
+   "min_obstacle": 0.56,
+   "fail_reason": "success",
+   "episode": 93
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.49,
+   "fail_reason": "timeout_no_goal",
+   "episode": 94
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 11,
+   "min_obstacle": 1.25,
+   "fail_reason": "success",
+   "episode": 95
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 79,
+   "min_obstacle": 0.07,
+   "fail_reason": "success",
+   "episode": 96
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 38,
+   "min_obstacle": 0.56,
+   "fail_reason": "success",
+   "episode": 97
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.92,
+   "fail_reason": "timeout_no_goal",
+   "episode": 98
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 44,
+   "min_obstacle": 0.27,
+   "fail_reason": "success",
+   "episode": 99
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 65,
+   "min_obstacle": 0.39,
+   "fail_reason": "success",
+   "episode": 100
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 84,
+   "min_obstacle": 0.11,
+   "fail_reason": "success",
+   "episode": 101
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.84,
+   "fail_reason": "timeout_no_goal",
+   "episode": 102
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 12,
+   "min_obstacle": 0.15,
+   "fail_reason": "near_goal_collision",
+   "episode": 103
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.79,
+   "fail_reason": "timeout_no_goal",
+   "episode": 104
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.01,
+   "fail_reason": "timeout_no_goal",
+   "episode": 105
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 50,
+   "min_obstacle": 0.62,
+   "fail_reason": "success",
+   "episode": 106
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 40,
+   "min_obstacle": 0.82,
+   "fail_reason": "success",
+   "episode": 107
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.27,
+   "fail_reason": "timeout_no_goal",
+   "episode": 108
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 74,
+   "min_obstacle": 0.33,
+   "fail_reason": "success",
+   "episode": 109
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 86,
+   "min_obstacle": 0.11,
+   "fail_reason": "success",
+   "episode": 110
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 72,
+   "min_obstacle": 0.94,
+   "fail_reason": "success",
+   "episode": 111
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 53,
+   "min_obstacle": 0.79,
+   "fail_reason": "success",
+   "episode": 112
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 87,
+   "min_obstacle": 0.16,
+   "fail_reason": "success",
+   "episode": 113
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 139,
+   "min_obstacle": 0.22,
+   "fail_reason": "success",
+   "episode": 114
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.62,
+   "fail_reason": "timeout_no_goal",
+   "episode": 115
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 49,
+   "min_obstacle": 0.49,
+   "fail_reason": "success",
+   "episode": 116
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 25,
+   "min_obstacle": 0.78,
+   "fail_reason": "success",
+   "episode": 117
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 68,
+   "min_obstacle": 0.06,
+   "fail_reason": "near_goal_collision",
+   "episode": 118
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 16,
+   "min_obstacle": 1.65,
+   "fail_reason": "success",
+   "episode": 119
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 81,
+   "min_obstacle": 0.33,
+   "fail_reason": "success",
+   "episode": 120
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.51,
+   "fail_reason": "timeout_no_goal",
+   "episode": 121
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 74,
+   "min_obstacle": 0.25,
+   "fail_reason": "success",
+   "episode": 122
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 101,
+   "min_obstacle": 0.2,
+   "fail_reason": "success",
+   "episode": 123
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 58,
+   "min_obstacle": 0.6,
+   "fail_reason": "success",
+   "episode": 124
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.32,
+   "fail_reason": "timeout_no_goal",
+   "episode": 125
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 56,
+   "min_obstacle": 0.0,
+   "fail_reason": "near_goal_collision",
+   "episode": 126
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 38,
+   "min_obstacle": 0.65,
+   "fail_reason": "success",
+   "episode": 127
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 92,
+   "min_obstacle": 0.21,
+   "fail_reason": "success",
+   "episode": 128
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 11,
+   "min_obstacle": 1.55,
+   "fail_reason": "success",
+   "episode": 129
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 61,
+   "min_obstacle": 0.14,
+   "fail_reason": "tight_space",
+   "episode": 130
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 39,
+   "min_obstacle": 0.65,
+   "fail_reason": "success",
+   "episode": 131
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 31,
+   "min_obstacle": 0.22,
+   "fail_reason": "success",
+   "episode": 132
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 14,
+   "min_obstacle": 0.2,
+   "fail_reason": "tight_space",
+   "episode": 133
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.02,
+   "fail_reason": "timeout_no_goal",
+   "episode": 134
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 40,
+   "min_obstacle": 0.16,
+   "fail_reason": "success",
+   "episode": 135
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.8,
+   "fail_reason": "timeout_no_goal",
+   "episode": 136
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 44,
+   "min_obstacle": 0.31,
+   "fail_reason": "success",
+   "episode": 137
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 115,
+   "min_obstacle": 0.16,
+   "fail_reason": "success",
+   "episode": 138
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 25,
+   "min_obstacle": 0.32,
+   "fail_reason": "tight_space",
+   "episode": 139
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.76,
+   "fail_reason": "timeout_no_goal",
+   "episode": 140
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 43,
+   "min_obstacle": 0.06,
+   "fail_reason": "success",
+   "episode": 141
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 68,
+   "min_obstacle": 0.03,
+   "fail_reason": "near_goal_collision",
+   "episode": 142
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 70,
+   "min_obstacle": 0.62,
+   "fail_reason": "success",
+   "episode": 143
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 57,
+   "min_obstacle": 0.27,
+   "fail_reason": "success",
+   "episode": 144
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 5,
+   "min_obstacle": 0.02,
+   "fail_reason": "near_goal_collision",
+   "episode": 145
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 83,
+   "min_obstacle": 0.26,
+   "fail_reason": "success",
+   "episode": 146
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 66,
+   "min_obstacle": 0.47,
+   "fail_reason": "success",
+   "episode": 147
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 57,
+   "min_obstacle": 0.78,
+   "fail_reason": "success",
+   "episode": 148
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.46,
+   "fail_reason": "timeout_no_goal",
+   "episode": 149
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 40,
+   "min_obstacle": 0.48,
+   "fail_reason": "success",
+   "episode": 150
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 30,
+   "min_obstacle": 0.99,
+   "fail_reason": "success",
+   "episode": 151
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 93,
+   "min_obstacle": 0.05,
+   "fail_reason": "near_goal_collision",
+   "episode": 152
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 60,
+   "min_obstacle": 0.39,
+   "fail_reason": "success",
+   "episode": 153
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 49,
+   "min_obstacle": 0.24,
+   "fail_reason": "success",
+   "episode": 154
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 35,
+   "min_obstacle": 0.13,
+   "fail_reason": "success",
+   "episode": 155
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 7,
+   "min_obstacle": 0.03,
+   "fail_reason": "tight_space",
+   "episode": 156
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.24,
+   "fail_reason": "timeout_no_goal",
+   "episode": 157
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 14,
+   "min_obstacle": 0.89,
+   "fail_reason": "success",
+   "episode": 158
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 87,
+   "min_obstacle": 0.69,
+   "fail_reason": "success",
+   "episode": 159
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 128,
+   "min_obstacle": 0.22,
+   "fail_reason": "success",
+   "episode": 160
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 33,
+   "min_obstacle": 0.56,
+   "fail_reason": "success",
+   "episode": 161
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 86,
+   "min_obstacle": 0.07,
+   "fail_reason": "near_goal_collision",
+   "episode": 162
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 13,
+   "min_obstacle": 0.04,
+   "fail_reason": "tight_space",
+   "episode": 163
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 243,
+   "min_obstacle": 0.1,
+   "fail_reason": "near_goal_collision",
+   "episode": 164
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 22,
+   "min_obstacle": 0.37,
+   "fail_reason": "success",
+   "episode": 165
+  },
+  {
+   "success": false,
+   "collision": true,
+   "steps": 143,
+   "min_obstacle": 0.09,
+   "fail_reason": "near_goal_collision",
+   "episode": 166
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 90,
+   "min_obstacle": 0.19,
+   "fail_reason": "success",
+   "episode": 167
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 138,
+   "min_obstacle": 0.15,
+   "fail_reason": "success",
+   "episode": 168
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.75,
+   "fail_reason": "timeout_no_goal",
+   "episode": 169
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 94,
+   "min_obstacle": 0.52,
+   "fail_reason": "success",
+   "episode": 170
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 128,
+   "min_obstacle": 0.41,
+   "fail_reason": "success",
+   "episode": 171
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 39,
+   "min_obstacle": 1.35,
+   "fail_reason": "success",
+   "episode": 172
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.64,
+   "fail_reason": "timeout_no_goal",
+   "episode": 173
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.41,
+   "fail_reason": "timeout_no_goal",
+   "episode": 174
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.65,
+   "fail_reason": "timeout_no_goal",
+   "episode": 175
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 55,
+   "min_obstacle": 0.43,
+   "fail_reason": "success",
+   "episode": 176
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.22,
+   "fail_reason": "timeout_no_goal",
+   "episode": 177
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 1,
+   "min_obstacle": 0.71,
+   "fail_reason": "success",
+   "episode": 178
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.66,
+   "fail_reason": "timeout_no_goal",
+   "episode": 179
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 81,
+   "min_obstacle": 0.78,
+   "fail_reason": "success",
+   "episode": 180
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 26,
+   "min_obstacle": 1.33,
+   "fail_reason": "success",
+   "episode": 181
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 95,
+   "min_obstacle": 0.24,
+   "fail_reason": "success",
+   "episode": 182
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 34,
+   "min_obstacle": 0.22,
+   "fail_reason": "success",
+   "episode": 183
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 103,
+   "min_obstacle": 0.11,
+   "fail_reason": "success",
+   "episode": 184
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 54,
+   "min_obstacle": 0.91,
+   "fail_reason": "success",
+   "episode": 185
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 42,
+   "min_obstacle": 0.37,
+   "fail_reason": "success",
+   "episode": 186
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 68,
+   "min_obstacle": 0.76,
+   "fail_reason": "success",
+   "episode": 187
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.68,
+   "fail_reason": "timeout_no_goal",
+   "episode": 188
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 89,
+   "min_obstacle": 0.32,
+   "fail_reason": "success",
+   "episode": 189
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 47,
+   "min_obstacle": 0.34,
+   "fail_reason": "success",
+   "episode": 190
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.47,
+   "fail_reason": "timeout_no_goal",
+   "episode": 191
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.13,
+   "fail_reason": "timeout_no_goal",
+   "episode": 192
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 18,
+   "min_obstacle": 1.04,
+   "fail_reason": "success",
+   "episode": 193
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 148,
+   "min_obstacle": 0.38,
+   "fail_reason": "success",
+   "episode": 194
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 61,
+   "min_obstacle": 0.71,
+   "fail_reason": "success",
+   "episode": 195
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 87,
+   "min_obstacle": 0.14,
+   "fail_reason": "success",
+   "episode": 196
+  },
+  {
+   "success": false,
+   "collision": false,
+   "steps": 500,
+   "min_obstacle": 0.88,
+   "fail_reason": "timeout_no_goal",
+   "episode": 197
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 22,
+   "min_obstacle": 0.25,
+   "fail_reason": "success",
+   "episode": 198
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 161,
+   "min_obstacle": 0.25,
+   "fail_reason": "success",
+   "episode": 199
+  },
+  {
+   "success": true,
+   "collision": false,
+   "steps": 61,
+   "min_obstacle": 0.88,
+   "fail_reason": "success",
+   "episode": 200
+  }
+ ]
+}

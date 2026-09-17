@@ -1,0 +1,844 @@
+2026-07-03 17:03 | WARNING  | The state dimension 4 of r0 is larger than the desired dimension 3, the state dimension is truncated
+2026-07-03 17:03 | INFO     | Simulation environment 'robot_world' started. Step time 0.300 s.
+2026-07-03 17:03 | WARNING  | robot_0 collided with obstacle_8 at state [3.24, 0.18, -1.73]
+2026-07-03 17:03 | WARNING  | robot_0 collided with obstacle_7 at state [5.4, 8.2, -0.42]
+2026-07-03 17:03 | WARNING  | robot_0 collided with obstacle_1 at state [5.2, 5.5, 1.28]
+2026-07-03 17:03 | WARNING  | robot_0 collided with obstacle_3 at state [5.55, 2.02, 0.39]
+2026-07-03 17:03 | WARNING  | robot_0 collided with obstacle_6 at state [7.35, 7.9, 0.69]
+2026-07-03 17:03 | WARNING  | robot_0 collided with obstacle_4 at state [7.03, 6.54, 0.0]
+2026-07-03 17:03 | WARNING  | robot_0 collided with obstacle_5 at state [7.56, 6.87, 1.33]
+2026-07-03 17:03 | WARNING  | robot_0 collided with obstacle_7 at state [7.18, 5.08, 0.2]
+2026-07-03 17:03 | WARNING  | robot_0 collided with obstacle_8 at state [4.71, 9.81, 3.14]
+2026-07-03 17:03 | WARNING  | robot_0 collided with obstacle_1 at state [2.06, 2.5, 0.81]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_3 at state [8.8, 8.37, 0.85]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_7 at state [5.5, 8.36, -2.62]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_3 at state [7.74, 6.5, -1.89]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_1 at state [5.95, 4.7, -2.96]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_2 at state [6.21, 2.96, 0.55]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_7 at state [7.48, 8.01, -1.71]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_2 at state [6.2, 6.09, -0.71]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_4 at state [7.25, 7.63, -2.98]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_4 at state [9.32, 2.11, 2.56]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_7 at state [5.22, 8.1, -1.31]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_1 at state [3.57, 3.92, -2.7]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_4 at state [6.49, 7.36, -2.08]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_5 at state [5.6, 3.87, 1.58]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_7 at state [4.06, 7.93, 0.3]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_7 at state [1.61, 2.93, -1.52]
+2026-07-03 17:04 | WARNING  | robot_0 collided with obstacle_2 at state [1.58, 8.01, 0.35]
+2026-07-03 17:05 | WARNING  | robot_0 collided with obstacle_3 at state [2.75, 4.41, -0.56]
+2026-07-03 17:05 | WARNING  | robot_0 collided with obstacle_2 at state [8.5, 5.2, 1.95]
+2026-07-03 17:05 | WARNING  | robot_0 collided with obstacle_5 at state [3.42, 2.8, 2.76]
+2026-07-03 17:05 | WARNING  | robot_0 collided with obstacle_2 at state [1.35, 4.48, 0.34]
+2026-07-03 17:05 | WARNING  | robot_0 collided with obstacle_2 at state [4.56, 3.04, -1.73]
+2026-07-03 17:05 | WARNING  | robot_0 collided with obstacle_8 at state [9.09, 9.86, 2.94]
+2026-07-03 17:05 | WARNING  | robot_0 collided with obstacle_3 at state [2.27, 8.24, -0.46]
+2026-07-03 17:06 | WARNING  | robot_0 collided with obstacle_1 at state [2.04, 7.49, 1.18]
+2026-07-03 17:06 | WARNING  | robot_0 collided with obstacle_4 at state [1.68, 8.3, 0.3]
+2026-07-03 17:06 | WARNING  | robot_0 collided with obstacle_4 at state [8.16, 3.58, 0.49]
+2026-07-03 17:06 | WARNING  | robot_0 collided with obstacle_6 at state [7.04, 5.21, 3.1]
+..............................................
+Epoch 1. Evaluating scenarios
+2026-07-03 17:06 | WARNING  | robot_0 collided with obstacle_3 at state [5.38, 2.87, 1.22]
+2026-07-03 17:07 | WARNING  | robot_0 collided with obstacle_4 at state [1.57, 1.73, 0.3]
+2026-07-03 17:07 | WARNING  | robot_0 collided with obstacle_5 at state [3.61, 2.89, 0.6]
+Average Reward: -55.13207081032336
+Average Collision rate: 0.3
+Average Goal rate: 0.0
+..............................................
+2026-07-03 17:07 | WARNING  | robot_0 collided with obstacle_7 at state [5.42, 6.55, 1.44]
+2026-07-03 17:07 | WARNING  | robot_0 collided with obstacle_4 at state [5.76, 8.1, -0.65]
+2026-07-03 17:08 | WARNING  | robot_0 collided with obstacle_4 at state [7.18, 6.82, -2.73]
+2026-07-03 17:08 | WARNING  | robot_0 collided with obstacle_6 at state [7.12, 8.81, 0.78]
+2026-07-03 17:08 | WARNING  | robot_0 collided with obstacle_6 at state [8.11, 1.43, 0.26]
+2026-07-03 17:09 | WARNING  | robot_0 collided with obstacle_3 at state [2.36, 7.91, -2.27]
+2026-07-03 17:09 | WARNING  | robot_0 collided with obstacle_1 at state [7.03, 6.41, -2.16]
+2026-07-03 17:09 | WARNING  | robot_0 collided with obstacle_1 at state [5.1, 5.45, 2.28]
+2026-07-03 17:09 | WARNING  | robot_0 collided with obstacle_4 at state [8.46, 7.33, 0.6]
+2026-07-03 17:09 | WARNING  | robot_0 collided with obstacle_3 at state [6.41, 7.85, -2.9]
+2026-07-03 17:10 | WARNING  | robot_0 collided with obstacle_1 at state [2.73, 8.03, -2.97]
+2026-07-03 17:10 | WARNING  | robot_0 collided with obstacle_3 at state [6.59, 3.89, 1.44]
+2026-07-03 17:10 | WARNING  | robot_0 collided with obstacle_2 at state [5.32, 6.19, 0.0]
+2026-07-03 17:10 | WARNING  | robot_0 collided with obstacle_7 at state [7.01, 6.82, 1.9]
+2026-07-03 17:11 | WARNING  | robot_0 collided with obstacle_3 at state [5.24, 1.88, -3.1]
+2026-07-03 17:11 | WARNING  | robot_0 collided with obstacle_4 at state [2.88, 3.57, 0.0]
+2026-07-03 17:11 | WARNING  | robot_0 collided with obstacle_2 at state [3.45, 5.25, -3.12]
+..............................................
+Epoch 2. Evaluating scenarios
+2026-07-03 17:12 | WARNING  | robot_0 collided with obstacle_3 at state [6.92, 3.41, -2.82]
+Average Reward: -65.47226272760167
+Average Collision rate: 0.1
+Average Goal rate: 0.1
+..............................................
+2026-07-03 17:13 | WARNING  | robot_0 collided with obstacle_3 at state [5.63, 6.49, 2.16]
+2026-07-03 17:14 | WARNING  | robot_0 collided with obstacle_1 at state [7.06, 6.91, -2.62]
+2026-07-03 17:14 | WARNING  | robot_0 collided with obstacle_3 at state [2.35, 7.35, 0.55]
+2026-07-03 17:14 | WARNING  | robot_0 collided with obstacle_1 at state [3.91, 4.61, -0.21]
+2026-07-03 17:14 | WARNING  | robot_0 collided with obstacle_2 at state [5.03, 9.02, -3.06]
+2026-07-03 17:15 | WARNING  | robot_0 collided with obstacle_4 at state [5.75, 1.96, 3.13]
+2026-07-03 17:16 | WARNING  | robot_0 collided with obstacle_2 at state [3.52, 3.73, 0.48]
+2026-07-03 17:16 | WARNING  | robot_0 collided with obstacle_1 at state [5.85, 2.13, 0.8]
+2026-07-03 17:17 | WARNING  | robot_0 collided with obstacle_2 at state [1.8, 5.87, 1.07]
+..............................................
+Epoch 3. Evaluating scenarios
+2026-07-03 17:17 | WARNING  | robot_0 collided with obstacle_3 at state [2.39, 1.88, 0.58]
+Average Reward: -10.707350082847464
+Average Collision rate: 0.1
+Average Goal rate: 0.0
+..............................................
+2026-07-03 17:19 | WARNING  | robot_0 collided with obstacle_1 at state [1.3, 7.2, -0.12]
+2026-07-03 17:19 | WARNING  | robot_0 collided with obstacle_3 at state [8.83, 5.44, 1.23]
+2026-07-03 17:20 | WARNING  | robot_0 collided with obstacle_1 at state [6.96, 5.17, 2.79]
+2026-07-03 17:21 | WARNING  | robot_0 collided with obstacle_2 at state [7.31, 5.0, 2.71]
+2026-07-03 17:22 | WARNING  | robot_0 collided with obstacle_3 at state [2.65, 7.89, -0.06]
+2026-07-03 17:22 | WARNING  | robot_0 collided with obstacle_4 at state [3.41, 4.61, 2.3]
+2026-07-03 17:23 | WARNING  | robot_0 collided with obstacle_2 at state [5.5, 7.06, -0.59]
+..............................................
+Epoch 4. Evaluating scenarios
+2026-07-03 17:23 | WARNING  | robot_0 collided with obstacle_1 at state [6.86, 2.26, 1.94]
+2026-07-03 17:24 | WARNING  | robot_0 collided with obstacle_4 at state [1.06, 2.79, 0.6]
+Average Reward: 25.280431583995288
+Average Collision rate: 0.2
+Average Goal rate: 0.2
+..............................................
+2026-07-03 17:24 | WARNING  | robot_0 collided with obstacle_4 at state [4.46, 7.16, -0.96]
+2026-07-03 17:26 | WARNING  | robot_0 collided with obstacle_2 at state [3.38, 8.14, -0.25]
+2026-07-03 17:27 | WARNING  | robot_0 collided with obstacle_2 at state [8.53, 6.54, -1.98]
+2026-07-03 17:28 | WARNING  | robot_0 collided with obstacle_1 at state [6.31, 4.97, 1.08]
+..............................................
+Epoch 5. Evaluating scenarios
+2026-07-03 17:30 | WARNING  | robot_0 collided with obstacle_2 at state [1.77, 7.79, -0.39]
+2026-07-03 17:30 | WARNING  | robot_0 collided with obstacle_2 at state [2.18, 5.79, 0.47]
+Average Reward: 11.498564265227609
+Average Collision rate: 0.2
+Average Goal rate: 0.2
+..............................................
+2026-07-03 17:31 | WARNING  | robot_0 collided with obstacle_2 at state [7.64, 7.28, 0.03]
+2026-07-03 17:31 | WARNING  | robot_0 collided with obstacle_4 at state [7.54, 3.06, 2.47]
+2026-07-03 17:32 | WARNING  | robot_0 collided with obstacle_2 at state [4.79, 5.21, 0.92]
+2026-07-03 17:33 | WARNING  | robot_0 collided with obstacle_6 at state [8.63, 3.61, -2.81]
+2026-07-03 17:34 | WARNING  | robot_0 collided with obstacle_3 at state [7.21, 2.29, -2.38]
+2026-07-03 17:34 | WARNING  | robot_0 collided with obstacle_1 at state [3.86, 5.38, -1.8]
+..............................................
+Epoch 6. Evaluating scenarios
+2026-07-03 17:35 | WARNING  | robot_0 collided with obstacle_7 at state [5.08, 6.86, 2.4]
+Average Reward: 47.71980938423779
+Average Collision rate: 0.1
+Average Goal rate: 0.6
+..............................................
+2026-07-03 17:35 | WARNING  | robot_0 collided with obstacle_1 at state [7.11, 5.94, 0.23]
+2026-07-03 17:36 | WARNING  | robot_0 collided with obstacle_1 at state [4.17, 5.55, 3.1]
+2026-07-03 17:36 | WARNING  | robot_0 collided with obstacle_4 at state [4.09, 3.8, 2.78]
+2026-07-03 17:36 | WARNING  | robot_0 collided with obstacle_1 at state [6.81, 3.27, 1.74]
+2026-07-03 17:37 | WARNING  | robot_0 collided with obstacle_2 at state [1.08, 7.28, 0.99]
+2026-07-03 17:37 | WARNING  | robot_0 collided with obstacle_3 at state [8.36, 5.7, -1.35]
+2026-07-03 17:37 | WARNING  | robot_0 collided with obstacle_1 at state [3.34, 6.85, -0.92]
+2026-07-03 17:37 | WARNING  | robot_0 collided with obstacle_4 at state [3.16, 1.65, 0.0]
+2026-07-03 17:37 | WARNING  | robot_0 collided with obstacle_2 at state [7.17, 4.97, -0.24]
+2026-07-03 17:37 | WARNING  | robot_0 collided with obstacle_3 at state [3.45, 5.83, 0.66]
+2026-07-03 17:38 | WARNING  | robot_0 collided with obstacle_3 at state [4.69, 2.55, 2.8]
+2026-07-03 17:38 | WARNING  | robot_0 collided with obstacle_2 at state [4.3, 3.17, -0.11]
+2026-07-03 17:39 | WARNING  | robot_0 collided with obstacle_4 at state [8.13, 8.78, 0.48]
+2026-07-03 17:39 | WARNING  | robot_0 collided with obstacle_4 at state [4.06, 3.14, 0.48]
+2026-07-03 17:39 | WARNING  | robot_0 collided with obstacle_1 at state [6.02, 8.98, 0.75]
+..............................................
+Epoch 7. Evaluating scenarios
+2026-07-03 17:39 | WARNING  | robot_0 collided with obstacle_4 at state [2.75, 5.48, -2.73]
+2026-07-03 17:40 | WARNING  | robot_0 collided with obstacle_3 at state [7.07, 1.3, 2.65]
+2026-07-03 17:40 | WARNING  | robot_0 collided with obstacle_2 at state [4.04, 6.03, 2.64]
+Average Reward: 1.4322124311493878
+Average Collision rate: 0.3
+Average Goal rate: 0.2
+..............................................
+2026-07-03 17:40 | WARNING  | robot_0 collided with obstacle_3 at state [2.33, 5.22, 1.25]
+2026-07-03 17:41 | WARNING  | robot_0 collided with obstacle_1 at state [1.99, 6.69, 0.55]
+2026-07-03 17:41 | WARNING  | robot_0 collided with obstacle_2 at state [7.06, 5.96, 2.7]
+2026-07-03 17:41 | WARNING  | robot_0 collided with obstacle_3 at state [4.98, 8.66, 0.8]
+2026-07-03 17:41 | WARNING  | robot_0 collided with obstacle_3 at state [4.89, 7.6, -0.69]
+2026-07-03 17:42 | WARNING  | robot_0 collided with obstacle_6 at state [8.73, 5.44, 0.8]
+2026-07-03 17:42 | WARNING  | robot_0 collided with obstacle_3 at state [4.03, 4.43, 1.6]
+2026-07-03 17:42 | WARNING  | robot_0 collided with obstacle_3 at state [4.36, 8.11, 0.32]
+2026-07-03 17:42 | WARNING  | robot_0 collided with obstacle_6 at state [4.25, 5.49, 1.67]
+2026-07-03 17:42 | WARNING  | robot_0 collided with obstacle_3 at state [3.06, 2.48, 1.27]
+2026-07-03 17:43 | WARNING  | robot_0 collided with obstacle_3 at state [6.43, 1.44, 2.11]
+2026-07-03 17:43 | WARNING  | robot_0 collided with obstacle_4 at state [3.26, 5.62, -2.77]
+2026-07-03 17:43 | WARNING  | robot_0 collided with obstacle_2 at state [7.57, 4.61, -2.08]
+2026-07-03 17:43 | WARNING  | robot_0 collided with obstacle_3 at state [1.89, 6.78, 0.94]
+2026-07-03 17:43 | WARNING  | robot_0 collided with obstacle_7 at state [3.79, 1.88, 3.11]
+2026-07-03 17:43 | WARNING  | robot_0 collided with obstacle_7 at state [1.57, 7.67, 0.46]
+2026-07-03 17:43 | WARNING  | robot_0 collided with obstacle_1 at state [6.97, 7.97, -1.19]
+..............................................
+Epoch 8. Evaluating scenarios
+2026-07-03 17:43 | WARNING  | robot_0 collided with obstacle_2 at state [4.77, 7.08, -1.26]
+2026-07-03 17:44 | WARNING  | robot_0 collided with obstacle_2 at state [3.64, 8.41, 1.8]
+2026-07-03 17:44 | WARNING  | robot_0 collided with obstacle_3 at state [1.61, 1.63, -2.68]
+Average Reward: -5.5626047485409655
+Average Collision rate: 0.3
+Average Goal rate: 0.3
+..............................................
+2026-07-03 17:45 | WARNING  | robot_0 collided with obstacle_4 at state [3.62, 2.77, -2.43]
+2026-07-03 17:45 | WARNING  | robot_0 collided with obstacle_5 at state [3.43, 5.01, 0.48]
+2026-07-03 17:46 | WARNING  | robot_0 collided with obstacle_3 at state [6.81, 6.73, 2.59]
+2026-07-03 17:46 | WARNING  | robot_0 collided with obstacle_4 at state [6.21, 3.6, 0.3]
+2026-07-03 17:47 | WARNING  | robot_0 collided with obstacle_3 at state [8.35, 8.29, 0.1]
+2026-07-03 17:48 | WARNING  | robot_0 collided with obstacle_3 at state [3.8, 4.83, -2.57]
+..............................................
+Epoch 9. Evaluating scenarios
+Average Reward: 61.54018223854814
+Average Collision rate: 0.0
+Average Goal rate: 0.2
+..............................................
+2026-07-03 17:49 | WARNING  | robot_0 collided with obstacle_3 at state [8.41, 6.63, -2.45]
+2026-07-03 17:50 | WARNING  | robot_0 collided with obstacle_4 at state [3.64, 1.31, -2.36]
+2026-07-03 17:50 | WARNING  | robot_0 collided with obstacle_4 at state [1.9, 5.5, 0.26]
+2026-07-03 17:50 | WARNING  | robot_0 collided with obstacle_4 at state [6.52, 3.1, 0.88]
+2026-07-03 17:51 | WARNING  | robot_0 collided with obstacle_3 at state [5.37, 3.35, 1.58]
+2026-07-03 17:51 | WARNING  | robot_0 collided with obstacle_3 at state [8.84, 6.55, -2.57]
+2026-07-03 17:51 | WARNING  | robot_0 collided with obstacle_1 at state [3.57, 7.22, 3.09]
+2026-07-03 17:51 | WARNING  | robot_0 collided with obstacle_3 at state [4.65, 1.45, -2.15]
+2026-07-03 17:51 | WARNING  | robot_0 collided with obstacle_2 at state [6.64, 1.52, 1.36]
+2026-07-03 17:52 | WARNING  | robot_0 collided with obstacle_4 at state [8.37, 8.19, -1.95]
+2026-07-03 17:52 | WARNING  | robot_0 collided with obstacle_3 at state [3.37, 4.1, 0.0]
+2026-07-03 17:53 | WARNING  | robot_0 collided with obstacle_3 at state [6.28, 4.8, 0.0]
+2026-07-03 17:53 | WARNING  | robot_0 collided with obstacle_3 at state [8.05, 3.76, -0.76]
+2026-07-03 17:53 | WARNING  | robot_0 collided with obstacle_4 at state [7.96, 3.24, 0.9]
+..............................................
+Epoch 10. Evaluating scenarios
+2026-07-03 17:53 | WARNING  | robot_0 collided with obstacle_4 at state [6.45, 3.51, 1.02]
+Average Reward: 8.280182695329
+Average Collision rate: 0.1
+Average Goal rate: 0.3
+..............................................
+2026-07-03 17:55 | WARNING  | robot_0 collided with obstacle_3 at state [5.58, 6.5, 0.3]
+2026-07-03 17:56 | WARNING  | robot_0 collided with obstacle_2 at state [2.44, 7.05, 1.56]
+2026-07-03 17:56 | WARNING  | robot_0 collided with obstacle_3 at state [1.92, 4.16, 0.82]
+2026-07-03 17:56 | WARNING  | robot_0 collided with obstacle_3 at state [7.57, 8.04, -2.04]
+2026-07-03 17:57 | WARNING  | robot_0 collided with obstacle_4 at state [2.34, 5.29, -3.11]
+..............................................
+Epoch 11. Evaluating scenarios
+Average Reward: 103.44408766336574
+Average Collision rate: 0.0
+Average Goal rate: 0.9
+..............................................
+2026-07-03 17:58 | WARNING  | robot_0 collided with obstacle_3 at state [2.22, 5.3, 0.6]
+2026-07-03 17:59 | WARNING  | robot_0 collided with obstacle_1 at state [7.09, 8.53, 0.0]
+2026-07-03 17:59 | WARNING  | robot_0 collided with obstacle_3 at state [5.58, 1.9, -0.87]
+2026-07-03 17:59 | WARNING  | robot_0 collided with obstacle_3 at state [8.27, 3.94, -1.42]
+2026-07-03 17:59 | WARNING  | robot_0 collided with obstacle_1 at state [8.17, 4.06, 2.08]
+2026-07-03 18:00 | WARNING  | robot_0 collided with obstacle_3 at state [8.24, 1.51, 2.0]
+2026-07-03 18:00 | WARNING  | robot_0 collided with obstacle_3 at state [6.82, 7.24, -2.24]
+2026-07-03 18:00 | WARNING  | robot_0 collided with obstacle_4 at state [8.04, 8.15, 1.43]
+2026-07-03 18:00 | WARNING  | robot_0 collided with obstacle_3 at state [7.35, 6.53, 0.56]
+2026-07-03 18:00 | WARNING  | robot_0 collided with obstacle_3 at state [4.26, 1.23, -0.86]
+..............................................
+Epoch 12. Evaluating scenarios
+Average Reward: 74.40323959315195
+Average Collision rate: 0.0
+Average Goal rate: 0.6
+..............................................
+2026-07-03 18:02 | WARNING  | robot_0 collided with obstacle_4 at state [5.25, 8.67, -2.19]
+2026-07-03 18:02 | WARNING  | robot_0 collided with obstacle_4 at state [6.89, 5.38, 0.03]
+2026-07-03 18:03 | WARNING  | robot_0 collided with obstacle_3 at state [8.36, 6.42, 0.77]
+2026-07-03 18:04 | WARNING  | robot_0 collided with obstacle_2 at state [6.1, 4.8, 2.95]
+2026-07-03 18:04 | WARNING  | robot_0 collided with obstacle_2 at state [7.8, 4.75, 2.55]
+2026-07-03 18:04 | WARNING  | robot_0 collided with obstacle_6 at state [2.31, 7.31, 1.2]
+..............................................
+Epoch 13. Evaluating scenarios
+2026-07-03 18:04 | WARNING  | robot_0 collided with obstacle_1 at state [5.23, 1.61, 1.8]
+2026-07-03 18:04 | WARNING  | robot_0 collided with obstacle_2 at state [5.69, 8.3, -3.06]
+Average Reward: 46.455407330937895
+Average Collision rate: 0.2
+Average Goal rate: 0.5
+..............................................
+2026-07-03 18:05 | WARNING  | robot_0 collided with obstacle_1 at state [1.4, 6.03, 0.54]
+2026-07-03 18:05 | WARNING  | robot_0 collided with obstacle_4 at state [7.94, 8.49, 2.54]
+2026-07-03 18:05 | WARNING  | robot_0 collided with obstacle_4 at state [3.82, 2.15, 1.71]
+2026-07-03 18:05 | WARNING  | robot_0 collided with obstacle_1 at state [3.48, 5.61, 2.63]
+2026-07-03 18:06 | WARNING  | robot_0 collided with obstacle_2 at state [7.01, 8.15, -0.5]
+2026-07-03 18:06 | WARNING  | robot_0 collided with obstacle_1 at state [6.47, 6.48, -1.75]
+2026-07-03 18:06 | WARNING  | robot_0 collided with obstacle_7 at state [2.02, 5.5, 1.79]
+2026-07-03 18:06 | WARNING  | robot_0 collided with obstacle_3 at state [4.0, 4.42, 0.64]
+2026-07-03 18:06 | WARNING  | robot_0 collided with obstacle_1 at state [2.75, 6.62, -0.41]
+2026-07-03 18:06 | WARNING  | robot_0 collided with obstacle_4 at state [1.69, 7.27, 1.69]
+2026-07-03 18:06 | WARNING  | robot_0 collided with obstacle_2 at state [7.2, 4.26, -1.79]
+..............................................
+Epoch 14. Evaluating scenarios
+2026-07-03 18:07 | WARNING  | robot_0 collided with obstacle_4 at state [5.2, 6.12, 0.0]
+2026-07-03 18:07 | WARNING  | robot_0 collided with obstacle_4 at state [2.61, 7.52, 0.34]
+Average Reward: 30.330034772122637
+Average Collision rate: 0.2
+Average Goal rate: 0.6
+..............................................
+2026-07-03 18:08 | WARNING  | robot_0 collided with obstacle_4 at state [4.13, 4.9, -0.57]
+2026-07-03 18:08 | WARNING  | robot_0 collided with obstacle_3 at state [5.52, 5.17, 0.75]
+2026-07-03 18:08 | WARNING  | robot_0 collided with obstacle_3 at state [6.16, 7.75, 1.65]
+2026-07-03 18:08 | WARNING  | robot_0 collided with obstacle_3 at state [3.96, 3.47, 1.58]
+2026-07-03 18:09 | WARNING  | robot_0 collided with obstacle_3 at state [6.03, 7.29, 2.91]
+2026-07-03 18:09 | WARNING  | robot_0 collided with obstacle_2 at state [7.0, 7.67, -1.0]
+2026-07-03 18:09 | WARNING  | robot_0 collided with obstacle_7 at state [7.18, 7.05, 2.37]
+2026-07-03 18:09 | WARNING  | robot_0 collided with obstacle_3 at state [8.63, 4.94, 2.27]
+2026-07-03 18:09 | WARNING  | robot_0 collided with obstacle_4 at state [2.73, 4.2, -0.13]
+2026-07-03 18:09 | WARNING  | robot_0 collided with obstacle_7 at state [8.25, 4.64, -0.58]
+2026-07-03 18:09 | WARNING  | robot_0 collided with obstacle_1 at state [4.07, 7.95, -0.76]
+2026-07-03 18:09 | WARNING  | robot_0 collided with obstacle_7 at state [5.56, 4.67, -0.58]
+..............................................
+Epoch 15. Evaluating scenarios
+Average Reward: 80.77524286412878
+Average Collision rate: 0.0
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:10 | WARNING  | robot_0 collided with obstacle_2 at state [3.43, 7.99, 0.38]
+2026-07-03 18:10 | WARNING  | robot_0 collided with obstacle_1 at state [5.53, 7.96, 0.5]
+2026-07-03 18:11 | WARNING  | robot_0 collided with obstacle_3 at state [1.01, 5.89, 0.77]
+2026-07-03 18:11 | WARNING  | robot_0 collided with obstacle_2 at state [8.07, 5.49, 2.87]
+2026-07-03 18:11 | WARNING  | robot_0 collided with obstacle_1 at state [2.72, 6.19, -2.53]
+2026-07-03 18:11 | WARNING  | robot_0 collided with obstacle_4 at state [3.31, 6.01, -1.61]
+2026-07-03 18:11 | WARNING  | robot_0 collided with obstacle_7 at state [6.16, 2.15, -1.84]
+2026-07-03 18:11 | WARNING  | robot_0 collided with obstacle_5 at state [2.82, 8.58, -0.66]
+2026-07-03 18:11 | WARNING  | robot_0 collided with obstacle_1 at state [7.47, 8.68, -2.29]
+2026-07-03 18:11 | WARNING  | robot_0 collided with obstacle_1 at state [7.63, 7.62, -0.45]
+2026-07-03 18:11 | WARNING  | robot_0 collided with obstacle_4 at state [6.19, 5.53, 1.89]
+2026-07-03 18:11 | WARNING  | robot_0 collided with obstacle_1 at state [7.61, 5.57, 2.27]
+2026-07-03 18:12 | WARNING  | robot_0 collided with obstacle_1 at state [6.71, 5.1, 1.38]
+..............................................
+Epoch 16. Evaluating scenarios
+2026-07-03 18:12 | WARNING  | robot_0 collided with obstacle_2 at state [3.03, 7.75, -1.86]
+2026-07-03 18:12 | WARNING  | robot_0 collided with obstacle_1 at state [3.54, 7.02, 3.0]
+Average Reward: 26.133931028115047
+Average Collision rate: 0.2
+Average Goal rate: 0.7
+..............................................
+2026-07-03 18:12 | WARNING  | robot_0 collided with obstacle_3 at state [7.64, 4.49, 0.15]
+2026-07-03 18:12 | WARNING  | robot_0 collided with obstacle_3 at state [4.43, 6.59, 0.6]
+2026-07-03 18:12 | WARNING  | robot_0 collided with obstacle_4 at state [3.68, 6.24, -2.64]
+2026-07-03 18:13 | WARNING  | robot_0 collided with obstacle_4 at state [6.25, 7.28, -2.06]
+2026-07-03 18:13 | WARNING  | robot_0 collided with obstacle_3 at state [8.54, 1.07, 0.23]
+2026-07-03 18:13 | WARNING  | robot_0 collided with obstacle_2 at state [2.43, 3.39, -1.03]
+2026-07-03 18:13 | WARNING  | robot_0 collided with obstacle_6 at state [5.36, 6.94, -1.37]
+2026-07-03 18:13 | WARNING  | robot_0 collided with obstacle_3 at state [4.26, 3.95, 2.53]
+2026-07-03 18:13 | WARNING  | robot_0 collided with obstacle_2 at state [4.51, 2.46, 1.8]
+2026-07-03 18:13 | WARNING  | robot_0 collided with obstacle_4 at state [4.89, 4.73, 1.61]
+2026-07-03 18:13 | WARNING  | robot_0 collided with obstacle_4 at state [2.69, 2.4, 2.13]
+..............................................
+Epoch 17. Evaluating scenarios
+2026-07-03 18:14 | WARNING  | robot_0 collided with obstacle_3 at state [8.39, 5.78, -0.02]
+Average Reward: 63.69420282044219
+Average Collision rate: 0.1
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:14 | WARNING  | robot_0 collided with obstacle_2 at state [5.04, 8.58, 0.63]
+2026-07-03 18:14 | WARNING  | robot_0 collided with obstacle_3 at state [5.22, 4.43, 0.52]
+2026-07-03 18:14 | WARNING  | robot_0 collided with obstacle_4 at state [1.08, 8.54, 1.2]
+2026-07-03 18:14 | WARNING  | robot_0 collided with obstacle_3 at state [7.62, 4.7, -2.55]
+2026-07-03 18:15 | WARNING  | robot_0 collided with obstacle_3 at state [8.43, 4.95, -1.16]
+2026-07-03 18:15 | WARNING  | robot_0 collided with obstacle_1 at state [5.02, 6.5, -1.52]
+2026-07-03 18:15 | WARNING  | robot_0 collided with obstacle_3 at state [3.69, 1.54, 0.3]
+2026-07-03 18:15 | WARNING  | robot_0 collided with obstacle_4 at state [1.32, 3.22, 2.87]
+..............................................
+Epoch 18. Evaluating scenarios
+Average Reward: 98.46942261429903
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 18:15 | WARNING  | robot_0 collided with obstacle_2 at state [7.89, 8.23, -0.62]
+2026-07-03 18:16 | WARNING  | robot_0 collided with obstacle_3 at state [5.54, 3.12, 2.85]
+2026-07-03 18:16 | WARNING  | robot_0 collided with obstacle_3 at state [7.32, 7.35, -1.91]
+2026-07-03 18:16 | WARNING  | robot_0 collided with obstacle_1 at state [5.25, 6.41, -1.43]
+2026-07-03 18:16 | WARNING  | robot_0 collided with obstacle_4 at state [3.53, 1.1, 1.04]
+2026-07-03 18:16 | WARNING  | robot_0 collided with obstacle_2 at state [5.0, 4.48, -0.88]
+2026-07-03 18:17 | WARNING  | robot_0 collided with obstacle_2 at state [3.44, 7.37, 2.85]
+2026-07-03 18:17 | WARNING  | robot_0 collided with obstacle_4 at state [7.23, 6.27, 2.76]
+..............................................
+Epoch 19. Evaluating scenarios
+Average Reward: 99.38652333803336
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 18:17 | WARNING  | robot_0 collided with obstacle_2 at state [5.58, 3.95, -1.44]
+2026-07-03 18:17 | WARNING  | robot_0 collided with obstacle_4 at state [5.93, 2.62, 0.29]
+2026-07-03 18:18 | WARNING  | robot_0 collided with obstacle_2 at state [7.65, 7.26, 1.2]
+..............................................
+Epoch 20. Evaluating scenarios
+Average Reward: 64.65072700683297
+Average Collision rate: 0.0
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:19 | WARNING  | robot_0 collided with obstacle_4 at state [2.19, 5.25, 0.67]
+2026-07-03 18:19 | WARNING  | robot_0 collided with obstacle_3 at state [4.65, 5.17, 2.23]
+2026-07-03 18:19 | WARNING  | robot_0 collided with obstacle_3 at state [2.05, 1.41, -0.79]
+2026-07-03 18:19 | WARNING  | robot_0 collided with obstacle_3 at state [6.55, 8.38, 2.08]
+..............................................
+Epoch 21. Evaluating scenarios
+2026-07-03 18:20 | WARNING  | robot_0 collided with obstacle_2 at state [2.36, 6.92, 0.08]
+Average Reward: 76.99671935556314
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:20 | WARNING  | robot_0 collided with obstacle_4 at state [5.05, 7.92, -1.82]
+2026-07-03 18:20 | WARNING  | robot_0 collided with obstacle_4 at state [5.76, 5.73, 0.56]
+2026-07-03 18:21 | WARNING  | robot_0 collided with obstacle_4 at state [7.41, 4.15, 2.31]
+2026-07-03 18:21 | WARNING  | robot_0 collided with obstacle_2 at state [8.15, 5.1, -0.01]
+2026-07-03 18:21 | WARNING  | robot_0 collided with obstacle_1 at state [5.36, 4.91, -2.94]
+..............................................
+Epoch 22. Evaluating scenarios
+2026-07-03 18:21 | WARNING  | robot_0 collided with obstacle_3 at state [6.92, 1.41, -0.14]
+2026-07-03 18:21 | WARNING  | robot_0 collided with obstacle_6 at state [5.4, 2.57, 0.65]
+Average Reward: 60.9734171662296
+Average Collision rate: 0.2
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:21 | WARNING  | robot_0 collided with obstacle_4 at state [7.81, 6.56, 1.72]
+2026-07-03 18:23 | WARNING  | robot_0 collided with obstacle_3 at state [3.3, 4.68, -2.74]
+2026-07-03 18:23 | WARNING  | robot_0 collided with obstacle_2 at state [3.8, 1.52, 1.02]
+..............................................
+Epoch 23. Evaluating scenarios
+2026-07-03 18:23 | WARNING  | robot_0 collided with obstacle_3 at state [3.2, 5.48, -0.02]
+Average Reward: 81.12265223595921
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:23 | WARNING  | robot_0 collided with obstacle_4 at state [1.69, 3.98, 2.38]
+2026-07-03 18:23 | WARNING  | robot_0 collided with obstacle_3 at state [4.31, 2.23, 2.06]
+2026-07-03 18:23 | WARNING  | robot_0 collided with obstacle_6 at state [5.98, 2.3, 0.78]
+2026-07-03 18:23 | WARNING  | robot_0 collided with obstacle_7 at state [6.74, 1.32, 1.49]
+2026-07-03 18:23 | WARNING  | robot_0 collided with obstacle_2 at state [2.13, 8.57, 1.88]
+2026-07-03 18:24 | WARNING  | robot_0 collided with obstacle_4 at state [8.02, 6.19, 2.56]
+2026-07-03 18:24 | WARNING  | robot_0 collided with obstacle_4 at state [2.13, 8.41, -2.87]
+2026-07-03 18:24 | WARNING  | robot_0 collided with obstacle_4 at state [7.16, 2.67, 0.97]
+2026-07-03 18:24 | WARNING  | robot_0 collided with obstacle_3 at state [7.88, 2.8, 0.0]
+..............................................
+Epoch 24. Evaluating scenarios
+Average Reward: 98.60476408000179
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 18:25 | WARNING  | robot_0 collided with obstacle_2 at state [7.65, 4.55, 0.86]
+2026-07-03 18:25 | WARNING  | robot_0 collided with obstacle_6 at state [1.37, 6.34, 1.06]
+2026-07-03 18:25 | WARNING  | robot_0 collided with obstacle_3 at state [5.56, 3.66, 0.94]
+2026-07-03 18:25 | WARNING  | robot_0 collided with obstacle_3 at state [5.58, 4.78, 0.2]
+2026-07-03 18:25 | WARNING  | robot_0 collided with obstacle_2 at state [7.44, 7.68, 2.23]
+2026-07-03 18:26 | WARNING  | robot_0 collided with obstacle_4 at state [5.92, 7.09, -0.32]
+2026-07-03 18:26 | WARNING  | robot_0 collided with obstacle_4 at state [7.99, 5.48, 1.15]
+2026-07-03 18:26 | WARNING  | robot_0 collided with obstacle_3 at state [3.22, 4.34, 0.9]
+..............................................
+Epoch 25. Evaluating scenarios
+Average Reward: 96.99867408587127
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 18:26 | WARNING  | robot_0 collided with obstacle_1 at state [5.92, 1.95, -2.16]
+2026-07-03 18:26 | WARNING  | robot_0 collided with obstacle_1 at state [4.44, 6.69, 1.62]
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_4 at state [4.33, 4.44, -2.7]
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_2 at state [3.83, 5.3, 1.88]
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_3 at state [4.86, 2.63, 1.57]
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_1 at state [2.51, 2.35, -2.68]
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_4 at state [8.21, 2.96, 0.79]
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_3 at state [6.53, 3.59, 0.7]
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_7 at state [2.37, 3.66, 0.85]
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_3 at state [2.41, 1.65, -0.74]
+..............................................
+Epoch 26. Evaluating scenarios
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_3 at state [3.7, 3.37, 1.63]
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_3 at state [6.85, 2.69, -0.1]
+Average Reward: 61.665556496385435
+Average Collision rate: 0.2
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_3 at state [3.16, 7.56, -0.9]
+2026-07-03 18:27 | WARNING  | robot_0 collided with obstacle_1 at state [5.75, 7.21, 2.53]
+2026-07-03 18:28 | WARNING  | robot_0 collided with obstacle_3 at state [5.66, 5.41, 2.76]
+2026-07-03 18:28 | WARNING  | robot_0 collided with obstacle_2 at state [7.5, 5.14, 2.84]
+2026-07-03 18:28 | WARNING  | robot_0 collided with obstacle_2 at state [4.37, 4.51, 1.89]
+2026-07-03 18:28 | WARNING  | robot_0 collided with obstacle_2 at state [7.78, 7.76, 0.3]
+2026-07-03 18:28 | WARNING  | robot_0 collided with obstacle_3 at state [6.02, 7.24, -0.48]
+2026-07-03 18:28 | WARNING  | robot_0 collided with obstacle_2 at state [5.73, 5.83, 0.0]
+2026-07-03 18:28 | WARNING  | robot_0 collided with obstacle_1 at state [5.48, 6.47, 1.2]
+..............................................
+Epoch 27. Evaluating scenarios
+2026-07-03 18:29 | WARNING  | robot_0 collided with obstacle_4 at state [1.45, 2.47, -1.0]
+Average Reward: 54.375811452647625
+Average Collision rate: 0.1
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:29 | WARNING  | robot_0 collided with obstacle_2 at state [3.44, 7.41, -2.83]
+2026-07-03 18:29 | WARNING  | robot_0 collided with obstacle_3 at state [2.79, 5.73, -0.47]
+2026-07-03 18:29 | WARNING  | robot_0 collided with obstacle_1 at state [7.94, 5.19, 1.55]
+2026-07-03 18:29 | WARNING  | robot_0 collided with obstacle_4 at state [7.3, 7.64, -0.02]
+2026-07-03 18:29 | WARNING  | robot_0 collided with obstacle_4 at state [6.49, 6.46, 2.95]
+2026-07-03 18:30 | WARNING  | robot_0 collided with obstacle_1 at state [6.31, 2.23, 2.41]
+2026-07-03 18:30 | WARNING  | robot_0 collided with obstacle_3 at state [3.85, 8.02, 2.01]
+2026-07-03 18:30 | WARNING  | robot_0 collided with obstacle_3 at state [4.82, 8.16, 1.57]
+2026-07-03 18:30 | WARNING  | robot_0 collided with obstacle_1 at state [7.72, 3.7, 2.06]
+2026-07-03 18:30 | WARNING  | robot_0 collided with obstacle_3 at state [5.39, 2.55, 2.53]
+..............................................
+Epoch 28. Evaluating scenarios
+2026-07-03 18:30 | WARNING  | robot_0 collided with obstacle_1 at state [3.69, 3.29, -1.38]
+Average Reward: 67.32117849549074
+Average Collision rate: 0.1
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:31 | WARNING  | robot_0 collided with obstacle_1 at state [6.52, 2.87, 0.98]
+2026-07-03 18:31 | WARNING  | robot_0 collided with obstacle_4 at state [1.87, 7.31, 1.9]
+2026-07-03 18:31 | WARNING  | robot_0 collided with obstacle_5 at state [2.2, 6.15, 0.28]
+2026-07-03 18:31 | WARNING  | robot_0 collided with obstacle_4 at state [4.63, 4.7, 0.57]
+2026-07-03 18:31 | WARNING  | robot_0 collided with obstacle_2 at state [7.07, 1.45, 1.02]
+2026-07-03 18:31 | WARNING  | robot_0 collided with obstacle_3 at state [1.59, 6.64, 1.5]
+2026-07-03 18:31 | WARNING  | robot_0 collided with obstacle_4 at state [7.18, 7.36, 0.86]
+2026-07-03 18:31 | WARNING  | robot_0 collided with obstacle_3 at state [5.04, 4.95, -2.44]
+2026-07-03 18:31 | WARNING  | robot_0 collided with obstacle_7 at state [3.3, 2.55, 0.56]
+2026-07-03 18:32 | WARNING  | robot_0 collided with obstacle_3 at state [7.88, 5.67, 1.71]
+..............................................
+Epoch 29. Evaluating scenarios
+2026-07-03 18:32 | WARNING  | robot_0 collided with obstacle_3 at state [5.07, 3.46, 0.6]
+Average Reward: 80.14315581428787
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:32 | WARNING  | robot_0 collided with obstacle_3 at state [3.6, 7.98, 2.42]
+2026-07-03 18:32 | WARNING  | robot_0 collided with obstacle_4 at state [2.46, 3.11, 0.6]
+2026-07-03 18:32 | WARNING  | robot_0 collided with obstacle_2 at state [8.15, 6.83, -1.47]
+2026-07-03 18:33 | WARNING  | robot_0 collided with obstacle_2 at state [3.52, 6.7, 2.49]
+2026-07-03 18:33 | WARNING  | robot_0 collided with obstacle_3 at state [3.06, 8.48, -1.75]
+2026-07-03 18:33 | WARNING  | robot_0 collided with obstacle_3 at state [5.02, 6.85, 1.2]
+..............................................
+Epoch 30. Evaluating scenarios
+Average Reward: 103.76221525569511
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 18:34 | WARNING  | robot_0 collided with obstacle_1 at state [7.2, 5.96, 2.78]
+2026-07-03 18:34 | WARNING  | robot_0 collided with obstacle_4 at state [2.1, 8.64, 2.77]
+2026-07-03 18:34 | WARNING  | robot_0 collided with obstacle_7 at state [3.97, 2.24, 0.6]
+2026-07-03 18:35 | WARNING  | robot_0 collided with obstacle_4 at state [1.36, 4.68, 0.3]
+2026-07-03 18:35 | WARNING  | robot_0 collided with obstacle_4 at state [2.42, 4.49, -2.29]
+..............................................
+Epoch 31. Evaluating scenarios
+2026-07-03 18:35 | WARNING  | robot_0 collided with obstacle_4 at state [2.84, 2.89, 1.82]
+Average Reward: 78.16699214743798
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:36 | WARNING  | robot_0 collided with obstacle_1 at state [6.15, 4.13, -0.38]
+2026-07-03 18:36 | WARNING  | robot_0 collided with obstacle_4 at state [5.46, 6.46, -3.02]
+2026-07-03 18:36 | WARNING  | robot_0 collided with obstacle_5 at state [2.75, 3.99, 2.84]
+2026-07-03 18:36 | WARNING  | robot_0 collided with obstacle_4 at state [6.94, 3.84, 1.85]
+2026-07-03 18:37 | WARNING  | robot_0 collided with obstacle_2 at state [3.37, 5.15, 0.67]
+2026-07-03 18:37 | WARNING  | robot_0 collided with obstacle_4 at state [2.78, 4.24, -0.03]
+..............................................
+Epoch 32. Evaluating scenarios
+2026-07-03 18:37 | WARNING  | robot_0 collided with obstacle_1 at state [7.95, 5.33, 2.11]
+Average Reward: 73.53906870508185
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:37 | WARNING  | robot_0 collided with obstacle_4 at state [2.9, 7.69, 1.48]
+2026-07-03 18:37 | WARNING  | robot_0 collided with obstacle_4 at state [8.04, 3.72, 0.41]
+2026-07-03 18:37 | WARNING  | robot_0 collided with obstacle_2 at state [5.9, 3.24, 0.54]
+2026-07-03 18:38 | WARNING  | robot_0 collided with obstacle_1 at state [6.77, 6.4, 0.46]
+2026-07-03 18:38 | WARNING  | robot_0 collided with obstacle_2 at state [6.31, 8.33, -0.65]
+..............................................
+Epoch 33. Evaluating scenarios
+2026-07-03 18:38 | WARNING  | robot_0 collided with obstacle_1 at state [6.9, 5.49, 2.38]
+Average Reward: 74.08268548500726
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:39 | WARNING  | robot_0 collided with obstacle_6 at state [2.4, 7.65, -0.42]
+2026-07-03 18:39 | WARNING  | robot_0 collided with obstacle_3 at state [6.6, 8.16, -0.12]
+2026-07-03 18:39 | WARNING  | robot_0 collided with obstacle_3 at state [8.44, 3.3, -1.17]
+2026-07-03 18:39 | WARNING  | robot_0 collided with obstacle_4 at state [5.61, 7.05, 0.0]
+2026-07-03 18:40 | WARNING  | robot_0 collided with obstacle_4 at state [3.15, 7.81, 0.56]
+..............................................
+Epoch 34. Evaluating scenarios
+2026-07-03 18:40 | WARNING  | robot_0 collided with obstacle_4 at state [1.66, 7.53, -3.13]
+2026-07-03 18:40 | WARNING  | robot_0 collided with obstacle_4 at state [7.77, 5.6, -1.74]
+Average Reward: 61.37777300228497
+Average Collision rate: 0.2
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:40 | WARNING  | robot_0 collided with obstacle_5 at state [4.84, 7.51, 1.4]
+2026-07-03 18:40 | WARNING  | robot_0 collided with obstacle_3 at state [1.42, 6.18, -0.71]
+2026-07-03 18:41 | WARNING  | robot_0 collided with obstacle_4 at state [2.23, 2.81, -1.49]
+..............................................
+Epoch 35. Evaluating scenarios
+2026-07-03 18:41 | WARNING  | robot_0 collided with obstacle_3 at state [8.64, 3.17, -0.45]
+Average Reward: 39.75429297541707
+Average Collision rate: 0.1
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:41 | WARNING  | robot_0 collided with obstacle_3 at state [1.7, 1.06, -2.96]
+2026-07-03 18:43 | WARNING  | robot_0 collided with obstacle_3 at state [5.34, 2.79, -0.24]
+..............................................
+Epoch 36. Evaluating scenarios
+Average Reward: 97.10407278294589
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 18:43 | WARNING  | robot_0 collided with obstacle_4 at state [3.75, 7.09, -1.57]
+2026-07-03 18:44 | WARNING  | robot_0 collided with obstacle_4 at state [7.2, 8.06, -0.95]
+2026-07-03 18:44 | WARNING  | robot_0 collided with obstacle_3 at state [8.56, 2.06, -0.68]
+..............................................
+Epoch 37. Evaluating scenarios
+2026-07-03 18:44 | WARNING  | robot_0 collided with obstacle_3 at state [3.13, 4.38, 0.9]
+2026-07-03 18:44 | WARNING  | robot_0 collided with obstacle_2 at state [2.5, 4.71, 0.75]
+Average Reward: 19.884837775048478
+Average Collision rate: 0.2
+Average Goal rate: 0.7
+..............................................
+2026-07-03 18:45 | WARNING  | robot_0 collided with obstacle_4 at state [7.0, 7.61, -0.18]
+2026-07-03 18:45 | WARNING  | robot_0 collided with obstacle_4 at state [6.57, 5.81, -0.25]
+2026-07-03 18:46 | WARNING  | robot_0 collided with obstacle_3 at state [5.36, 3.71, -1.48]
+2026-07-03 18:46 | WARNING  | robot_0 collided with obstacle_3 at state [6.0, 3.31, 2.0]
+..............................................
+Epoch 38. Evaluating scenarios
+2026-07-03 18:46 | WARNING  | robot_0 collided with obstacle_2 at state [5.87, 7.65, -1.99]
+Average Reward: 68.59200943694258
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:47 | WARNING  | robot_0 collided with obstacle_2 at state [7.89, 4.23, 1.38]
+2026-07-03 18:47 | WARNING  | robot_0 collided with obstacle_3 at state [2.14, 6.28, 1.12]
+2026-07-03 18:47 | WARNING  | robot_0 collided with obstacle_4 at state [9.58, 8.4, 3.06]
+2026-07-03 18:47 | WARNING  | robot_0 collided with obstacle_3 at state [4.2, 8.73, -0.85]
+2026-07-03 18:47 | WARNING  | robot_0 collided with obstacle_4 at state [3.46, 6.21, 1.09]
+2026-07-03 18:47 | WARNING  | robot_0 collided with obstacle_3 at state [2.88, 5.8, 0.0]
+2026-07-03 18:47 | WARNING  | robot_0 collided with obstacle_7 at state [5.37, 3.91, -0.13]
+2026-07-03 18:47 | WARNING  | robot_0 collided with obstacle_7 at state [1.59, 4.8, -0.71]
+2026-07-03 18:47 | WARNING  | robot_0 collided with obstacle_4 at state [2.35, 1.11, -0.55]
+2026-07-03 18:47 | WARNING  | robot_0 collided with obstacle_3 at state [5.49, 1.26, -0.76]
+2026-07-03 18:48 | WARNING  | robot_0 collided with obstacle_6 at state [3.67, 6.96, -0.56]
+2026-07-03 18:48 | WARNING  | robot_0 collided with obstacle_1 at state [6.3, 7.12, -2.93]
+..............................................
+Epoch 39. Evaluating scenarios
+2026-07-03 18:48 | WARNING  | robot_0 collided with obstacle_4 at state [3.95, 3.37, 0.0]
+2026-07-03 18:48 | WARNING  | robot_0 collided with obstacle_6 at state [4.86, 8.21, -0.3]
+Average Reward: 54.86060976765318
+Average Collision rate: 0.2
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:48 | WARNING  | robot_0 collided with obstacle_1 at state [7.4, 3.34, 0.77]
+2026-07-03 18:48 | WARNING  | robot_0 collided with obstacle_4 at state [5.05, 8.12, 1.18]
+2026-07-03 18:48 | WARNING  | robot_0 collided with obstacle_3 at state [4.82, 4.38, -1.28]
+2026-07-03 18:48 | WARNING  | robot_0 collided with obstacle_3 at state [4.82, 4.17, 3.06]
+2026-07-03 18:49 | WARNING  | robot_0 collided with obstacle_4 at state [8.0, 8.97, 1.2]
+2026-07-03 18:49 | WARNING  | robot_0 collided with obstacle_2 at state [5.55, 7.87, -2.0]
+..............................................
+Epoch 40. Evaluating scenarios
+2026-07-03 18:49 | WARNING  | robot_0 collided with obstacle_2 at state [3.04, 4.61, 1.45]
+2026-07-03 18:49 | WARNING  | robot_0 collided with obstacle_2 at state [3.23, 6.12, -1.16]
+Average Reward: 61.56840073830123
+Average Collision rate: 0.2
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:49 | WARNING  | robot_0 collided with obstacle_3 at state [5.46, 3.43, -0.27]
+2026-07-03 18:50 | WARNING  | robot_0 collided with obstacle_7 at state [5.95, 3.03, 0.25]
+2026-07-03 18:50 | WARNING  | robot_0 collided with obstacle_4 at state [1.77, 1.97, -2.48]
+2026-07-03 18:50 | WARNING  | robot_0 collided with obstacle_4 at state [5.96, 7.61, 2.57]
+2026-07-03 18:50 | WARNING  | robot_0 collided with obstacle_3 at state [8.59, 3.06, -1.95]
+2026-07-03 18:51 | WARNING  | robot_0 collided with obstacle_2 at state [4.72, 6.53, 0.0]
+2026-07-03 18:51 | WARNING  | robot_0 collided with obstacle_2 at state [3.32, 8.15, -0.56]
+2026-07-03 18:51 | WARNING  | robot_0 collided with obstacle_1 at state [5.39, 8.39, -2.56]
+..............................................
+Epoch 41. Evaluating scenarios
+Average Reward: 104.30234842281611
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 18:51 | WARNING  | robot_0 collided with obstacle_3 at state [1.79, 7.4, -0.82]
+2026-07-03 18:52 | WARNING  | robot_0 collided with obstacle_4 at state [2.54, 6.22, 0.12]
+2026-07-03 18:52 | WARNING  | robot_0 collided with obstacle_4 at state [6.94, 5.24, 0.6]
+2026-07-03 18:52 | WARNING  | robot_0 collided with obstacle_4 at state [7.47, 5.59, 1.52]
+2026-07-03 18:52 | WARNING  | robot_0 collided with obstacle_3 at state [7.47, 5.59, 1.52]
+2026-07-03 18:52 | WARNING  | robot_0 collided with obstacle_1 at state [7.03, 7.48, 0.0]
+..............................................
+Epoch 42. Evaluating scenarios
+2026-07-03 18:52 | WARNING  | robot_0 collided with obstacle_4 at state [6.53, 3.92, 0.48]
+Average Reward: 73.05396466178314
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:53 | WARNING  | robot_0 collided with obstacle_2 at state [8.05, 6.96, -0.74]
+2026-07-03 18:53 | WARNING  | robot_0 collided with obstacle_4 at state [7.01, 5.16, -0.81]
+2026-07-03 18:54 | WARNING  | robot_0 collided with obstacle_3 at state [2.01, 8.33, 1.09]
+2026-07-03 18:54 | WARNING  | robot_0 collided with obstacle_3 at state [4.7, 4.49, 1.1]
+..............................................
+Epoch 43. Evaluating scenarios
+2026-07-03 18:54 | WARNING  | robot_0 collided with obstacle_3 at state [4.67, 4.55, -3.12]
+2026-07-03 18:54 | WARNING  | robot_0 collided with obstacle_3 at state [5.02, 4.77, -2.92]
+Average Reward: 59.11328570762089
+Average Collision rate: 0.2
+Average Goal rate: 0.8
+..............................................
+2026-07-03 18:55 | WARNING  | robot_0 collided with obstacle_4 at state [7.62, 7.84, -2.99]
+2026-07-03 18:55 | WARNING  | robot_0 collided with obstacle_3 at state [5.79, 5.95, 2.12]
+2026-07-03 18:55 | WARNING  | robot_0 collided with obstacle_3 at state [4.0, 8.32, 0.0]
+2026-07-03 18:55 | WARNING  | robot_0 collided with obstacle_4 at state [8.9, 4.46, -0.95]
+..............................................
+Epoch 44. Evaluating scenarios
+Average Reward: 78.41296818207248
+Average Collision rate: 0.0
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:57 | WARNING  | robot_0 collided with obstacle_7 at state [6.52, 5.89, -0.97]
+2026-07-03 18:57 | WARNING  | robot_0 collided with obstacle_3 at state [2.04, 8.48, 0.0]
+2026-07-03 18:57 | WARNING  | robot_0 collided with obstacle_1 at state [3.85, 8.67, 2.31]
+..............................................
+Epoch 45. Evaluating scenarios
+2026-07-03 18:58 | WARNING  | robot_0 collided with obstacle_3 at state [4.32, 6.78, -0.26]
+Average Reward: 78.08617526380671
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 18:58 | WARNING  | robot_0 collided with obstacle_2 at state [6.76, 3.47, 0.83]
+..............................................
+Epoch 46. Evaluating scenarios
+Average Reward: 98.99927422460749
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 18:59 | WARNING  | robot_0 collided with obstacle_3 at state [2.26, 3.0, -0.87]
+2026-07-03 19:00 | WARNING  | robot_0 collided with obstacle_3 at state [5.99, 4.91, 0.82]
+2026-07-03 19:01 | WARNING  | robot_0 collided with obstacle_3 at state [5.87, 3.67, -2.94]
+..............................................
+Epoch 47. Evaluating scenarios
+Average Reward: 103.68356813659211
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 19:02 | WARNING  | robot_0 collided with obstacle_4 at state [6.26, 6.73, -3.0]
+2026-07-03 19:02 | WARNING  | robot_0 collided with obstacle_3 at state [5.69, 2.07, 2.09]
+2026-07-03 19:02 | WARNING  | robot_0 collided with obstacle_4 at state [6.77, 4.48, 2.55]
+2026-07-03 19:02 | WARNING  | robot_0 collided with obstacle_1 at state [2.25, 6.85, -2.12]
+..............................................
+Epoch 48. Evaluating scenarios
+2026-07-03 19:03 | WARNING  | robot_0 collided with obstacle_4 at state [5.27, 7.09, 1.64]
+Average Reward: 85.37452699862179
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 19:03 | WARNING  | robot_0 collided with obstacle_3 at state [4.67, 4.98, -1.76]
+2026-07-03 19:03 | WARNING  | robot_0 collided with obstacle_2 at state [6.46, 4.31, -1.51]
+2026-07-03 19:03 | WARNING  | robot_0 collided with obstacle_7 at state [1.89, 2.95, -1.63]
+2026-07-03 19:03 | WARNING  | robot_0 collided with obstacle_4 at state [6.74, 3.72, 1.56]
+..............................................
+Epoch 49. Evaluating scenarios
+Average Reward: 104.06840979710287
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 19:05 | WARNING  | robot_0 collided with obstacle_2 at state [4.54, 6.05, -0.27]
+2026-07-03 19:05 | WARNING  | robot_0 collided with obstacle_3 at state [2.1, 4.27, -2.5]
+2026-07-03 19:05 | WARNING  | robot_0 collided with obstacle_1 at state [3.73, 4.73, 1.45]
+2026-07-03 19:05 | WARNING  | robot_0 collided with obstacle_3 at state [4.02, 6.02, -0.42]
+2026-07-03 19:05 | WARNING  | robot_0 collided with obstacle_7 at state [5.66, 8.51, -0.71]
+..............................................
+Epoch 50. Evaluating scenarios
+Average Reward: 99.10104313111393
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 19:07 | WARNING  | robot_0 collided with obstacle_2 at state [8.09, 7.38, -0.43]
+2026-07-03 19:07 | WARNING  | robot_0 collided with obstacle_1 at state [1.41, 5.34, -1.59]
+2026-07-03 19:07 | WARNING  | robot_0 collided with obstacle_2 at state [6.34, 8.32, 0.0]
+2026-07-03 19:07 | WARNING  | robot_0 collided with obstacle_4 at state [5.88, 1.32, 0.82]
+..............................................
+Epoch 51. Evaluating scenarios
+Average Reward: 104.8677494578747
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 19:08 | WARNING  | robot_0 collided with obstacle_1 at state [5.8, 6.78, -2.88]
+..............................................
+Epoch 52. Evaluating scenarios
+2026-07-03 19:08 | WARNING  | robot_0 collided with obstacle_3 at state [6.18, 3.51, -0.79]
+Average Reward: 84.08736768239262
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 19:09 | WARNING  | robot_0 collided with obstacle_1 at state [3.49, 5.09, -2.69]
+2026-07-03 19:09 | WARNING  | robot_0 collided with obstacle_6 at state [4.42, 6.8, -0.42]
+2026-07-03 19:09 | WARNING  | robot_0 collided with obstacle_3 at state [2.97, 6.47, 0.0]
+2026-07-03 19:09 | WARNING  | robot_0 collided with obstacle_1 at state [7.47, 6.19, 2.57]
+2026-07-03 19:09 | WARNING  | robot_0 collided with obstacle_4 at state [7.91, 8.27, 0.61]
+2026-07-03 19:09 | WARNING  | robot_0 collided with obstacle_3 at state [5.22, 1.14, 0.51]
+2026-07-03 19:09 | WARNING  | robot_0 collided with obstacle_4 at state [9.41, 3.61, 0.46]
+2026-07-03 19:10 | WARNING  | robot_0 collided with obstacle_3 at state [9.01, 1.74, 0.23]
+..............................................
+Epoch 53. Evaluating scenarios
+Average Reward: 102.96619945287614
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 19:11 | WARNING  | robot_0 collided with obstacle_2 at state [4.63, 3.97, 0.6]
+2026-07-03 19:11 | WARNING  | robot_0 collided with obstacle_1 at state [4.39, 7.92, 0.27]
+2026-07-03 19:11 | WARNING  | robot_0 collided with obstacle_1 at state [4.67, 5.99, 2.54]
+..............................................
+Epoch 54. Evaluating scenarios
+2026-07-03 19:12 | WARNING  | robot_0 collided with obstacle_7 at state [2.74, 5.02, -0.3]
+Average Reward: 82.33047113776334
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 19:12 | WARNING  | robot_0 collided with obstacle_3 at state [5.42, 1.74, -1.42]
+2026-07-03 19:13 | WARNING  | robot_0 collided with obstacle_1 at state [2.4, 4.68, 0.0]
+2026-07-03 19:13 | WARNING  | robot_0 collided with obstacle_4 at state [5.43, 1.77, 1.39]
+..............................................
+Epoch 55. Evaluating scenarios
+Average Reward: 103.98031569062046
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 19:14 | WARNING  | robot_0 collided with obstacle_3 at state [1.95, 2.61, -1.62]
+2026-07-03 19:14 | WARNING  | robot_0 collided with obstacle_1 at state [1.85, 6.13, 0.13]
+..............................................
+Epoch 56. Evaluating scenarios
+2026-07-03 19:15 | WARNING  | robot_0 collided with obstacle_4 at state [6.57, 5.08, -0.77]
+Average Reward: 86.6133959696911
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 19:16 | WARNING  | robot_0 collided with obstacle_3 at state [7.94, 7.05, 0.86]
+2026-07-03 19:16 | WARNING  | robot_0 collided with obstacle_3 at state [9.41, 6.29, 0.18]
+2026-07-03 19:16 | WARNING  | robot_0 collided with obstacle_3 at state [2.32, 3.06, 0.0]
+..............................................
+Epoch 57. Evaluating scenarios
+2026-07-03 19:16 | WARNING  | robot_0 collided with obstacle_2 at state [8.15, 6.65, -2.12]
+2026-07-03 19:16 | WARNING  | robot_0 collided with obstacle_3 at state [5.74, 3.8, 0.37]
+Average Reward: 59.234603390371184
+Average Collision rate: 0.2
+Average Goal rate: 0.8
+..............................................
+2026-07-03 19:16 | WARNING  | robot_0 collided with obstacle_3 at state [7.46, 5.88, 0.0]
+2026-07-03 19:16 | WARNING  | robot_0 collided with obstacle_2 at state [1.4, 6.84, 1.69]
+2026-07-03 19:17 | WARNING  | robot_0 collided with obstacle_6 at state [7.49, 6.96, -0.89]
+2026-07-03 19:17 | WARNING  | robot_0 collided with obstacle_2 at state [6.41, 5.67, 1.4]
+2026-07-03 19:17 | WARNING  | robot_0 collided with obstacle_4 at state [2.79, 7.92, 2.48]
+2026-07-03 19:17 | WARNING  | robot_0 collided with obstacle_2 at state [3.04, 4.65, 0.88]
+..............................................
+Epoch 58. Evaluating scenarios
+2026-07-03 19:17 | WARNING  | robot_0 collided with obstacle_3 at state [9.33, 8.06, 0.7]
+Average Reward: 77.12816029144552
+Average Collision rate: 0.1
+Average Goal rate: 0.9
+..............................................
+2026-07-03 19:18 | WARNING  | robot_0 collided with obstacle_4 at state [5.16, 5.78, 0.53]
+2026-07-03 19:18 | WARNING  | robot_0 collided with obstacle_2 at state [2.97, 7.33, 1.49]
+2026-07-03 19:18 | WARNING  | robot_0 collided with obstacle_2 at state [7.91, 8.15, 0.87]
+2026-07-03 19:18 | WARNING  | robot_0 collided with obstacle_2 at state [5.52, 4.55, -1.03]
+2026-07-03 19:19 | WARNING  | robot_0 collided with obstacle_3 at state [2.73, 4.72, -2.85]
+..............................................
+Epoch 59. Evaluating scenarios
+Average Reward: 92.45301759552254
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................
+2026-07-03 19:19 | WARNING  | robot_0 collided with obstacle_2 at state [2.54, 5.72, -0.16]
+2026-07-03 19:19 | WARNING  | robot_0 collided with obstacle_3 at state [9.37, 7.38, 1.52]
+2026-07-03 19:20 | WARNING  | robot_0 collided with obstacle_3 at state [8.68, 6.33, -0.03]
+2026-07-03 19:20 | WARNING  | robot_0 collided with obstacle_4 at state [7.64, 2.84, 1.12]
+..............................................
+Epoch 60. Evaluating scenarios
+Average Reward: 98.57294732215777
+Average Collision rate: 0.0
+Average Goal rate: 1.0
+..............................................

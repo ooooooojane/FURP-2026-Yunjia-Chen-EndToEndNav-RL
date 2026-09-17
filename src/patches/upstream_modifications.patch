@@ -1,0 +1,471 @@
+diff --git a/robot_nav/SIM_ENV/sim.py b/robot_nav/SIM_ENV/sim.py
+index c341373..0400e93 100644
+--- a/robot_nav/SIM_ENV/sim.py
++++ b/robot_nav/SIM_ENV/sim.py
+@@ -6,44 +6,36 @@ from robot_nav.SIM_ENV.sim_env import SIM_ENV
+ 
+ 
+ class SIM(SIM_ENV):
+-    """
+-    A simulation environment interface for robot navigation using IRSim.
+-
+-    This class wraps around the IRSim environment and provides methods for stepping,
+-    resetting, and interacting with a mobile robot, including reward computation.
++    """Simulation environment for robot navigation with configurable reward function.
+ 
+-    Attributes:
+-        env (object): The simulation environment instance from IRSim.
+-        robot_goal (np.ndarray): The goal position of the robot.
++    Reward modes:
++      - "default": goal +100, collision -100, small shaping for speed & obstacle clearance
++      - "dense":   default + distance-based progress reward (-distance/10 per step)
++      - "sparse":  only goal +100 / collision -100, zero intermediate reward
++      - "harsh":   default but collision penalty doubled to -200
+     """
+ 
+-    def __init__(self, world_file="robot_world.yaml", disable_plotting=False):
+-        """
+-        Initialize the simulation environment.
+-
+-        Args:
+-            world_file (str): Path to the world configuration YAML file.
+-            disable_plotting (bool): If True, disables rendering and plotting.
+-        """
++    def __init__(self, world_file="robot_world.yaml", disable_plotting=False,
++                 reward_mode="default", seed=None):
+         display = False if disable_plotting else True
++        if seed is not None:
++            # 固定障碍布局的关键: 创建环境前播种全部三个随机源。
++            # (实测: 只播种 irsim 内部RNG不够——障碍生成还消费 Python random/numpy,
++            #  不同进程布局不同; 三源同播后跨进程布局完全一致。)
++            random.seed(seed)
++            np.random.seed(seed)
++            from irsim.util.random import set_seed
++            set_seed(seed)
+         self.env = irsim.make(
+-            world_file, disable_all_plot=disable_plotting, display=display
++            world_file, disable_all_plot=disable_plotting, display=display,
++            seed=seed
+         )
+         robot_info = self.env.get_robot_info(0)
+         self.robot_goal = robot_info.goal
++        self.reward_mode = reward_mode
++        self.prev_distance = None
+ 
+     def step(self, lin_velocity=0.0, ang_velocity=0.1):
+-        """
+-        Perform one step in the simulation using the given control commands.
+-
+-        Args:
+-            lin_velocity (float): Linear velocity to apply to the robot.
+-            ang_velocity (float): Angular velocity to apply to the robot.
+-
+-        Returns:
+-            (tuple): Contains the latest LIDAR scan, distance to goal, cosine and sine of angle to goal,
+-                   collision flag, goal reached flag, applied action, and computed reward.
+-        """
+         self.env.step(action_id=0, action=np.array([[lin_velocity], [ang_velocity]]))
+         self.env.render()
+ 
+@@ -61,52 +53,28 @@ class SIM(SIM_ENV):
+         cos, sin = self.cossin(pose_vector, goal_vector)
+         collision = self.env.robot.collision
+         action = [lin_velocity, ang_velocity]
+-        reward = self.get_reward(goal, collision, action, latest_scan)
++        reward = self.get_reward(goal, collision, action, latest_scan, distance)
+ 
+         return latest_scan, distance, cos, sin, collision, goal, action, reward
+ 
+-    def reset(
+-        self,
+-        robot_state=None,
+-        robot_goal=None,
+-        random_obstacles=True,
+-        random_obstacle_ids=None,
+-    ):
+-        """
+-        Reset the simulation environment, optionally setting robot and obstacle states.
+-
+-        Args:
+-            robot_state (list or None): Initial state of the robot as a list of [x, y, theta, speed].
+-            robot_goal (list or None): Goal state for the robot.
+-            random_obstacles (bool): Whether to randomly reposition obstacles.
+-            random_obstacle_ids (list or None): Specific obstacle IDs to randomize.
+-
+-        Returns:
+-            (tuple): Initial observation after reset, including LIDAR scan, distance, cos/sin,
+-                   and reward-related flags and values.
+-        """
++    def reset(self, robot_state=None, robot_goal=None, random_obstacles=True,
++              random_obstacle_ids=None):
+         if robot_state is None:
+             robot_state = [[random.uniform(1, 9)], [random.uniform(1, 9)], [0]]
+ 
+-        self.env.robot.set_state(
+-            state=np.array(robot_state),
+-            init=True,
+-        )
++        self.env.robot.set_state(state=np.array(robot_state), init=True)
+ 
+         if random_obstacles:
+             if random_obstacle_ids is None:
+                 random_obstacle_ids = [i + 1 for i in range(7)]
+             self.env.random_obstacle_position(
+-                range_low=[0, 0, -3.14],
+-                range_high=[10, 10, 3.14],
+-                ids=random_obstacle_ids,
+-                non_overlapping=True,
++                range_low=[0, 0, -3.14], range_high=[10, 10, 3.14],
++                ids=random_obstacle_ids, non_overlapping=True,
+             )
+ 
+         if robot_goal is None:
+             self.env.robot.set_random_goal(
+-                obstacle_list=self.env.obstacle_list,
+-                init=True,
++                obstacle_list=self.env.obstacle_list, init=True,
+                 range_limits=[[1, 1, -3.141592653589793], [9, 9, 3.141592653589793]],
+             )
+         else:
+@@ -118,26 +86,30 @@ class SIM(SIM_ENV):
+         latest_scan, distance, cos, sin, _, _, action, reward = self.step(
+             lin_velocity=action[0], ang_velocity=action[1]
+         )
++        self.prev_distance = distance
+         return latest_scan, distance, cos, sin, False, False, action, reward
+ 
+-    @staticmethod
+-    def get_reward(goal, collision, action, laser_scan):
+-        """
+-        Calculate the reward for the current step.
+-
+-        Args:
+-            goal (bool): Whether the goal has been reached.
+-            collision (bool): Whether a collision occurred.
+-            action (list): The action taken [linear velocity, angular velocity].
+-            laser_scan (list): The LIDAR scan readings.
+-
+-        Returns:
+-            (float): Computed reward for the current state.
+-        """
++    def get_reward(self, goal, collision, action, laser_scan, distance):
+         if goal:
+             return 100.0
+-        elif collision:
+-            return -100.0
+-        else:
+-            r3 = lambda x: 1.35 - x if x < 1.35 else 0.0
+-            return action[0] - abs(action[1]) / 2 - r3(min(laser_scan)) / 2
++
++        if collision:
++            return -200.0 if self.reward_mode == "harsh" else -100.0
++
++        # Intermediate reward
++        r_obstacle = lambda x: 1.35 - x if x < 1.35 else 0.0
++        base = action[0] - abs(action[1]) / 2 - r_obstacle(min(laser_scan)) / 2
++
++        if self.reward_mode == "sparse":
++            return 0.0
++
++        if self.reward_mode == "dense":
++            # Shaping: reward progress toward goal, penalize moving away
++            progress = 0.0
++            if self.prev_distance is not None:
++                progress = self.prev_distance - distance  # positive = getting closer
++            self.prev_distance = distance
++            return base + progress * 5.0
++
++        # default
++        return base
+diff --git a/robot_nav/rl_train.py b/robot_nav/rl_train.py
+index 683c2e4..98c91cc 100644
+--- a/robot_nav/rl_train.py
++++ b/robot_nav/rl_train.py
+@@ -1,87 +1,145 @@
+-from robot_nav.models.CNNTD3.CNNTD3 import CNNTD3
+-
++import argparse
+ import torch
+ import numpy as np
++from pathlib import Path
+ from robot_nav.SIM_ENV.sim import SIM
+-from utils import get_buffer
++from robot_nav.utils import get_buffer
++
++
++def create_model(algo, state_dim, action_dim, max_action, device, save_every, resume=False, reward_mode="default"):
++    """Factory: instantiate the requested RL algorithm with sensible defaults."""
++    algo = algo.upper()
++    model_name = algo if reward_mode == "default" else f"{algo}_{reward_mode}"
++    common = dict(
++        state_dim=state_dim, action_dim=action_dim, max_action=max_action,
++        device=device, save_every=save_every, load_model=resume, model_name=model_name,
++    )
++
++    if algo == "CNNTD3":
++        from robot_nav.models.CNNTD3.CNNTD3 import CNNTD3
++        return CNNTD3(**common)
++
++    elif algo == "TD3":
++        from robot_nav.models.TD3.TD3 import TD3
++        return TD3(**common,
++                   save_directory=Path("robot_nav/models/TD3/checkpoint"),
++                   load_directory=Path("robot_nav/models/TD3/checkpoint"))
++
++    elif algo == "DDPG":
++        from robot_nav.models.DDPG.DDPG import DDPG
++        return DDPG(**common,
++                    save_directory=Path("robot_nav/models/DDPG/checkpoint"),
++                    load_directory=Path("robot_nav/models/DDPG/checkpoint"))
++
++    elif algo == "SAC":
++        from robot_nav.models.SAC.SAC import SAC
++        # SAC has device before max_action — handle separately
++        return SAC(state_dim=state_dim, action_dim=action_dim,
++                   device=device, max_action=max_action,
++                   save_every=save_every, load_model=resume, model_name=model_name,
++                   save_directory=Path("robot_nav/models/SAC/checkpoint"),
++                   load_directory=Path("robot_nav/models/SAC/checkpoint"))
++
++    elif algo == "PPO":
++        from robot_nav.models.PPO.PPO import PPO
++        return PPO(**common,
++                   save_directory=Path("robot_nav/models/PPO/checkpoint"),
++                   load_directory=Path("robot_nav/models/PPO/checkpoint"))
++
++    else:
++        raise ValueError(f"Unknown algorithm: {algo}. Choose from: CNNTD3, TD3, DDPG, SAC, PPO")
+ 
+ 
+ def main(args=None):
+     """Main training function"""
+-    action_dim = 2  # number of actions produced by the model
+-    max_action = 1  # maximum absolute value of output actions
+-    state_dim = 185  # number of input values in the neural network (vector length of state input)
+-    device = torch.device(
+-        "cuda" if torch.cuda.is_available() else "cpu"
+-    )  # using cuda if it is available, cpu otherwise
+-    nr_eval_episodes = 10  # how many episodes to use to run evaluation
+-    max_epochs = 60  # max number of epochs
+-    epoch = 0  # starting epoch number
+-    episodes_per_epoch = 70  # how many episodes to run in single epoch
+-    episode = 0  # starting episode number
+-    train_every_n = 2  # train and update network parameters every n episodes
+-    training_iterations = 80  # how many batches to use for single training cycle
+-    batch_size = 64  # batch size for each training iteration
+-    max_steps = 300  # maximum number of steps in single episode
+-    steps = 0  # starting step number
+-    load_saved_buffer = False  # whether to load experiences from assets/data.yml
+-    pretrain = False  # whether to use the loaded experiences to pre-train the model (load_saved_buffer must be True)
+-    pretraining_iterations = (
+-        10  # number of training iterations to run during pre-training
++    # ── CLI ──────────────────────────────────────────────
++    parser = argparse.ArgumentParser(description="RL Navigation Training")
++    parser.add_argument("--algo", type=str, default="CNNTD3",
++                        choices=["CNNTD3", "TD3", "DDPG", "SAC", "PPO"],
++                        help="RL algorithm to train (default: CNNTD3)")
++    parser.add_argument("--epochs", type=int, default=60,
++                        help="Number of training epochs (default: 60)")
++    parser.add_argument("--save-every", type=int, default=5,
++                        help="Save checkpoint every N training iterations (default: 5)")
++    parser.add_argument("--no-plot", action="store_true", default=True,
++                        help="Disable simulation rendering (default: True for headless)")
++    parser.add_argument("--reward", type=str, default="default",
++                        choices=["default", "dense", "sparse", "harsh"],
++                        help="Reward function mode (default: default)")
++    parser.add_argument("--resume", action="store_true", default=False,
++                        help="Resume training from saved checkpoint")
++    cli = parser.parse_args(args)
++
++    # ── Hyperparameters ──────────────────────────────────
++    action_dim = 2
++    max_action = 1
++    state_dim = 185
++    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
++    nr_eval_episodes = 10
++    max_epochs = cli.epochs
++    epoch = 0
++    episodes_per_epoch = 70
++    episode = 0
++    train_every_n = 2
++    training_iterations = 80
++    batch_size = 64
++    max_steps = 300
++    steps = 0
++    load_saved_buffer = False
++    pretrain = False
++    pretraining_iterations = 10
++
++    # ── Model ────────────────────────────────────────────
++    model = create_model(
++        algo=cli.algo, state_dim=state_dim, action_dim=action_dim,
++        max_action=max_action, device=device, save_every=cli.save_every,
++        resume=cli.resume, reward_mode=cli.reward,
+     )
+-    save_every = 5  # save the model every n training cycles
+-
+-    model = CNNTD3(
+-        state_dim=state_dim,
+-        action_dim=action_dim,
+-        max_action=max_action,
+-        device=device,
+-        save_every=save_every,
+-        load_model=False,
+-        model_name="CNNTD3",
+-    )  # instantiate a model
++    # Tag model/tensorboard with reward mode for separate tracking
++    if cli.reward != "default":
++        model.model_name = f"{cli.algo}_{cli.reward}"
++        model.writer = type(model.writer)(comment=model.model_name)
++
++    # PPO is on-policy: needs larger rollout batches, fewer iterations per batch
++    if cli.algo == "PPO":
++        train_every_n = 20
++        training_iterations = 10
++        print(f"PPO mode: train_every_n={train_every_n}, training_iterations={training_iterations}")
+ 
++    print(f"Training with {cli.algo} on {device} for {max_epochs} epochs, reward={cli.reward}")
++
++    # ── Environment & Buffer ─────────────────────────────
+     sim = SIM(
+-        world_file="worlds/robot_world.yaml", disable_plotting=False
+-    )  # instantiate environment
++        world_file="worlds/robot_world.yaml",
++        disable_plotting=cli.no_plot,
++        reward_mode=cli.reward,
++    )
+     replay_buffer = get_buffer(
+-        model,
+-        sim,
+-        load_saved_buffer,
+-        pretrain,
+-        pretraining_iterations,
+-        training_iterations,
+-        batch_size,
++        model, sim, load_saved_buffer, pretrain,
++        pretraining_iterations, training_iterations, batch_size,
+     )
+ 
++    # ── Training Loop ────────────────────────────────────
+     latest_scan, distance, cos, sin, collision, goal, a, reward = sim.step(
+-        lin_velocity=0.0, ang_velocity=0.0
+-    )  # get the initial step state
++        lin_velocity=0.0, ang_velocity=0.0,
++    )
+ 
+-    while epoch < max_epochs:  # train until max_epochs is reached
++    while epoch < max_epochs:
+         state, terminal = model.prepare_state(
+-            latest_scan, distance, cos, sin, collision, goal, a
+-        )  # get state a state representation from returned data from the environment
+-
+-        action = model.get_action(np.array(state), True)  # get an action from the model
+-        a_in = [
+-            (action[0] + 1) / 4,
+-            action[1],
+-        ]  # clip linear velocity to [0, 0.5] m/s range
++            latest_scan, distance, cos, sin, collision, goal, a,
++        )
++        action = model.get_action(np.array(state), True)
++        a_in = [(action[0] + 1) / 4, action[1]]
+ 
+         latest_scan, distance, cos, sin, collision, goal, a, reward = sim.step(
+-            lin_velocity=a_in[0], ang_velocity=a_in[1]
+-        )  # get data from the environment
++            lin_velocity=a_in[0], ang_velocity=a_in[1],
++        )
+         next_state, terminal = model.prepare_state(
+-            latest_scan, distance, cos, sin, collision, goal, a
+-        )  # get a next state representation
+-        replay_buffer.add(
+-            state, action, reward, terminal, next_state
+-        )  # add experience to the replay buffer
+-
+-        if (
+-            terminal or steps == max_steps
+-        ):  # reset environment of terminal stat ereached, or max_steps were taken
++            latest_scan, distance, cos, sin, collision, goal, a,
++        )
++        replay_buffer.add(state, action, reward, terminal, next_state)
++
++        if terminal or steps == max_steps:
+             latest_scan, distance, cos, sin, collision, goal, a, reward = sim.reset()
+             episode += 1
+             if episode % train_every_n == 0:
+@@ -89,15 +147,12 @@ def main(args=None):
+                     replay_buffer=replay_buffer,
+                     iterations=training_iterations,
+                     batch_size=batch_size,
+-                )  # train the model and update its parameters
+-
++                )
+             steps = 0
+         else:
+             steps += 1
+ 
+-        if (
+-            episode + 1
+-        ) % episodes_per_epoch == 0:  # if epoch is concluded, run evaluation
++        if (episode + 1) % episodes_per_epoch == 0:
+             episode = 0
+             epoch += 1
+             evaluate(model, epoch, sim, eval_episodes=nr_eval_episodes)
+@@ -115,12 +170,12 @@ def evaluate(model, epoch, sim, eval_episodes=10):
+         done = False
+         while not done and count < 501:
+             state, terminal = model.prepare_state(
+-                latest_scan, distance, cos, sin, collision, goal, a
++                latest_scan, distance, cos, sin, collision, goal, a,
+             )
+             action = model.get_action(np.array(state), False)
+             a_in = [(action[0] + 1) / 4, action[1]]
+             latest_scan, distance, cos, sin, collision, goal, a, reward = sim.step(
+-                lin_velocity=a_in[0], ang_velocity=a_in[1]
++                lin_velocity=a_in[0], ang_velocity=a_in[1],
+             )
+             avg_reward += reward
+             count += 1
+diff --git a/robot_nav/worlds/circle_world.yaml b/robot_nav/worlds/circle_world.yaml
+index 8570c11..038ffc6 100644
+--- a/robot_nav/worlds/circle_world.yaml
++++ b/robot_nav/worlds/circle_world.yaml
+@@ -19,5 +19,17 @@ robot:
+     arrive_mode: position
+     goal_threshold: 0.3
+ 
++    sensors:
++      - type: 'lidar2d'
++        range_min: 0
++        range_max: 7
++        angle_range: 3.14
++        number: 180
++        noise: True
++        std: 0.08
++        angle_std: 0.1
++        offset: [ 0, 0, 0 ]
++        alpha: 0.3
++
+     plot:
+       show_trajectory: False
+diff --git a/robot_nav/worlds/cross_world.yaml b/robot_nav/worlds/cross_world.yaml
+index 375036a..96101ad 100644
+--- a/robot_nav/worlds/cross_world.yaml
++++ b/robot_nav/worlds/cross_world.yaml
+@@ -19,5 +19,17 @@ robot:
+     arrive_mode: position
+     goal_threshold: 0.3
+ 
++    sensors:
++      - type: 'lidar2d'
++        range_min: 0
++        range_max: 7
++        angle_range: 3.14
++        number: 180
++        noise: True
++        std: 0.08
++        angle_std: 0.1
++        offset: [ 0, 0, 0 ]
++        alpha: 0.3
++
+     plot:
+       show_trajectory: False

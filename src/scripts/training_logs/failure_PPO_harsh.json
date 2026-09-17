@@ -1,0 +1,4502 @@
+[
+  {
+    "episode": 1,
+    "success": true,
+    "collision": false,
+    "steps": 103,
+    "final_distance": 0.23,
+    "min_obstacle": 0.7,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 2,
+    "success": false,
+    "collision": true,
+    "steps": 98,
+    "final_distance": 1.27,
+    "min_obstacle": -0.04,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 3,
+    "success": false,
+    "collision": true,
+    "steps": 7,
+    "final_distance": 2.24,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 4,
+    "success": true,
+    "collision": false,
+    "steps": 190,
+    "final_distance": 0.27,
+    "min_obstacle": 0.26,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 5,
+    "success": false,
+    "collision": true,
+    "steps": 119,
+    "final_distance": 2.74,
+    "min_obstacle": -0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 6,
+    "success": true,
+    "collision": false,
+    "steps": 103,
+    "final_distance": 0.27,
+    "min_obstacle": 0.55,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 7,
+    "success": false,
+    "collision": true,
+    "steps": 186,
+    "final_distance": 1.64,
+    "min_obstacle": -0.02,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 8,
+    "success": false,
+    "collision": true,
+    "steps": 151,
+    "final_distance": 1.31,
+    "min_obstacle": -0.04,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 9,
+    "success": false,
+    "collision": true,
+    "steps": 77,
+    "final_distance": 3.0,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 10,
+    "success": false,
+    "collision": true,
+    "steps": 196,
+    "final_distance": 3.54,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 11,
+    "success": false,
+    "collision": true,
+    "steps": 73,
+    "final_distance": 6.75,
+    "min_obstacle": 0.1,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 12,
+    "success": true,
+    "collision": false,
+    "steps": 267,
+    "final_distance": 0.29,
+    "min_obstacle": 0.18,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 13,
+    "success": false,
+    "collision": true,
+    "steps": 200,
+    "final_distance": 1.67,
+    "min_obstacle": -0.04,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 14,
+    "success": true,
+    "collision": false,
+    "steps": 81,
+    "final_distance": 0.27,
+    "min_obstacle": 0.4,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 15,
+    "success": true,
+    "collision": false,
+    "steps": 29,
+    "final_distance": 0.26,
+    "min_obstacle": 0.28,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 16,
+    "success": false,
+    "collision": true,
+    "steps": 292,
+    "final_distance": 3.25,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 17,
+    "success": true,
+    "collision": false,
+    "steps": 88,
+    "final_distance": 0.29,
+    "min_obstacle": 0.3,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 18,
+    "success": false,
+    "collision": true,
+    "steps": 94,
+    "final_distance": 4.64,
+    "min_obstacle": -0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 19,
+    "success": false,
+    "collision": true,
+    "steps": 417,
+    "final_distance": 7.0,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 20,
+    "success": false,
+    "collision": true,
+    "steps": 21,
+    "final_distance": 1.33,
+    "min_obstacle": 0.0,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 21,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.66,
+    "min_obstacle": 0.03,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 22,
+    "success": false,
+    "collision": true,
+    "steps": 44,
+    "final_distance": 3.6,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 23,
+    "success": true,
+    "collision": false,
+    "steps": 260,
+    "final_distance": 0.24,
+    "min_obstacle": 0.82,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 24,
+    "success": false,
+    "collision": true,
+    "steps": 125,
+    "final_distance": 4.78,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 25,
+    "success": false,
+    "collision": true,
+    "steps": 12,
+    "final_distance": 2.47,
+    "min_obstacle": 0.07,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 26,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.32,
+    "min_obstacle": 0.47,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 27,
+    "success": true,
+    "collision": false,
+    "steps": 107,
+    "final_distance": 0.25,
+    "min_obstacle": 0.46,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 28,
+    "success": false,
+    "collision": true,
+    "steps": 52,
+    "final_distance": 3.76,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 29,
+    "success": true,
+    "collision": false,
+    "steps": 89,
+    "final_distance": 0.27,
+    "min_obstacle": 0.92,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 30,
+    "success": false,
+    "collision": true,
+    "steps": 89,
+    "final_distance": 2.16,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 31,
+    "success": false,
+    "collision": true,
+    "steps": 1,
+    "final_distance": 2.62,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 32,
+    "success": true,
+    "collision": false,
+    "steps": 124,
+    "final_distance": 0.24,
+    "min_obstacle": 0.34,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 33,
+    "success": false,
+    "collision": true,
+    "steps": 67,
+    "final_distance": 5.81,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 34,
+    "success": false,
+    "collision": true,
+    "steps": 148,
+    "final_distance": 2.68,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 35,
+    "success": true,
+    "collision": false,
+    "steps": 177,
+    "final_distance": 0.28,
+    "min_obstacle": 0.6,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 36,
+    "success": false,
+    "collision": true,
+    "steps": 146,
+    "final_distance": 2.36,
+    "min_obstacle": -0.07,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 37,
+    "success": true,
+    "collision": false,
+    "steps": 355,
+    "final_distance": 0.3,
+    "min_obstacle": 0.43,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 38,
+    "success": false,
+    "collision": true,
+    "steps": 36,
+    "final_distance": 2.71,
+    "min_obstacle": 0.15,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 39,
+    "success": false,
+    "collision": true,
+    "steps": 42,
+    "final_distance": 3.81,
+    "min_obstacle": 0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 40,
+    "success": true,
+    "collision": false,
+    "steps": 99,
+    "final_distance": 0.27,
+    "min_obstacle": 0.77,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 41,
+    "success": false,
+    "collision": true,
+    "steps": 22,
+    "final_distance": 3.1,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 42,
+    "success": true,
+    "collision": false,
+    "steps": 215,
+    "final_distance": 0.25,
+    "min_obstacle": 0.36,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 43,
+    "success": true,
+    "collision": false,
+    "steps": 69,
+    "final_distance": 0.28,
+    "min_obstacle": 0.75,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 44,
+    "success": false,
+    "collision": true,
+    "steps": 67,
+    "final_distance": 5.18,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 45,
+    "success": false,
+    "collision": true,
+    "steps": 87,
+    "final_distance": 1.16,
+    "min_obstacle": 0.0,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 46,
+    "success": true,
+    "collision": false,
+    "steps": 4,
+    "final_distance": 0.29,
+    "min_obstacle": 0.95,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 47,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.29,
+    "min_obstacle": 0.67,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 48,
+    "success": true,
+    "collision": false,
+    "steps": 59,
+    "final_distance": 0.29,
+    "min_obstacle": 1.11,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 49,
+    "success": false,
+    "collision": true,
+    "steps": 13,
+    "final_distance": 4.96,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 50,
+    "success": false,
+    "collision": true,
+    "steps": 132,
+    "final_distance": 0.84,
+    "min_obstacle": 0.02,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 51,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.56,
+    "min_obstacle": 0.11,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 52,
+    "success": false,
+    "collision": true,
+    "steps": 57,
+    "final_distance": 5.66,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 53,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 6.81,
+    "min_obstacle": 0.16,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 54,
+    "success": true,
+    "collision": false,
+    "steps": 434,
+    "final_distance": 0.28,
+    "min_obstacle": 0.21,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 55,
+    "success": false,
+    "collision": true,
+    "steps": 170,
+    "final_distance": 3.52,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 56,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 4.83,
+    "min_obstacle": 0.16,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 57,
+    "success": true,
+    "collision": false,
+    "steps": 112,
+    "final_distance": 0.28,
+    "min_obstacle": 0.08,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 58,
+    "success": false,
+    "collision": true,
+    "steps": 83,
+    "final_distance": 0.91,
+    "min_obstacle": 0.03,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 59,
+    "success": true,
+    "collision": false,
+    "steps": 155,
+    "final_distance": 0.29,
+    "min_obstacle": 0.42,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 60,
+    "success": false,
+    "collision": true,
+    "steps": 107,
+    "final_distance": 4.82,
+    "min_obstacle": -0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 61,
+    "success": true,
+    "collision": false,
+    "steps": 75,
+    "final_distance": 0.3,
+    "min_obstacle": 0.73,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 62,
+    "success": false,
+    "collision": true,
+    "steps": 103,
+    "final_distance": 4.49,
+    "min_obstacle": 0.08,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 63,
+    "success": false,
+    "collision": true,
+    "steps": 11,
+    "final_distance": 4.33,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 64,
+    "success": false,
+    "collision": true,
+    "steps": 8,
+    "final_distance": 2.73,
+    "min_obstacle": 0.08,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 65,
+    "success": true,
+    "collision": false,
+    "steps": 85,
+    "final_distance": 0.25,
+    "min_obstacle": 0.49,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 66,
+    "success": false,
+    "collision": true,
+    "steps": 14,
+    "final_distance": 6.49,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 67,
+    "success": true,
+    "collision": false,
+    "steps": 156,
+    "final_distance": 0.26,
+    "min_obstacle": 0.31,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 68,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 6.83,
+    "min_obstacle": 0.3,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 69,
+    "success": true,
+    "collision": false,
+    "steps": 46,
+    "final_distance": 0.25,
+    "min_obstacle": 1.43,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 70,
+    "success": false,
+    "collision": true,
+    "steps": 324,
+    "final_distance": 6.53,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 71,
+    "success": true,
+    "collision": false,
+    "steps": 36,
+    "final_distance": 0.25,
+    "min_obstacle": 1.47,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 72,
+    "success": false,
+    "collision": true,
+    "steps": 25,
+    "final_distance": 5.03,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 73,
+    "success": true,
+    "collision": false,
+    "steps": 286,
+    "final_distance": 0.28,
+    "min_obstacle": 0.24,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 74,
+    "success": false,
+    "collision": true,
+    "steps": 12,
+    "final_distance": 2.4,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 75,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.63,
+    "min_obstacle": 0.45,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 76,
+    "success": false,
+    "collision": true,
+    "steps": 6,
+    "final_distance": 2.58,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 77,
+    "success": false,
+    "collision": true,
+    "steps": 61,
+    "final_distance": 1.64,
+    "min_obstacle": -0.03,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 78,
+    "success": true,
+    "collision": false,
+    "steps": 359,
+    "final_distance": 0.25,
+    "min_obstacle": 0.08,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 79,
+    "success": true,
+    "collision": false,
+    "steps": 100,
+    "final_distance": 0.27,
+    "min_obstacle": 0.16,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 80,
+    "success": false,
+    "collision": true,
+    "steps": 260,
+    "final_distance": 4.57,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 81,
+    "success": true,
+    "collision": false,
+    "steps": 26,
+    "final_distance": 0.27,
+    "min_obstacle": 0.28,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 82,
+    "success": true,
+    "collision": false,
+    "steps": 65,
+    "final_distance": 0.29,
+    "min_obstacle": 0.47,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 83,
+    "success": true,
+    "collision": false,
+    "steps": 362,
+    "final_distance": 0.26,
+    "min_obstacle": 0.67,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 84,
+    "success": false,
+    "collision": true,
+    "steps": 19,
+    "final_distance": 3.63,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 85,
+    "success": false,
+    "collision": true,
+    "steps": 1,
+    "final_distance": 3.45,
+    "min_obstacle": -0.11,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 86,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 4.56,
+    "min_obstacle": 0.31,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 87,
+    "success": false,
+    "collision": true,
+    "steps": 129,
+    "final_distance": 1.44,
+    "min_obstacle": 0.03,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 88,
+    "success": false,
+    "collision": true,
+    "steps": 96,
+    "final_distance": 3.95,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 89,
+    "success": false,
+    "collision": true,
+    "steps": 179,
+    "final_distance": 4.5,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 90,
+    "success": true,
+    "collision": false,
+    "steps": 114,
+    "final_distance": 0.28,
+    "min_obstacle": 0.85,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 91,
+    "success": false,
+    "collision": true,
+    "steps": 150,
+    "final_distance": 4.9,
+    "min_obstacle": 0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 92,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.93,
+    "min_obstacle": -0.01,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 93,
+    "success": true,
+    "collision": false,
+    "steps": 196,
+    "final_distance": 0.3,
+    "min_obstacle": 0.03,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 94,
+    "success": false,
+    "collision": true,
+    "steps": 238,
+    "final_distance": 6.05,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 95,
+    "success": true,
+    "collision": false,
+    "steps": 40,
+    "final_distance": 0.28,
+    "min_obstacle": 0.73,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 96,
+    "success": false,
+    "collision": true,
+    "steps": 112,
+    "final_distance": 4.29,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 97,
+    "success": false,
+    "collision": true,
+    "steps": 68,
+    "final_distance": 4.08,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 98,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.01,
+    "min_obstacle": 0.23,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 99,
+    "success": true,
+    "collision": false,
+    "steps": 178,
+    "final_distance": 0.25,
+    "min_obstacle": 0.28,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 100,
+    "success": true,
+    "collision": false,
+    "steps": 105,
+    "final_distance": 0.25,
+    "min_obstacle": 0.35,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 101,
+    "success": false,
+    "collision": true,
+    "steps": 66,
+    "final_distance": 1.0,
+    "min_obstacle": 0.05,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 102,
+    "success": false,
+    "collision": true,
+    "steps": 131,
+    "final_distance": 3.49,
+    "min_obstacle": -0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 103,
+    "success": false,
+    "collision": true,
+    "steps": 318,
+    "final_distance": 2.49,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 104,
+    "success": true,
+    "collision": false,
+    "steps": 122,
+    "final_distance": 0.29,
+    "min_obstacle": 0.37,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 105,
+    "success": false,
+    "collision": true,
+    "steps": 23,
+    "final_distance": 6.08,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 106,
+    "success": false,
+    "collision": true,
+    "steps": 279,
+    "final_distance": 0.82,
+    "min_obstacle": -0.0,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 107,
+    "success": true,
+    "collision": false,
+    "steps": 45,
+    "final_distance": 0.27,
+    "min_obstacle": 1.17,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 108,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.95,
+    "min_obstacle": 0.07,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 109,
+    "success": false,
+    "collision": true,
+    "steps": 68,
+    "final_distance": 4.18,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 110,
+    "success": false,
+    "collision": true,
+    "steps": 4,
+    "final_distance": 1.96,
+    "min_obstacle": -0.02,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 111,
+    "success": false,
+    "collision": true,
+    "steps": 57,
+    "final_distance": 6.56,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 112,
+    "success": false,
+    "collision": true,
+    "steps": 141,
+    "final_distance": 3.95,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 113,
+    "success": false,
+    "collision": true,
+    "steps": 31,
+    "final_distance": 2.65,
+    "min_obstacle": 0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 114,
+    "success": false,
+    "collision": true,
+    "steps": 64,
+    "final_distance": 7.21,
+    "min_obstacle": -0.1,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 115,
+    "success": false,
+    "collision": true,
+    "steps": 280,
+    "final_distance": 5.68,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 116,
+    "success": true,
+    "collision": false,
+    "steps": 81,
+    "final_distance": 0.27,
+    "min_obstacle": 1.29,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 117,
+    "success": false,
+    "collision": true,
+    "steps": 116,
+    "final_distance": 2.05,
+    "min_obstacle": 0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 118,
+    "success": false,
+    "collision": true,
+    "steps": 256,
+    "final_distance": 2.09,
+    "min_obstacle": -0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 119,
+    "success": false,
+    "collision": true,
+    "steps": 213,
+    "final_distance": 1.23,
+    "min_obstacle": 0.06,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 120,
+    "success": false,
+    "collision": true,
+    "steps": 175,
+    "final_distance": 0.62,
+    "min_obstacle": 0.05,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 121,
+    "success": true,
+    "collision": false,
+    "steps": 45,
+    "final_distance": 0.29,
+    "min_obstacle": 1.02,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 122,
+    "success": false,
+    "collision": true,
+    "steps": 165,
+    "final_distance": 3.39,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 123,
+    "success": false,
+    "collision": true,
+    "steps": 106,
+    "final_distance": 3.24,
+    "min_obstacle": -0.08,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 124,
+    "success": false,
+    "collision": true,
+    "steps": 48,
+    "final_distance": 2.7,
+    "min_obstacle": 0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 125,
+    "success": true,
+    "collision": false,
+    "steps": 108,
+    "final_distance": 0.3,
+    "min_obstacle": 0.28,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 126,
+    "success": true,
+    "collision": false,
+    "steps": 151,
+    "final_distance": 0.23,
+    "min_obstacle": 0.33,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 127,
+    "success": false,
+    "collision": true,
+    "steps": 27,
+    "final_distance": 2.97,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 128,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.43,
+    "min_obstacle": 0.18,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 129,
+    "success": true,
+    "collision": false,
+    "steps": 104,
+    "final_distance": 0.22,
+    "min_obstacle": 0.1,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 130,
+    "success": false,
+    "collision": true,
+    "steps": 35,
+    "final_distance": 2.61,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 131,
+    "success": true,
+    "collision": false,
+    "steps": 80,
+    "final_distance": 0.3,
+    "min_obstacle": 0.08,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 132,
+    "success": true,
+    "collision": false,
+    "steps": 119,
+    "final_distance": 0.26,
+    "min_obstacle": 0.05,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 133,
+    "success": false,
+    "collision": true,
+    "steps": 413,
+    "final_distance": 5.94,
+    "min_obstacle": -0.07,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 134,
+    "success": false,
+    "collision": true,
+    "steps": 276,
+    "final_distance": 7.0,
+    "min_obstacle": 0.07,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 135,
+    "success": false,
+    "collision": true,
+    "steps": 152,
+    "final_distance": 3.32,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 136,
+    "success": false,
+    "collision": true,
+    "steps": 6,
+    "final_distance": 7.2,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 137,
+    "success": true,
+    "collision": false,
+    "steps": 212,
+    "final_distance": 0.3,
+    "min_obstacle": 0.26,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 138,
+    "success": false,
+    "collision": true,
+    "steps": 159,
+    "final_distance": 6.24,
+    "min_obstacle": -0.1,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 139,
+    "success": true,
+    "collision": false,
+    "steps": 136,
+    "final_distance": 0.3,
+    "min_obstacle": 0.21,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 140,
+    "success": true,
+    "collision": false,
+    "steps": 89,
+    "final_distance": 0.3,
+    "min_obstacle": 0.62,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 141,
+    "success": false,
+    "collision": true,
+    "steps": 122,
+    "final_distance": 5.24,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 142,
+    "success": false,
+    "collision": true,
+    "steps": 100,
+    "final_distance": 6.53,
+    "min_obstacle": 0.08,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 143,
+    "success": false,
+    "collision": true,
+    "steps": 105,
+    "final_distance": 3.63,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 144,
+    "success": false,
+    "collision": true,
+    "steps": 11,
+    "final_distance": 6.75,
+    "min_obstacle": -0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 145,
+    "success": false,
+    "collision": true,
+    "steps": 38,
+    "final_distance": 3.46,
+    "min_obstacle": -0.07,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 146,
+    "success": false,
+    "collision": true,
+    "steps": 1,
+    "final_distance": 4.62,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 147,
+    "success": false,
+    "collision": true,
+    "steps": 221,
+    "final_distance": 2.88,
+    "min_obstacle": -0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 148,
+    "success": false,
+    "collision": true,
+    "steps": 4,
+    "final_distance": 2.74,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 149,
+    "success": false,
+    "collision": true,
+    "steps": 41,
+    "final_distance": 1.95,
+    "min_obstacle": 0.01,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 150,
+    "success": false,
+    "collision": true,
+    "steps": 476,
+    "final_distance": 1.08,
+    "min_obstacle": -0.02,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 151,
+    "success": false,
+    "collision": true,
+    "steps": 60,
+    "final_distance": 4.99,
+    "min_obstacle": -0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 152,
+    "success": false,
+    "collision": true,
+    "steps": 457,
+    "final_distance": 7.66,
+    "min_obstacle": 0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 153,
+    "success": true,
+    "collision": false,
+    "steps": 12,
+    "final_distance": 0.28,
+    "min_obstacle": 0.19,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 154,
+    "success": true,
+    "collision": false,
+    "steps": 75,
+    "final_distance": 0.26,
+    "min_obstacle": 0.38,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 155,
+    "success": false,
+    "collision": true,
+    "steps": 131,
+    "final_distance": 1.0,
+    "min_obstacle": 0.02,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 156,
+    "success": false,
+    "collision": true,
+    "steps": 137,
+    "final_distance": 2.5,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 157,
+    "success": false,
+    "collision": true,
+    "steps": 51,
+    "final_distance": 5.3,
+    "min_obstacle": -0.08,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 158,
+    "success": false,
+    "collision": true,
+    "steps": 10,
+    "final_distance": 3.25,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 159,
+    "success": false,
+    "collision": true,
+    "steps": 499,
+    "final_distance": 1.22,
+    "min_obstacle": 0.04,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 160,
+    "success": false,
+    "collision": true,
+    "steps": 3,
+    "final_distance": 2.39,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 161,
+    "success": false,
+    "collision": true,
+    "steps": 304,
+    "final_distance": 1.64,
+    "min_obstacle": 0.04,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 162,
+    "success": false,
+    "collision": true,
+    "steps": 30,
+    "final_distance": 2.53,
+    "min_obstacle": 0.08,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 163,
+    "success": true,
+    "collision": false,
+    "steps": 271,
+    "final_distance": 0.29,
+    "min_obstacle": 0.12,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 164,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 4.36,
+    "min_obstacle": 0.05,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 165,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.78,
+    "min_obstacle": 0.55,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 166,
+    "success": true,
+    "collision": false,
+    "steps": 448,
+    "final_distance": 0.29,
+    "min_obstacle": 0.3,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 167,
+    "success": true,
+    "collision": false,
+    "steps": 98,
+    "final_distance": 0.29,
+    "min_obstacle": 0.08,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 168,
+    "success": false,
+    "collision": true,
+    "steps": 49,
+    "final_distance": 3.83,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 169,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.06,
+    "min_obstacle": 0.96,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 170,
+    "success": false,
+    "collision": true,
+    "steps": 20,
+    "final_distance": 2.19,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 171,
+    "success": false,
+    "collision": true,
+    "steps": 49,
+    "final_distance": 6.17,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 172,
+    "success": true,
+    "collision": false,
+    "steps": 298,
+    "final_distance": 0.29,
+    "min_obstacle": 0.01,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 173,
+    "success": true,
+    "collision": false,
+    "steps": 109,
+    "final_distance": 0.29,
+    "min_obstacle": 0.3,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 174,
+    "success": false,
+    "collision": true,
+    "steps": 60,
+    "final_distance": 3.92,
+    "min_obstacle": -0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 175,
+    "success": false,
+    "collision": true,
+    "steps": 48,
+    "final_distance": 0.31,
+    "min_obstacle": 0.0,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 176,
+    "success": false,
+    "collision": true,
+    "steps": 220,
+    "final_distance": 5.19,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 177,
+    "success": true,
+    "collision": false,
+    "steps": 116,
+    "final_distance": 0.26,
+    "min_obstacle": 0.5,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 178,
+    "success": false,
+    "collision": true,
+    "steps": 150,
+    "final_distance": 6.77,
+    "min_obstacle": -0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 179,
+    "success": true,
+    "collision": false,
+    "steps": 30,
+    "final_distance": 0.23,
+    "min_obstacle": 0.02,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 180,
+    "success": true,
+    "collision": false,
+    "steps": 44,
+    "final_distance": 0.27,
+    "min_obstacle": 1.24,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 181,
+    "success": false,
+    "collision": true,
+    "steps": 32,
+    "final_distance": 0.5,
+    "min_obstacle": 0.06,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 182,
+    "success": true,
+    "collision": false,
+    "steps": 179,
+    "final_distance": 0.26,
+    "min_obstacle": 0.23,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 183,
+    "success": false,
+    "collision": true,
+    "steps": 26,
+    "final_distance": 1.37,
+    "min_obstacle": 0.05,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 184,
+    "success": false,
+    "collision": true,
+    "steps": 22,
+    "final_distance": 2.95,
+    "min_obstacle": 0.29,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 185,
+    "success": false,
+    "collision": true,
+    "steps": 75,
+    "final_distance": 6.77,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 186,
+    "success": true,
+    "collision": false,
+    "steps": 146,
+    "final_distance": 0.25,
+    "min_obstacle": 0.37,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 187,
+    "success": true,
+    "collision": false,
+    "steps": 54,
+    "final_distance": 0.29,
+    "min_obstacle": 0.53,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 188,
+    "success": true,
+    "collision": false,
+    "steps": 26,
+    "final_distance": 0.28,
+    "min_obstacle": 0.64,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 189,
+    "success": false,
+    "collision": true,
+    "steps": 75,
+    "final_distance": 3.65,
+    "min_obstacle": -0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 190,
+    "success": false,
+    "collision": true,
+    "steps": 140,
+    "final_distance": 1.51,
+    "min_obstacle": -0.05,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 191,
+    "success": false,
+    "collision": true,
+    "steps": 4,
+    "final_distance": 4.65,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 192,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 5.04,
+    "min_obstacle": 0.11,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 193,
+    "success": false,
+    "collision": true,
+    "steps": 5,
+    "final_distance": 2.64,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 194,
+    "success": false,
+    "collision": true,
+    "steps": 9,
+    "final_distance": 5.87,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 195,
+    "success": true,
+    "collision": false,
+    "steps": 152,
+    "final_distance": 0.26,
+    "min_obstacle": 0.17,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 196,
+    "success": false,
+    "collision": true,
+    "steps": 48,
+    "final_distance": 2.99,
+    "min_obstacle": 0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 197,
+    "success": false,
+    "collision": true,
+    "steps": 26,
+    "final_distance": 5.45,
+    "min_obstacle": 0.18,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 198,
+    "success": false,
+    "collision": true,
+    "steps": 27,
+    "final_distance": 2.12,
+    "min_obstacle": -0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 199,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 3.58,
+    "min_obstacle": 0.23,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 200,
+    "success": true,
+    "collision": false,
+    "steps": 327,
+    "final_distance": 0.24,
+    "min_obstacle": 1.04,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 201,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.08,
+    "min_obstacle": 0.06,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 202,
+    "success": false,
+    "collision": true,
+    "steps": 252,
+    "final_distance": 2.23,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 203,
+    "success": true,
+    "collision": false,
+    "steps": 116,
+    "final_distance": 0.28,
+    "min_obstacle": 0.98,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 204,
+    "success": false,
+    "collision": true,
+    "steps": 151,
+    "final_distance": 3.46,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 205,
+    "success": true,
+    "collision": false,
+    "steps": 93,
+    "final_distance": 0.27,
+    "min_obstacle": 1.17,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 206,
+    "success": false,
+    "collision": true,
+    "steps": 110,
+    "final_distance": 1.77,
+    "min_obstacle": -0.01,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 207,
+    "success": true,
+    "collision": false,
+    "steps": 140,
+    "final_distance": 0.29,
+    "min_obstacle": 0.34,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 208,
+    "success": false,
+    "collision": true,
+    "steps": 197,
+    "final_distance": 1.62,
+    "min_obstacle": 0.03,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 209,
+    "success": true,
+    "collision": false,
+    "steps": 41,
+    "final_distance": 0.26,
+    "min_obstacle": 1.29,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 210,
+    "success": false,
+    "collision": true,
+    "steps": 4,
+    "final_distance": 4.51,
+    "min_obstacle": -0.09,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 211,
+    "success": true,
+    "collision": false,
+    "steps": 21,
+    "final_distance": 0.29,
+    "min_obstacle": 1.75,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 212,
+    "success": false,
+    "collision": true,
+    "steps": 13,
+    "final_distance": 3.38,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 213,
+    "success": true,
+    "collision": false,
+    "steps": 40,
+    "final_distance": 0.22,
+    "min_obstacle": 1.14,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 214,
+    "success": false,
+    "collision": true,
+    "steps": 199,
+    "final_distance": 5.2,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 215,
+    "success": false,
+    "collision": true,
+    "steps": 145,
+    "final_distance": 5.69,
+    "min_obstacle": -0.1,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 216,
+    "success": false,
+    "collision": true,
+    "steps": 11,
+    "final_distance": 2.23,
+    "min_obstacle": -0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 217,
+    "success": false,
+    "collision": true,
+    "steps": 106,
+    "final_distance": 6.89,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 218,
+    "success": false,
+    "collision": true,
+    "steps": 55,
+    "final_distance": 3.45,
+    "min_obstacle": -0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 219,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 5.99,
+    "min_obstacle": 0.19,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 220,
+    "success": true,
+    "collision": false,
+    "steps": 76,
+    "final_distance": 0.22,
+    "min_obstacle": 0.66,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 221,
+    "success": true,
+    "collision": false,
+    "steps": 452,
+    "final_distance": 0.29,
+    "min_obstacle": 0.23,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 222,
+    "success": true,
+    "collision": false,
+    "steps": 480,
+    "final_distance": 0.27,
+    "min_obstacle": 0.03,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 223,
+    "success": true,
+    "collision": false,
+    "steps": 181,
+    "final_distance": 0.27,
+    "min_obstacle": 0.32,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 224,
+    "success": false,
+    "collision": true,
+    "steps": 63,
+    "final_distance": 2.21,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 225,
+    "success": true,
+    "collision": false,
+    "steps": 78,
+    "final_distance": 0.29,
+    "min_obstacle": 0.12,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 226,
+    "success": false,
+    "collision": true,
+    "steps": 353,
+    "final_distance": 2.63,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 227,
+    "success": false,
+    "collision": true,
+    "steps": 8,
+    "final_distance": 5.36,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 228,
+    "success": true,
+    "collision": false,
+    "steps": 94,
+    "final_distance": 0.29,
+    "min_obstacle": 0.35,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 229,
+    "success": false,
+    "collision": true,
+    "steps": 26,
+    "final_distance": 7.48,
+    "min_obstacle": 0.15,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 230,
+    "success": true,
+    "collision": false,
+    "steps": 108,
+    "final_distance": 0.29,
+    "min_obstacle": 0.34,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 231,
+    "success": false,
+    "collision": true,
+    "steps": 224,
+    "final_distance": 4.51,
+    "min_obstacle": 0.1,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 232,
+    "success": true,
+    "collision": false,
+    "steps": 6,
+    "final_distance": 0.28,
+    "min_obstacle": 2.39,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 233,
+    "success": false,
+    "collision": true,
+    "steps": 71,
+    "final_distance": 0.79,
+    "min_obstacle": -0.02,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 234,
+    "success": true,
+    "collision": false,
+    "steps": 92,
+    "final_distance": 0.23,
+    "min_obstacle": 0.55,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 235,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 0.55,
+    "min_obstacle": 0.13,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 236,
+    "success": true,
+    "collision": false,
+    "steps": 412,
+    "final_distance": 0.22,
+    "min_obstacle": 0.07,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 237,
+    "success": false,
+    "collision": true,
+    "steps": 303,
+    "final_distance": 4.91,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 238,
+    "success": false,
+    "collision": true,
+    "steps": 164,
+    "final_distance": 0.38,
+    "min_obstacle": -0.01,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 239,
+    "success": false,
+    "collision": true,
+    "steps": 298,
+    "final_distance": 3.94,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 240,
+    "success": true,
+    "collision": false,
+    "steps": 197,
+    "final_distance": 0.3,
+    "min_obstacle": 0.52,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 241,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 4.1,
+    "min_obstacle": 1.12,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 242,
+    "success": false,
+    "collision": true,
+    "steps": 349,
+    "final_distance": 3.69,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 243,
+    "success": false,
+    "collision": true,
+    "steps": 1,
+    "final_distance": 4.0,
+    "min_obstacle": -0.1,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 244,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 4.46,
+    "min_obstacle": 0.01,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 245,
+    "success": false,
+    "collision": true,
+    "steps": 141,
+    "final_distance": 2.88,
+    "min_obstacle": -0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 246,
+    "success": true,
+    "collision": false,
+    "steps": 16,
+    "final_distance": 0.26,
+    "min_obstacle": 0.57,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 247,
+    "success": true,
+    "collision": false,
+    "steps": 43,
+    "final_distance": 0.3,
+    "min_obstacle": 1.02,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 248,
+    "success": true,
+    "collision": false,
+    "steps": 204,
+    "final_distance": 0.21,
+    "min_obstacle": 0.48,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 249,
+    "success": false,
+    "collision": true,
+    "steps": 108,
+    "final_distance": 1.7,
+    "min_obstacle": 0.0,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 250,
+    "success": false,
+    "collision": true,
+    "steps": 69,
+    "final_distance": 2.07,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 251,
+    "success": false,
+    "collision": true,
+    "steps": 76,
+    "final_distance": 3.72,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 252,
+    "success": true,
+    "collision": false,
+    "steps": 83,
+    "final_distance": 0.23,
+    "min_obstacle": 0.79,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 253,
+    "success": false,
+    "collision": true,
+    "steps": 295,
+    "final_distance": 5.26,
+    "min_obstacle": -0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 254,
+    "success": false,
+    "collision": true,
+    "steps": 3,
+    "final_distance": 2.75,
+    "min_obstacle": -0.08,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 255,
+    "success": true,
+    "collision": false,
+    "steps": 222,
+    "final_distance": 0.3,
+    "min_obstacle": 0.14,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 256,
+    "success": false,
+    "collision": true,
+    "steps": 98,
+    "final_distance": 0.75,
+    "min_obstacle": 0.04,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 257,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 3.47,
+    "min_obstacle": 0.06,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 258,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.3,
+    "min_obstacle": 0.49,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 259,
+    "success": false,
+    "collision": true,
+    "steps": 68,
+    "final_distance": 2.22,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 260,
+    "success": true,
+    "collision": false,
+    "steps": 394,
+    "final_distance": 0.25,
+    "min_obstacle": 0.1,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 261,
+    "success": true,
+    "collision": false,
+    "steps": 55,
+    "final_distance": 0.26,
+    "min_obstacle": 0.05,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 262,
+    "success": false,
+    "collision": true,
+    "steps": 165,
+    "final_distance": 6.7,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 263,
+    "success": true,
+    "collision": false,
+    "steps": 179,
+    "final_distance": 0.25,
+    "min_obstacle": 0.24,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 264,
+    "success": false,
+    "collision": true,
+    "steps": 261,
+    "final_distance": 2.96,
+    "min_obstacle": -0.07,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 265,
+    "success": false,
+    "collision": true,
+    "steps": 6,
+    "final_distance": 4.84,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 266,
+    "success": false,
+    "collision": true,
+    "steps": 16,
+    "final_distance": 1.66,
+    "min_obstacle": 0.03,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 267,
+    "success": false,
+    "collision": true,
+    "steps": 90,
+    "final_distance": 1.2,
+    "min_obstacle": 0.04,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 268,
+    "success": true,
+    "collision": false,
+    "steps": 150,
+    "final_distance": 0.27,
+    "min_obstacle": 0.42,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 269,
+    "success": false,
+    "collision": true,
+    "steps": 134,
+    "final_distance": 1.08,
+    "min_obstacle": -0.03,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 270,
+    "success": true,
+    "collision": false,
+    "steps": 98,
+    "final_distance": 0.3,
+    "min_obstacle": 0.29,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 271,
+    "success": true,
+    "collision": false,
+    "steps": 127,
+    "final_distance": 0.27,
+    "min_obstacle": 0.14,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 272,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 6.58,
+    "min_obstacle": 0.09,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 273,
+    "success": false,
+    "collision": true,
+    "steps": 30,
+    "final_distance": 4.04,
+    "min_obstacle": 0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 274,
+    "success": false,
+    "collision": true,
+    "steps": 60,
+    "final_distance": 2.62,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 275,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 0.84,
+    "min_obstacle": 0.2,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 276,
+    "success": true,
+    "collision": false,
+    "steps": 101,
+    "final_distance": 0.3,
+    "min_obstacle": 0.13,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 277,
+    "success": true,
+    "collision": false,
+    "steps": 109,
+    "final_distance": 0.29,
+    "min_obstacle": 0.89,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 278,
+    "success": true,
+    "collision": false,
+    "steps": 84,
+    "final_distance": 0.22,
+    "min_obstacle": 0.06,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 279,
+    "success": false,
+    "collision": true,
+    "steps": 2,
+    "final_distance": 1.08,
+    "min_obstacle": -0.02,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 280,
+    "success": false,
+    "collision": true,
+    "steps": 78,
+    "final_distance": 2.07,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 281,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.39,
+    "min_obstacle": 0.55,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 282,
+    "success": false,
+    "collision": true,
+    "steps": 65,
+    "final_distance": 5.12,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 283,
+    "success": false,
+    "collision": true,
+    "steps": 334,
+    "final_distance": 0.44,
+    "min_obstacle": -0.0,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 284,
+    "success": true,
+    "collision": false,
+    "steps": 219,
+    "final_distance": 0.29,
+    "min_obstacle": 0.77,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 285,
+    "success": false,
+    "collision": true,
+    "steps": 194,
+    "final_distance": 3.75,
+    "min_obstacle": 0.16,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 286,
+    "success": true,
+    "collision": false,
+    "steps": 108,
+    "final_distance": 0.27,
+    "min_obstacle": 0.68,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 287,
+    "success": false,
+    "collision": true,
+    "steps": 114,
+    "final_distance": 2.94,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 288,
+    "success": false,
+    "collision": true,
+    "steps": 3,
+    "final_distance": 3.13,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 289,
+    "success": false,
+    "collision": true,
+    "steps": 42,
+    "final_distance": 3.32,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 290,
+    "success": true,
+    "collision": false,
+    "steps": 21,
+    "final_distance": 0.3,
+    "min_obstacle": 0.97,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 291,
+    "success": false,
+    "collision": true,
+    "steps": 230,
+    "final_distance": 1.45,
+    "min_obstacle": 0.03,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 292,
+    "success": true,
+    "collision": false,
+    "steps": 215,
+    "final_distance": 0.29,
+    "min_obstacle": 0.16,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 293,
+    "success": false,
+    "collision": true,
+    "steps": 81,
+    "final_distance": 2.92,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 294,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 3.57,
+    "min_obstacle": 0.01,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 295,
+    "success": true,
+    "collision": false,
+    "steps": 115,
+    "final_distance": 0.29,
+    "min_obstacle": 0.39,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 296,
+    "success": false,
+    "collision": true,
+    "steps": 108,
+    "final_distance": 3.46,
+    "min_obstacle": -0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 297,
+    "success": false,
+    "collision": true,
+    "steps": 7,
+    "final_distance": 1.19,
+    "min_obstacle": 0.08,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 298,
+    "success": false,
+    "collision": true,
+    "steps": 58,
+    "final_distance": 2.07,
+    "min_obstacle": 0.13,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 299,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 0.96,
+    "min_obstacle": 0.08,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 300,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.08,
+    "min_obstacle": 0.07,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 301,
+    "success": false,
+    "collision": true,
+    "steps": 206,
+    "final_distance": 7.74,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 302,
+    "success": true,
+    "collision": false,
+    "steps": 145,
+    "final_distance": 0.29,
+    "min_obstacle": 0.36,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 303,
+    "success": false,
+    "collision": true,
+    "steps": 30,
+    "final_distance": 2.66,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 304,
+    "success": false,
+    "collision": true,
+    "steps": 192,
+    "final_distance": 1.26,
+    "min_obstacle": 0.07,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 305,
+    "success": false,
+    "collision": true,
+    "steps": 265,
+    "final_distance": 2.17,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 306,
+    "success": true,
+    "collision": false,
+    "steps": 13,
+    "final_distance": 0.26,
+    "min_obstacle": 1.05,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 307,
+    "success": false,
+    "collision": true,
+    "steps": 400,
+    "final_distance": 4.21,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 308,
+    "success": true,
+    "collision": false,
+    "steps": 171,
+    "final_distance": 0.27,
+    "min_obstacle": 0.14,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 309,
+    "success": true,
+    "collision": false,
+    "steps": 113,
+    "final_distance": 0.28,
+    "min_obstacle": 0.44,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 310,
+    "success": true,
+    "collision": false,
+    "steps": 240,
+    "final_distance": 0.3,
+    "min_obstacle": 0.55,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 311,
+    "success": false,
+    "collision": true,
+    "steps": 226,
+    "final_distance": 2.38,
+    "min_obstacle": -0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 312,
+    "success": false,
+    "collision": true,
+    "steps": 61,
+    "final_distance": 5.17,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 313,
+    "success": false,
+    "collision": true,
+    "steps": 142,
+    "final_distance": 2.71,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 314,
+    "success": false,
+    "collision": true,
+    "steps": 214,
+    "final_distance": 0.73,
+    "min_obstacle": -0.02,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 315,
+    "success": false,
+    "collision": true,
+    "steps": 127,
+    "final_distance": 3.84,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 316,
+    "success": false,
+    "collision": true,
+    "steps": 144,
+    "final_distance": 1.34,
+    "min_obstacle": 0.3,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 317,
+    "success": false,
+    "collision": true,
+    "steps": 9,
+    "final_distance": 4.92,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 318,
+    "success": true,
+    "collision": false,
+    "steps": 6,
+    "final_distance": 0.23,
+    "min_obstacle": 1.04,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 319,
+    "success": true,
+    "collision": false,
+    "steps": 59,
+    "final_distance": 0.22,
+    "min_obstacle": 0.18,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 320,
+    "success": true,
+    "collision": false,
+    "steps": 134,
+    "final_distance": 0.25,
+    "min_obstacle": 0.83,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 321,
+    "success": true,
+    "collision": false,
+    "steps": 75,
+    "final_distance": 0.28,
+    "min_obstacle": 0.31,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 322,
+    "success": true,
+    "collision": false,
+    "steps": 52,
+    "final_distance": 0.28,
+    "min_obstacle": 0.18,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 323,
+    "success": false,
+    "collision": true,
+    "steps": 129,
+    "final_distance": 3.52,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 324,
+    "success": true,
+    "collision": false,
+    "steps": 79,
+    "final_distance": 0.3,
+    "min_obstacle": 0.18,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 325,
+    "success": false,
+    "collision": true,
+    "steps": 104,
+    "final_distance": 4.79,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 326,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.47,
+    "min_obstacle": 0.14,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 327,
+    "success": false,
+    "collision": true,
+    "steps": 223,
+    "final_distance": 2.77,
+    "min_obstacle": -0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 328,
+    "success": false,
+    "collision": true,
+    "steps": 102,
+    "final_distance": 2.93,
+    "min_obstacle": -0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 329,
+    "success": true,
+    "collision": false,
+    "steps": 113,
+    "final_distance": 0.3,
+    "min_obstacle": 0.3,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 330,
+    "success": true,
+    "collision": false,
+    "steps": 24,
+    "final_distance": 0.24,
+    "min_obstacle": 0.11,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 331,
+    "success": false,
+    "collision": true,
+    "steps": 249,
+    "final_distance": 4.77,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 332,
+    "success": false,
+    "collision": true,
+    "steps": 9,
+    "final_distance": 3.91,
+    "min_obstacle": 0.07,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 333,
+    "success": false,
+    "collision": true,
+    "steps": 62,
+    "final_distance": 4.9,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 334,
+    "success": false,
+    "collision": true,
+    "steps": 295,
+    "final_distance": 3.75,
+    "min_obstacle": 0.13,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 335,
+    "success": false,
+    "collision": true,
+    "steps": 125,
+    "final_distance": 2.36,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 336,
+    "success": true,
+    "collision": false,
+    "steps": 74,
+    "final_distance": 0.3,
+    "min_obstacle": 0.09,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 337,
+    "success": true,
+    "collision": false,
+    "steps": 85,
+    "final_distance": 0.28,
+    "min_obstacle": 0.57,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 338,
+    "success": false,
+    "collision": true,
+    "steps": 14,
+    "final_distance": 3.68,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 339,
+    "success": true,
+    "collision": false,
+    "steps": 420,
+    "final_distance": 0.27,
+    "min_obstacle": 0.1,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 340,
+    "success": false,
+    "collision": true,
+    "steps": 192,
+    "final_distance": 1.77,
+    "min_obstacle": 0.06,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 341,
+    "success": true,
+    "collision": false,
+    "steps": 57,
+    "final_distance": 0.27,
+    "min_obstacle": 0.78,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 342,
+    "success": false,
+    "collision": true,
+    "steps": 377,
+    "final_distance": 4.56,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 343,
+    "success": false,
+    "collision": true,
+    "steps": 325,
+    "final_distance": 3.3,
+    "min_obstacle": -0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 344,
+    "success": true,
+    "collision": false,
+    "steps": 155,
+    "final_distance": 0.28,
+    "min_obstacle": 0.18,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 345,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.32,
+    "min_obstacle": 0.1,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 346,
+    "success": false,
+    "collision": true,
+    "steps": 30,
+    "final_distance": 5.83,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 347,
+    "success": true,
+    "collision": false,
+    "steps": 148,
+    "final_distance": 0.3,
+    "min_obstacle": 0.14,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 348,
+    "success": true,
+    "collision": false,
+    "steps": 16,
+    "final_distance": 0.26,
+    "min_obstacle": 0.08,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 349,
+    "success": false,
+    "collision": true,
+    "steps": 2,
+    "final_distance": 4.17,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 350,
+    "success": false,
+    "collision": true,
+    "steps": 489,
+    "final_distance": 2.15,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 351,
+    "success": true,
+    "collision": false,
+    "steps": 102,
+    "final_distance": 0.28,
+    "min_obstacle": 0.4,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 352,
+    "success": true,
+    "collision": false,
+    "steps": 235,
+    "final_distance": 0.27,
+    "min_obstacle": 0.23,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 353,
+    "success": true,
+    "collision": false,
+    "steps": 151,
+    "final_distance": 0.28,
+    "min_obstacle": 0.52,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 354,
+    "success": false,
+    "collision": true,
+    "steps": 17,
+    "final_distance": 1.31,
+    "min_obstacle": 0.05,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 355,
+    "success": false,
+    "collision": true,
+    "steps": 135,
+    "final_distance": 6.15,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 356,
+    "success": false,
+    "collision": true,
+    "steps": 230,
+    "final_distance": 5.25,
+    "min_obstacle": -0.09,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 357,
+    "success": false,
+    "collision": true,
+    "steps": 1,
+    "final_distance": 1.08,
+    "min_obstacle": -0.04,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 358,
+    "success": true,
+    "collision": false,
+    "steps": 223,
+    "final_distance": 0.27,
+    "min_obstacle": 0.18,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 359,
+    "success": true,
+    "collision": false,
+    "steps": 87,
+    "final_distance": 0.28,
+    "min_obstacle": 0.86,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 360,
+    "success": false,
+    "collision": true,
+    "steps": 66,
+    "final_distance": 2.34,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 361,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.19,
+    "min_obstacle": 0.22,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 362,
+    "success": true,
+    "collision": false,
+    "steps": 59,
+    "final_distance": 0.28,
+    "min_obstacle": 1.2,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 363,
+    "success": false,
+    "collision": true,
+    "steps": 29,
+    "final_distance": 0.81,
+    "min_obstacle": -0.02,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 364,
+    "success": true,
+    "collision": false,
+    "steps": 56,
+    "final_distance": 0.29,
+    "min_obstacle": 0.39,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 365,
+    "success": false,
+    "collision": true,
+    "steps": 99,
+    "final_distance": 0.88,
+    "min_obstacle": -0.02,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 366,
+    "success": true,
+    "collision": false,
+    "steps": 70,
+    "final_distance": 0.27,
+    "min_obstacle": 0.42,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 367,
+    "success": false,
+    "collision": true,
+    "steps": 191,
+    "final_distance": 3.52,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 368,
+    "success": false,
+    "collision": true,
+    "steps": 25,
+    "final_distance": 6.31,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 369,
+    "success": false,
+    "collision": true,
+    "steps": 383,
+    "final_distance": 1.28,
+    "min_obstacle": -0.04,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 370,
+    "success": true,
+    "collision": false,
+    "steps": 457,
+    "final_distance": 0.29,
+    "min_obstacle": 0.07,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 371,
+    "success": false,
+    "collision": true,
+    "steps": 13,
+    "final_distance": 7.58,
+    "min_obstacle": -0.08,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 372,
+    "success": false,
+    "collision": true,
+    "steps": 137,
+    "final_distance": 5.12,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 373,
+    "success": true,
+    "collision": false,
+    "steps": 151,
+    "final_distance": 0.28,
+    "min_obstacle": 0.57,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 374,
+    "success": true,
+    "collision": false,
+    "steps": 124,
+    "final_distance": 0.29,
+    "min_obstacle": 0.52,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 375,
+    "success": false,
+    "collision": true,
+    "steps": 212,
+    "final_distance": 0.86,
+    "min_obstacle": -0.07,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 376,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 3.08,
+    "min_obstacle": 0.06,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 377,
+    "success": false,
+    "collision": true,
+    "steps": 53,
+    "final_distance": 2.43,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 378,
+    "success": true,
+    "collision": false,
+    "steps": 240,
+    "final_distance": 0.3,
+    "min_obstacle": 0.6,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 379,
+    "success": true,
+    "collision": false,
+    "steps": 104,
+    "final_distance": 0.23,
+    "min_obstacle": 0.14,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 380,
+    "success": false,
+    "collision": true,
+    "steps": 33,
+    "final_distance": 2.28,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 381,
+    "success": true,
+    "collision": false,
+    "steps": 263,
+    "final_distance": 0.25,
+    "min_obstacle": 0.55,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 382,
+    "success": false,
+    "collision": true,
+    "steps": 61,
+    "final_distance": 2.21,
+    "min_obstacle": 0.11,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 383,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.99,
+    "min_obstacle": 0.04,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 384,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 5.17,
+    "min_obstacle": 0.09,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 385,
+    "success": true,
+    "collision": false,
+    "steps": 105,
+    "final_distance": 0.25,
+    "min_obstacle": 0.25,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 386,
+    "success": true,
+    "collision": false,
+    "steps": 40,
+    "final_distance": 0.3,
+    "min_obstacle": 0.21,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 387,
+    "success": true,
+    "collision": false,
+    "steps": 105,
+    "final_distance": 0.27,
+    "min_obstacle": 0.61,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 388,
+    "success": true,
+    "collision": false,
+    "steps": 141,
+    "final_distance": 0.28,
+    "min_obstacle": 0.43,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 389,
+    "success": false,
+    "collision": true,
+    "steps": 250,
+    "final_distance": 4.66,
+    "min_obstacle": 0.41,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 390,
+    "success": false,
+    "collision": true,
+    "steps": 16,
+    "final_distance": 5.62,
+    "min_obstacle": -0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 391,
+    "success": true,
+    "collision": false,
+    "steps": 44,
+    "final_distance": 0.29,
+    "min_obstacle": 0.11,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 392,
+    "success": false,
+    "collision": true,
+    "steps": 5,
+    "final_distance": 5.37,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 393,
+    "success": true,
+    "collision": false,
+    "steps": 257,
+    "final_distance": 0.25,
+    "min_obstacle": 0.4,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 394,
+    "success": true,
+    "collision": false,
+    "steps": 302,
+    "final_distance": 0.24,
+    "min_obstacle": 0.23,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 395,
+    "success": false,
+    "collision": true,
+    "steps": 58,
+    "final_distance": 3.63,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 396,
+    "success": true,
+    "collision": false,
+    "steps": 95,
+    "final_distance": 0.27,
+    "min_obstacle": 0.18,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 397,
+    "success": true,
+    "collision": false,
+    "steps": 110,
+    "final_distance": 0.29,
+    "min_obstacle": 0.35,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 398,
+    "success": true,
+    "collision": false,
+    "steps": 248,
+    "final_distance": 0.26,
+    "min_obstacle": 0.2,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 399,
+    "success": true,
+    "collision": false,
+    "steps": 420,
+    "final_distance": 0.29,
+    "min_obstacle": 0.96,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 400,
+    "success": false,
+    "collision": true,
+    "steps": 64,
+    "final_distance": 2.72,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 401,
+    "success": false,
+    "collision": true,
+    "steps": 33,
+    "final_distance": 5.03,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 402,
+    "success": true,
+    "collision": false,
+    "steps": 196,
+    "final_distance": 0.29,
+    "min_obstacle": 0.03,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 403,
+    "success": true,
+    "collision": false,
+    "steps": 410,
+    "final_distance": 0.29,
+    "min_obstacle": 0.5,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 404,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 5.98,
+    "min_obstacle": 0.78,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 405,
+    "success": false,
+    "collision": true,
+    "steps": 14,
+    "final_distance": 5.47,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 406,
+    "success": false,
+    "collision": true,
+    "steps": 160,
+    "final_distance": 5.19,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 407,
+    "success": false,
+    "collision": true,
+    "steps": 160,
+    "final_distance": 3.79,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 408,
+    "success": true,
+    "collision": false,
+    "steps": 127,
+    "final_distance": 0.28,
+    "min_obstacle": 0.19,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 409,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 4.88,
+    "min_obstacle": 0.1,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 410,
+    "success": false,
+    "collision": true,
+    "steps": 38,
+    "final_distance": 4.42,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 411,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 3.61,
+    "min_obstacle": 0.18,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 412,
+    "success": false,
+    "collision": true,
+    "steps": 4,
+    "final_distance": 5.21,
+    "min_obstacle": -0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 413,
+    "success": false,
+    "collision": true,
+    "steps": 2,
+    "final_distance": 0.74,
+    "min_obstacle": 0.11,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 414,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.94,
+    "min_obstacle": 0.22,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 415,
+    "success": false,
+    "collision": true,
+    "steps": 55,
+    "final_distance": 6.21,
+    "min_obstacle": -0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 416,
+    "success": true,
+    "collision": false,
+    "steps": 289,
+    "final_distance": 0.3,
+    "min_obstacle": 0.1,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 417,
+    "success": true,
+    "collision": false,
+    "steps": 70,
+    "final_distance": 0.26,
+    "min_obstacle": 0.28,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 418,
+    "success": false,
+    "collision": true,
+    "steps": 102,
+    "final_distance": 4.59,
+    "min_obstacle": 0.18,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 419,
+    "success": false,
+    "collision": true,
+    "steps": 10,
+    "final_distance": 4.33,
+    "min_obstacle": 0.07,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 420,
+    "success": true,
+    "collision": false,
+    "steps": 75,
+    "final_distance": 0.29,
+    "min_obstacle": 0.14,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 421,
+    "success": false,
+    "collision": true,
+    "steps": 10,
+    "final_distance": 5.22,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 422,
+    "success": false,
+    "collision": true,
+    "steps": 134,
+    "final_distance": 1.74,
+    "min_obstacle": -0.01,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 423,
+    "success": true,
+    "collision": false,
+    "steps": 17,
+    "final_distance": 0.29,
+    "min_obstacle": 0.91,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 424,
+    "success": true,
+    "collision": false,
+    "steps": 65,
+    "final_distance": 0.29,
+    "min_obstacle": 0.58,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 425,
+    "success": false,
+    "collision": true,
+    "steps": 31,
+    "final_distance": 2.81,
+    "min_obstacle": 0.05,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 426,
+    "success": false,
+    "collision": true,
+    "steps": 18,
+    "final_distance": 6.33,
+    "min_obstacle": -0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 427,
+    "success": false,
+    "collision": true,
+    "steps": 258,
+    "final_distance": 5.53,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 428,
+    "success": false,
+    "collision": true,
+    "steps": 1,
+    "final_distance": 4.2,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 429,
+    "success": false,
+    "collision": true,
+    "steps": 159,
+    "final_distance": 4.61,
+    "min_obstacle": 0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 430,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.98,
+    "min_obstacle": 0.06,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 431,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 0.91,
+    "min_obstacle": 0.19,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 432,
+    "success": false,
+    "collision": true,
+    "steps": 452,
+    "final_distance": 0.42,
+    "min_obstacle": -0.05,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 433,
+    "success": true,
+    "collision": false,
+    "steps": 72,
+    "final_distance": 0.29,
+    "min_obstacle": 1.1,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 434,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 4.96,
+    "min_obstacle": 0.14,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 435,
+    "success": false,
+    "collision": true,
+    "steps": 2,
+    "final_distance": 2.72,
+    "min_obstacle": -0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 436,
+    "success": false,
+    "collision": true,
+    "steps": 21,
+    "final_distance": 5.43,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 437,
+    "success": true,
+    "collision": false,
+    "steps": 41,
+    "final_distance": 0.29,
+    "min_obstacle": 1.15,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 438,
+    "success": false,
+    "collision": true,
+    "steps": 143,
+    "final_distance": 1.32,
+    "min_obstacle": 0.0,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 439,
+    "success": false,
+    "collision": true,
+    "steps": 333,
+    "final_distance": 1.02,
+    "min_obstacle": 0.03,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 440,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 4.18,
+    "min_obstacle": 0.56,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 441,
+    "success": false,
+    "collision": true,
+    "steps": 148,
+    "final_distance": 4.25,
+    "min_obstacle": -0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 442,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 5.42,
+    "min_obstacle": 0.37,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 443,
+    "success": true,
+    "collision": false,
+    "steps": 266,
+    "final_distance": 0.24,
+    "min_obstacle": 0.32,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 444,
+    "success": true,
+    "collision": false,
+    "steps": 321,
+    "final_distance": 0.28,
+    "min_obstacle": 0.26,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 445,
+    "success": false,
+    "collision": true,
+    "steps": 11,
+    "final_distance": 5.39,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 446,
+    "success": false,
+    "collision": true,
+    "steps": 234,
+    "final_distance": 2.93,
+    "min_obstacle": 0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 447,
+    "success": false,
+    "collision": true,
+    "steps": 24,
+    "final_distance": 0.85,
+    "min_obstacle": 0.06,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 448,
+    "success": true,
+    "collision": false,
+    "steps": 79,
+    "final_distance": 0.29,
+    "min_obstacle": 0.27,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 449,
+    "success": true,
+    "collision": false,
+    "steps": 63,
+    "final_distance": 0.3,
+    "min_obstacle": 0.29,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 450,
+    "success": true,
+    "collision": false,
+    "steps": 234,
+    "final_distance": 0.25,
+    "min_obstacle": 0.33,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 451,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.06,
+    "min_obstacle": 0.23,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 452,
+    "success": true,
+    "collision": false,
+    "steps": 99,
+    "final_distance": 0.29,
+    "min_obstacle": 0.59,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 453,
+    "success": true,
+    "collision": false,
+    "steps": 26,
+    "final_distance": 0.26,
+    "min_obstacle": 0.43,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 454,
+    "success": false,
+    "collision": true,
+    "steps": 479,
+    "final_distance": 4.6,
+    "min_obstacle": 0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 455,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.87,
+    "min_obstacle": 0.57,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 456,
+    "success": true,
+    "collision": false,
+    "steps": 169,
+    "final_distance": 0.23,
+    "min_obstacle": 0.17,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 457,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.2,
+    "min_obstacle": 0.2,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 458,
+    "success": false,
+    "collision": true,
+    "steps": 313,
+    "final_distance": 2.23,
+    "min_obstacle": -0.09,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 459,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 3.7,
+    "min_obstacle": 0.32,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 460,
+    "success": false,
+    "collision": true,
+    "steps": 4,
+    "final_distance": 3.61,
+    "min_obstacle": -0.13,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 461,
+    "success": true,
+    "collision": false,
+    "steps": 23,
+    "final_distance": 0.26,
+    "min_obstacle": 0.19,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 462,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.37,
+    "min_obstacle": 1.17,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 463,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 4.7,
+    "min_obstacle": 0.21,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 464,
+    "success": true,
+    "collision": false,
+    "steps": 76,
+    "final_distance": 0.29,
+    "min_obstacle": 0.31,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 465,
+    "success": false,
+    "collision": true,
+    "steps": 105,
+    "final_distance": 2.64,
+    "min_obstacle": -0.07,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 466,
+    "success": true,
+    "collision": false,
+    "steps": 110,
+    "final_distance": 0.26,
+    "min_obstacle": 0.41,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 467,
+    "success": true,
+    "collision": false,
+    "steps": 160,
+    "final_distance": 0.25,
+    "min_obstacle": 0.5,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 468,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.15,
+    "min_obstacle": 0.11,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 469,
+    "success": true,
+    "collision": false,
+    "steps": 71,
+    "final_distance": 0.27,
+    "min_obstacle": 1.01,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 470,
+    "success": false,
+    "collision": true,
+    "steps": 100,
+    "final_distance": 1.73,
+    "min_obstacle": -0.11,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 471,
+    "success": false,
+    "collision": true,
+    "steps": 54,
+    "final_distance": 2.69,
+    "min_obstacle": 0.02,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 472,
+    "success": false,
+    "collision": true,
+    "steps": 7,
+    "final_distance": 4.82,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 473,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 1.86,
+    "min_obstacle": 0.12,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 474,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 2.01,
+    "min_obstacle": 0.0,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 475,
+    "success": false,
+    "collision": true,
+    "steps": 78,
+    "final_distance": 3.58,
+    "min_obstacle": 0.1,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 476,
+    "success": false,
+    "collision": true,
+    "steps": 161,
+    "final_distance": 4.58,
+    "min_obstacle": 0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 477,
+    "success": false,
+    "collision": true,
+    "steps": 45,
+    "final_distance": 6.19,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 478,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 5.3,
+    "min_obstacle": 0.22,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 479,
+    "success": false,
+    "collision": true,
+    "steps": 250,
+    "final_distance": 4.67,
+    "min_obstacle": 0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 480,
+    "success": false,
+    "collision": true,
+    "steps": 27,
+    "final_distance": 5.99,
+    "min_obstacle": -0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 481,
+    "success": false,
+    "collision": true,
+    "steps": 320,
+    "final_distance": 2.54,
+    "min_obstacle": 0.0,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 482,
+    "success": true,
+    "collision": false,
+    "steps": 140,
+    "final_distance": 0.29,
+    "min_obstacle": 0.17,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 483,
+    "success": true,
+    "collision": false,
+    "steps": 252,
+    "final_distance": 0.25,
+    "min_obstacle": 0.13,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 484,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 3.0,
+    "min_obstacle": 0.27,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 485,
+    "success": true,
+    "collision": false,
+    "steps": 57,
+    "final_distance": 0.29,
+    "min_obstacle": -0.01,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 486,
+    "success": false,
+    "collision": true,
+    "steps": 32,
+    "final_distance": 4.71,
+    "min_obstacle": -0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 487,
+    "success": false,
+    "collision": true,
+    "steps": 89,
+    "final_distance": 1.55,
+    "min_obstacle": 0.04,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 488,
+    "success": false,
+    "collision": true,
+    "steps": 191,
+    "final_distance": 6.1,
+    "min_obstacle": 0.04,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 489,
+    "success": false,
+    "collision": true,
+    "steps": 127,
+    "final_distance": 3.89,
+    "min_obstacle": 0.03,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 490,
+    "success": false,
+    "collision": true,
+    "steps": 168,
+    "final_distance": 3.76,
+    "min_obstacle": -0.06,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 491,
+    "success": true,
+    "collision": false,
+    "steps": 48,
+    "final_distance": 0.27,
+    "min_obstacle": 0.33,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 492,
+    "success": false,
+    "collision": true,
+    "steps": 104,
+    "final_distance": 2.84,
+    "min_obstacle": 0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 493,
+    "success": true,
+    "collision": false,
+    "steps": 297,
+    "final_distance": 0.26,
+    "min_obstacle": 0.12,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 494,
+    "success": true,
+    "collision": false,
+    "steps": 68,
+    "final_distance": 0.28,
+    "min_obstacle": 1.65,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 495,
+    "success": false,
+    "collision": false,
+    "steps": 500,
+    "final_distance": 4.68,
+    "min_obstacle": 0.11,
+    "fail_reason": "timeout_no_goal"
+  },
+  {
+    "episode": 496,
+    "success": false,
+    "collision": true,
+    "steps": 161,
+    "final_distance": 2.3,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 497,
+    "success": false,
+    "collision": true,
+    "steps": 82,
+    "final_distance": 1.92,
+    "min_obstacle": -0.0,
+    "fail_reason": "near_goal_collision"
+  },
+  {
+    "episode": 498,
+    "success": false,
+    "collision": true,
+    "steps": 28,
+    "final_distance": 3.79,
+    "min_obstacle": -0.01,
+    "fail_reason": "tight_space"
+  },
+  {
+    "episode": 499,
+    "success": true,
+    "collision": false,
+    "steps": 78,
+    "final_distance": 0.3,
+    "min_obstacle": 0.83,
+    "fail_reason": "success"
+  },
+  {
+    "episode": 500,
+    "success": true,
+    "collision": false,
+    "steps": 1,
+    "final_distance": 0.16,
+    "min_obstacle": 1.25,
+    "fail_reason": "success"
+  }
+]

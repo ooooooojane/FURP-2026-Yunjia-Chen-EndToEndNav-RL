@@ -30,6 +30,28 @@ Thumbs.db
 data/
 !**/data/.gitkeep
 
+# ROS bags — raw real-robot recordings, 456 MB total. Kept off-repo.
+*.bag
+bags/
+
+# Build artifacts
+*.whl
+install/
+log/
+
+# Training runs / TensorBoard events (232 MB)
+runs/
+
+# --- Explicit inclusions -------------------------------------------------
+# The rules above are written for a generic project and would silently drop
+# this project's actual result files. These negations re-include them.
+# `git check-ignore -v <path>` verifies the winning rule for any file.
+
+# Paper Table 5 / Table IV source data (real-robot sensor-to-command latency)
+!src/paper_data/*.csv
+# Training curves backing the reward-sensitivity study (W4-W5)
+!src/scripts/training_logs/*.csv
+
 # Secrets — NEVER commit credentials
 .env
 *.key

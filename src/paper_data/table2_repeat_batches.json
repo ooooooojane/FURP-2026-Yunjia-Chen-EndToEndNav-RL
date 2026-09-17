@@ -1,0 +1,119 @@
+{
+  "cnntd3_cpu": {
+    "batch_means": [
+      0.1202,
+      0.1189,
+      0.1208,
+      0.1191,
+      0.1229
+    ],
+    "cross_batch_mean": 0.1204,
+    "cross_batch_std": 0.0016,
+    "min_batch_mean": 0.1189,
+    "max_batch_mean": 0.1229
+  },
+  "sac_cpu": {
+    "batch_means": [
+      0.0389,
+      0.0397,
+      0.0396,
+      0.0401,
+      0.0393
+    ],
+    "cross_batch_mean": 0.0395,
+    "cross_batch_std": 0.0004,
+    "min_batch_mean": 0.0389,
+    "max_batch_mean": 0.0401
+  },
+  "ppo_cpu": {
+    "batch_means": [
+      0.0295,
+      0.0294,
+      0.0293,
+      0.0297,
+      0.0294
+    ],
+    "cross_batch_mean": 0.0295,
+    "cross_batch_std": 0.0001,
+    "min_batch_mean": 0.0293,
+    "max_batch_mean": 0.0297
+  },
+  "cnntd3_mps": {
+    "batch_means": [
+      0.6721,
+      0.7792,
+      0.6802,
+      0.6754,
+      0.6741
+    ],
+    "cross_batch_mean": 0.6962,
+    "cross_batch_std": 0.0465,
+    "min_batch_mean": 0.6721,
+    "max_batch_mean": 0.7792
+  },
+  "sac_mps": {
+    "batch_means": [
+      0.4263,
+      0.4595,
+      0.4232,
+      0.5056,
+      0.4239
+    ],
+    "cross_batch_mean": 0.4477,
+    "cross_batch_std": 0.0358,
+    "min_batch_mean": 0.4232,
+    "max_batch_mean": 0.5056
+  },
+  "ppo_mps": {
+    "batch_means": [
+      0.3983,
+      0.3972,
+      0.3948,
+      0.7814,
+      0.5948
+    ],
+    "cross_batch_mean": 0.5133,
+    "cross_batch_std": 0.1727,
+    "min_batch_mean": 0.3948,
+    "max_batch_mean": 0.7814
+  },
+  "cnntd3_cuda": {
+    "batch_means": [
+      0.3096,
+      0.3096,
+      0.3079,
+      0.3046,
+      0.3049
+    ],
+    "cross_batch_mean": 0.3073,
+    "cross_batch_std": 0.0025,
+    "min_batch_mean": 0.3046,
+    "max_batch_mean": 0.3096
+  },
+  "sac_cuda": {
+    "batch_means": [
+      0.1489,
+      0.1459,
+      0.1458,
+      0.143,
+      0.1473
+    ],
+    "cross_batch_mean": 0.1462,
+    "cross_batch_std": 0.0022,
+    "min_batch_mean": 0.143,
+    "max_batch_mean": 0.1489
+  },
+  "ppo_cuda": {
+    "batch_means": [
+      0.1058,
+      0.1028,
+      0.1073,
+      0.1094,
+      0.1085
+    ],
+    "cross_batch_mean": 0.1068,
+    "cross_batch_std": 0.0026,
+    "min_batch_mean": 0.1028,
+    "max_batch_mean": 0.1094
+  }
+}

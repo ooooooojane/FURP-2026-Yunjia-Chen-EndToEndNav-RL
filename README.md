@@ -1,108 +1,115 @@
-# FURP Project Repository
+# Benchmarking Edge Deployment of DRL Navigation Policies
 
-> **Faculty Undergraduate Research Practice (FURP)**
-> Undergraduate Research Group · Faculty of Science and Engineering · University of Nottingham Ningbo China
+**Latency, Compression, and Real-Robot Validation**
 
-This is your project home for the FURP programme. **Fork this template**, rename your repo, fill in the content each week, and share it with us (or make it public) so we can follow your progress and review your weekly work.
+> **FURP 2026** — Faculty Undergraduate Research Practice
+> Undergraduate Research Group · Faculty of Science and Engineering
+> University of Nottingham Ningbo China
 
----
+## Deliverables
 
-## Getting started (do this in Week 1)
-
-1. **Fork / use this template** to create your own repository.
-2. **Rename your repo** following the naming convention:
-   ```
-   FURP-2025/YourName-ProjectTag
-   # e.g. furp-2025/Jason-ROSBootcamp
-   ```
-3. **Give us access:** either make the repo **public**, or **share it** with the research group accounts (ask your project lead for the usernames to add as collaborators).
-4. **Fill in this README** — replace the placeholders in the *Project Info* section below.
-5. **Start your weekly log** in [`docs/00_weekly.md`](docs/00_weekly.md).
-
----
-
-## Project Info — *fill this in*
-
-| Field | Your entry |
+| | |
 |---|---|
-| Student name(s) | Yunjia Chen |
+| 📄 **Final report** | [`FURP_Summer_Report.pdf`](FURP_Summer_Report.pdf) |
+| 🖼️ **Poster** | [`FURP_Showcase.pdf`](FURP_Showcase.pdf) |
+| 💻 **Code** | [`src/`](src/) — map in [`src/README.md`](src/README.md) |
+| 📊 **Source data** | [`src/paper_data/`](src/paper_data/) — which file backs which table |
+| 🔧 **Upstream patch** | [`src/patches/`](src/patches/) — what we changed, as a diff |
+| 📝 **Weekly log** | [`docs/00_weekly.md`](docs/00_weekly.md) |
+
+## Abstract
+
+Autonomous mobile robot navigation maps sensor observations to motion commands
+within an on-board control loop. A deployable policy must be timely, compact and
+competent, yet these properties are often evaluated separately. This report
+defines a benchmark that combines model-only latency and artifact size, paired
+closed-loop task outcomes, and execution in a physical sensing and control
+stack, where each source of evidence has a stated limit on the claims it
+supports. We apply it to three DRL policies and one optimization-based planner
+using CPU and GPU execution, 999 paired simulation scenarios, 200 paired
+compression trials, and 50 formal trials on a WHEELTEC S100.
+
+Model-only latency for CNNTD3, SAC and PPO ranges from 0.03 to 0.70 ms, but
+**latency ordering does not track navigation success** among the tested
+policies. ONNX Runtime provides a 6.3-fold speedup, while INT8 reduces size by
+71% without a statistically significant task-level degradation. Fine-tuning
+recovers most of the performance lost at 50% pruning. On the robot, model-only
+inference is small relative to the 87–89 ms sensor-to-command path.
+
+**Two contributions.** First, a benchmark for edge navigation with fixed
+model-only timing, paired simulation, and physical-robot protocols, keeping
+latency, size and task outcomes as separate metrics. Second, its application —
+which shows which deployment changes affect latency or storage, and which leave
+task behavior preserved.
+
+## Project info
+
+| Field | Entry |
+|---|---|
+| Student name | Yunjia Chen |
+| Student ID | 20808871 |
 | Project title | End-to-End Navigation for an AMR with Reinforcement Learning |
 | Project tag | EndToEndNav-RL |
 | Track | Research |
 | Supervising faculty | Tianxiang Cui |
 | Project lead | Fuhua Jia |
-| Team or individual | Team |
-| Cited paper being replicated | _title + link/DOI_ |
-
-**One-line summary:** Train a policy that maps observations to navigation actions and study how reward design, state representation, and evaluation affect performance.
-
----
+| Team or individual | Individual |
+| Upstream work extended | [`reiniscimurs/DRL-robot-navigation-IR-SIM`](https://github.com/reiniscimurs/DRL-robot-navigation-IR-SIM) — supplies the CNNTD3 / SAC / PPO implementations benchmarked here; our modifications are in [`src/patches/`](src/patches/) |
+| SOTA baseline added | NeuPAN (Han et al., *IEEE T-RO*, 2025) — optimization-based planner, evaluated under the identical protocol |
 
 ## Repository structure
 
-This structure is **mandatory** — please keep it intact.
-
 ```
 /docs
- ├── 00_weekly.md         ← update EVERY week: progress, challenges, next steps
- └── meeting_notes/       ← key takeaways from all team meetings
-/src                      ← your code / experiments / materials
-FURP_Showcase.pdf         ← your poster / presentation PDF, in the repo root
+ ├── 00_weekly.md          ← weekly log index
+ ├── weekly_progress/      ← individual weekly entries (W1–W6)
+ ├── meeting_notes/        ← key takeaways from team meetings
+ └── checklists/           ← programme checkpoints
+/src
+ ├── README.md             ← code map: which script produces what
+ ├── scripts/              ← self-contained working directory
+ ├── paper_data/           ← source data for every number in the report
+ └── patches/              ← modifications to the upstream project
+FURP_Showcase.pdf          ← poster (repository root, as required)
+FURP_Summer_Report.pdf     ← final report
 ```
 
-- **`docs/00_weekly.md`** — your weekly progress log. This is the first thing we check.
-- **`docs/meeting_notes/`** — one file per meeting with key takeaways and action items.
-- **`src/`** — all your code, scripts, notebooks, and experiment materials.
-- **`FURP_Showcase.pdf`** — your final poster, placed in the **repo root** with this exact filename.
+## Reproducing the results
 
----
+Training and simulation code is the upstream project plus
+[`src/patches/upstream_modifications.patch`](src/patches/), applied against
+commit `31e1a4d`. That patch is what makes the work possible: it adds
+**deterministic seeding across all three RNGs**, so obstacle layouts are
+reproducible across processes and every policy can be evaluated on byte-identical
+scenarios — the precondition for the paired McNemar tests in the report.
 
-## The three rules for your certificate
+```bash
+git clone https://github.com/reiniscimurs/DRL-robot-navigation-IR-SIM.git
+cd DRL-robot-navigation-IR-SIM
+git checkout 31e1a4d511bb607e6ea38f4f8fccc842fbc7dd77
+git apply /path/to/upstream_modifications.patch
+```
 
-To earn your FURP certificate, **all three** must be satisfied:
+Then see [`src/README.md`](src/README.md) for the per-script detail and
+[`src/paper_data/README.md`](src/paper_data/README.md) for the data.
 
-1. **Attend > 50%** of programme activities (weekly meetings, workshops, scheduled sessions — online or in person).
-2. **Submit a poster** — place it as `FURP_Showcase.pdf` in this repo root.
-3. **Present at the Poster Showcase** — in person (strongly preferred), or send a stand-in if you truly cannot attend.
+**Not included:** raw ROS `.bag` recordings (456 MB), trained checkpoints
+(65 MB), and the withdrawn `eval_compare.py`. Reasons are documented in
+[`src/README.md`](src/README.md#deliberately-not-included).
 
-> Miss any one of the three, and the certificate is not awarded this round.
+## FURP programme
 
-**Research Track — minimum for certification:** successful replication of a cited paper with at least **10% innovation** (reproduce the work *and* add something new).
+**The three rules for the certificate** — all three must be satisfied:
 
----
+1. **Attend > 50%** of programme activities.
+2. **Submit a poster** — placed as `FURP_Showcase.pdf` in this repo root. ✅
+3. **Present at the Poster Showcase.**
 
-## Weekly cadence
+Research Track minimum: successful replication of a cited work with at least
+**10% innovation** — reproduce the work *and* add something new.
 
-Every week, you should:
-
-- ✅ Update [`docs/00_weekly.md`](docs/00_weekly.md)
-- ✅ Log meeting notes in [`docs/meeting_notes/`](docs/meeting_notes/)
-- ✅ Attend the weekly meeting (online or in person)
-
-Consistent weekly engagement is the backbone of a successful FURP project — and it feeds directly into your attendance (Rule 1).
-
----
-
-## Leave & withdrawal
-
-Any **leave of absence** or **withdrawal** must be notified to us **by email** — a verbal or chat message is not sufficient.
-
-- **Leave:** email *before* the session where possible, state the date(s) and reason. Note that leave still counts against the >50% attendance rule.
-- **Withdrawal:** email us to formally withdraw so we can free your project slot and update records.
-- **Switching tracks:** email the project lead with the subject *"Project Transfer Request"* and CC your supervising faculty member.
-
-> No email = no record. Always put leave and withdrawal in writing.
-
----
-
-## Quick checklist
-
-- [ ] Forked the template and renamed the repo (`FURP-2025/YourName-ProjectTag`)
-- [ ] Made the repo public **or** shared it with the research group
-- [ ] Filled in the *Project Info* table above
-- [ ] Started `docs/00_weekly.md`
-- [ ] Created my first file in `docs/meeting_notes/`
-- [ ] (By Showcase) Added `FURP_Showcase.pdf` to the repo root
+Any leave of absence or withdrawal must be notified by email; a verbal or chat
+message is not sufficient.
 
 ---
 

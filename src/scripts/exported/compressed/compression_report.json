@@ -1,0 +1,30 @@
+{
+ "baseline": {
+  "size_mb": 0.538,
+  "mean_ms": 0.1297,
+  "p95_ms": 0.1379
+ },
+ "pruned10": {
+  "size_mb": 0.444,
+  "mean_ms": 0.128,
+  "p95_ms": 0.1359,
+  "max_out_diff": 0.0454
+ },
+ "pruned30": {
+  "size_mb": 0.286,
+  "mean_ms": 0.1279,
+  "p95_ms": 0.1344,
+  "max_out_diff": 0.0966
+ },
+ "pruned50": {
+  "size_mb": 0.164,
+  "mean_ms": 0.1264,
+  "p95_ms": 0.132,
+  "max_out_diff": 0.1686
+ },
+ "int8_onnx": {
+  "size_mb": 0.157,
+  "mean_ms": 0.0346,
+  "p95_ms": 0.0358
+ }
+}
